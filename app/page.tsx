@@ -8,9 +8,8 @@ import { defaultData } from "@/config/defaultData"
 
 import { BarChart } from "@/components/Charts/BarChart"
 import { UserData } from "@/config/defaultData"
-import { UserOutlinedIcon } from '../components/icons'
+import { ArrowLeftSLine, FirstPlaceMedalIcon, GroupIcon, SecondPlaceMedalIcon, ThirdPlaceMedalIcon, UserOutlinedIcon } from '../components/icons'
 import { AgesUsers, DefaultData, DefaultDataUsersByCountry, GendersUsers, TotalDataUsers } from '../types/index'
-
 
 const options = [
   { value: 'gender', label: 'Genero' },
@@ -20,7 +19,7 @@ const options = [
 
 export default function Home() {
   const [filterUsers, setFilterUsers] = useState<string>('gender')
-  console.log(defaultData);
+  // console.log(defaultData);
 
   const infoUsers = useMemo(() => {
     const countryData = defaultData.users.reduce((acc: DefaultDataUsersByCountry, user: UserData) => {
@@ -31,9 +30,11 @@ export default function Home() {
           'male': 0,
           'female': 0
         }, ages: {
-          '0-18': 0,
-          '18-35': 0,
-          '35-100': 0
+          '18-25': 0,
+          '25-35': 0,
+          '35-45': 0,
+          '45-60': 0,
+          '60-75': 0
         }, userType: {
           'new': 0,
           'returning': 0
@@ -41,12 +42,16 @@ export default function Home() {
       }
       acc[country]["Usuarios totales"] += 1
       
-      if (age >= 0 && age <= 18) {
-        acc[country].ages['0-18'] += 1
-      } else if (age >= 18 && age <= 35) {
-        acc[country].ages['18-35'] += 1
-      } else {
-        acc[country].ages['35-100'] += 1
+      if (age >= 0 && age <= 25) {
+        acc[country].ages['18-25'] += 1
+      } else if (age >= 25 && age <= 35) {
+        acc[country].ages['25-35'] += 1
+      } else if (age >= 35 && age <= 45) {
+        acc[country].ages['35-45'] += 1
+      } else if (age >= 45 && age <= 60) {
+        acc[country].ages['45-60'] += 1
+      } else if (age >= 60) {
+        acc[country].ages['60-75'] += 1
       }
       
       switch (gender) {
@@ -76,7 +81,6 @@ export default function Home() {
       userType: data.userType
     }))
   }, [defaultData.users])
-
   
   const totalInfo: TotalDataUsers = useMemo(() => {
     const totalGenders = infoUsers.reduce((acc: GendersUsers, user: DefaultData) => {
@@ -95,15 +99,19 @@ export default function Home() {
 
     const totalAges = infoUsers.reduce((acc: AgesUsers, user: DefaultData) => {
       if (Object.keys(acc).length === 0) {
-        acc['0-18'] = user.ages['0-18']
-        acc['18-35'] = user.ages['18-35']
-        acc['35-100'] = user.ages['35-100']
+        acc['18-25'] = user.ages['18-25']
+        acc['25-35'] = user.ages['25-35']
+        acc['35-45'] = user.ages['35-45']
+        acc['45-60'] = user.ages['45-60']
+        acc['60-75'] = user.ages['60-75']
       }
       
       const {ages} = user
-      acc['0-18'] += ages['0-18']
-      acc['18-35'] += ages['18-35']
-      acc['35-100'] += ages['35-100']
+      acc['18-25'] += ages['18-25']
+      acc['25-35'] += ages['25-35']
+      acc['35-45'] += ages['35-45']
+      acc['45-60'] += ages['45-60']
+      acc['60-75'] += ages['60-75']
       return acc
     }, {} as AgesUsers)
 
@@ -122,10 +130,6 @@ export default function Home() {
     const byCountries = Array.from(infoUsers).sort((a, b) => {
       return b["Usuarios totales"] - a["Usuarios totales"]
     }).slice(0, 3)
-    
-    const gender = Object.entries(totalGenders)
-    const maxGender = gender.reduce((max, entry) => (entry[1] > max[1] ? entry : max))
-    const minGender = gender.reduce((min, entry) => (entry[1] < min[1] ? entry : min))
 
     const ages = Object.entries(totalAges)
     const maxAge = ages.reduce((max, entry) => (entry[1] > max[1] ? entry : max))
@@ -133,8 +137,7 @@ export default function Home() {
     
     const response = {
       totalUsers,
-      maxGender,
-      minGender,
+      totalGenders,
       newUsers,
       firtsCountry: {
         country: byCountries[0].country,
@@ -197,49 +200,98 @@ export default function Home() {
     setCountrySelect(e.target.value)
   }
 
+  console.log(totalInfo);
+  
+
   return (
     <section className="flex flex-col w-full gap-4">
       <article className="flex gap-4 justify-between">
         <Card className="w-full max-w-xs shadow-lg">
-          <CardBody>
-          <div className="flex flex-col items-start">
-              <p className="text-tiny uppercase font-bold">Usuarios totales reigstrados</p>
-              <div className="flex w-min self-center justify-self-center items-center">
-                <UserOutlinedIcon className="w-8 h-8" />
-                <h4 className="font-bold text-large">{totalInfo.totalUsers}</h4>
+          <CardHeader>
+            <p className="text-tiny uppercase font-bold">Usuarios totales registrados</p>
+          </CardHeader>
+          <CardBody className="p-0">
+            <div className="flex w-min self-center justify-self-center items-end">
+              <UserOutlinedIcon className="w-10 h-10 text-primary" />
+              <h4 className="font-bold text-3xl self-end leading-none">{totalInfo.totalUsers}</h4>
+            </div>
+          </CardBody>
+        </Card>
+        <Card className="w-full max-w-xs shadow-lg">
+          <CardHeader>
+            <p className="text-tiny uppercase font-bold textexts">Distribución por géneros</p>
+          </CardHeader>
+          <CardBody className="p-0">
+            <div className="flex items-start w-full h-full">
+              <div className={`w-full max-w-[${Math.ceil((totalInfo.totalGenders.female * 100) / totalInfo.totalUsers)}%] bg-softCoral-300 h-full flex flex-col items-center justify-center`}>
+                <span className="text-xs font-bold">Femenino</span>
+                <h5>{totalInfo.totalGenders.female}</h5>
+              </div>
+              <div className={`w-full max-w-[${Math.round((totalInfo.totalGenders.male * 100) / totalInfo.totalUsers)}%] bg-primary/70 h-full flex flex-col items-center justify-center`}>
+                <span className="text-xs font-bold">Masculino</span>
+                <h5>{totalInfo.totalGenders.male}</h5>
+              </div>
+              <div className={`w-full max-w-[${Math.round((totalInfo.totalGenders.others * 100) / totalInfo.totalUsers)}%] bg-warmYellow-400 h-full flex flex-col items-center justify-center`}>
+                <span className="text-xs font-bold">Otro</span>
+                <h5>{totalInfo.totalGenders.others}</h5>
               </div>
             </div>
           </CardBody>
         </Card>
         <Card className="w-full max-w-xs shadow-lg">
           <CardBody>
-          <div className="flex-col items-start">
-              <p className="text-tiny uppercase font-bold">Género de usuario mas registrado</p>
-              <h4 className="font-bold text-large">{totalInfo.maxGender[0]}: {totalInfo.maxGender[1]}</h4>
-            </div>
-          </CardBody>
-        </Card>
-        <Card className="w-full max-w-xs shadow-lg">
-          <CardBody>
-          <div className="flex-col items-start">
+          <div className="flex flex-col items-start gap-2">
               <p className="text-tiny uppercase font-bold">Nuevos usuarios registrados</p>
-              <h4 className="font-bold text-large">{totalInfo.newUsers}</h4>
+              <div className="flex flex-col self-center items-center gap-2 border-x-1 px-5 border-green-500">
+                <ArrowLeftSLine className="w-5 h-5 text-green-500 rotate-90 -mb-3" />
+                <h4 className="font-bold text-large">{totalInfo.newUsers}</h4>
+              </div>
             </div>
           </CardBody>
         </Card>
         <Card className="w-full max-w-sm shadow-lg">
-          <CardBody>
-          <div className="flex-col items-start">
-              <p className="text-tiny uppercase font-bold">Países con mayor cantidad de usuarios</p>
-              <h4 className="font-bold text-large">Total de usuarios registrados por país</h4>
+          <CardHeader>
+            <p className="text-tiny uppercase font-bold">Países con mayor cantidad de usuarios</p>
+          </CardHeader>
+          <CardBody className="p-0">
+            <div className="grid grid-cols-3 items-start w-full h-full">
+              <div className="w-full items-center justify-center flex h-full gap-2 border-r-1">
+                <FirstPlaceMedalIcon className="w-7 h-7" />
+                <div className="flex flex-col w-fit h-full items-center justify-start">
+                <span className="text-xs font-bold">{totalInfo.firtsCountry.country}</span>
+                <h5>{totalInfo.firtsCountry.total}</h5>
+                </div>
+              </div>
+              <div className="w-full items-center justify-center flex h-full gap-2 border-r-1">
+                <SecondPlaceMedalIcon className="w-7 h-7" />
+                <div className="flex flex-col w-fit h-full items-center justify-start">
+                <span className="text-xs font-bold">{totalInfo.secondCountry.country}</span>
+                <h5>{totalInfo.secondCountry.total}</h5>
+                </div>
+              </div>
+              <div className="w-full items-center justify-center flex h-full gap-2">
+                <ThirdPlaceMedalIcon className="w-7 h-7" />
+                <div className="flex flex-col w-fit h-full items-center justify-start">
+                <span className="text-xs font-bold">{totalInfo.thirdCountry.country}</span>
+                <h5>{totalInfo.thirdCountry.total}</h5>
+                </div>
+              </div>
             </div>
           </CardBody>
         </Card>
         <Card className="w-full max-w-xs shadow-lg">
-          <CardBody>
-          <div className="flex-col items-start">
-              <p className="text-tiny uppercase font-bold">Preferencia de edad</p>
-              <h4 className="font-bold text-large">{totalInfo.maxAge[0]} años: {totalInfo.maxAge[1]} usuarios</h4>
+          <CardHeader>
+            <p className="text-tiny uppercase font-bold">Preferencia de edad</p>
+          </CardHeader>
+          <CardBody className="p-0">
+            <div className="flex items-start w-full h-full">
+              <div className="w-2/6 bg-electricPurple-700 h-full flex items-center justify-center">
+                <GroupIcon className="w-7 h-7 text-electricPurple-50" />
+              </div>
+              <div className="w-4/6 flex flex-col items-center justify-center px-2">
+                <h5 className="font-semibold text-sm self-start text-textSecondary">{totalInfo.maxAge[0]} años</h5>
+                <h5 className="font-bold text-large">{totalInfo.maxAge[1]} usuarios</h5>
+              </div>
             </div>
           </CardBody>
         </Card>

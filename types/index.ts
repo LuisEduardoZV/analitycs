@@ -11,9 +11,11 @@ export type GendersUsers = {
 }
 
 export type AgesUsers = {
-  '0-18': number,
-  '18-35': number,
-  '35-100': number,
+  '18-25': number,
+  '25-35': number,
+  '35-45': number,
+  '45-60': number,
+  '60-75': number,
 }
 
 export type UsersTypes = { 
@@ -32,23 +34,15 @@ export type DefaultData = {
 export type DefaultDataUsersByCountry = { 
   [country: string]: { 
     "Usuarios totales": number,
-    ages: {
-      '0-18': number,
-      '18-35': number,
-      '35-100': number,
-    }, 
+    ages: AgesUsers, 
     genders: GendersUsers, 
-    userType: { 
-      'new': number, 
-      'returning': number
-    } 
+    userType: UsersTypes
   } 
 }
 
 export type TotalDataUsers = {
   totalUsers: number,
-  maxGender: any[],
-  minGender: any[],
+  totalGenders: GendersUsers
   newUsers: number,
   firtsCountry: {
     country: string,
