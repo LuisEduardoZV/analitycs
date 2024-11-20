@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
+      },
+      gridTemplateRows: {
+        'grid-byCountry': 'min-content 1fr 1fr'
       }
     },
   },
@@ -37,7 +40,20 @@ module.exports = {
         colors: {
           background: '#F8F9FA',
           primaryLight: '#E0F2FF',
-          primary: '#007BFF',
+          primary: {
+            50: "#e3f2fd",
+            100: "#bbdefb",
+            200: "#90caf9",
+            300: "#64b5f6",
+            400: "#42a5f5",
+            500: "#007BFF",
+            600: "#1976d2",
+            700: "#1565c0",
+            800: "#0d47a1",
+            900: "#083175",
+            DEFAULT: "#007BFF",
+            foreground: "#ffffff"
+          },
           primaryDark: '#0056B3',
           secondary: '#20C997',
           secondaryLight: '#D1F5E8',

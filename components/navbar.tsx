@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from "@nextui-org/button"
 import {
   NavbarBrand,
@@ -11,7 +13,7 @@ import NextLink from "next/link"
 import { HeartFilledIcon, Logo /* SearchIcon */ } from "@/components/icons"
 import { ThemeSwitch } from "@/components/theme-switch"
 
-export const Navbar = () => {
+export const Navbar = ({openModal} : {openModal: () => void}) => {
   /* const searchInput = (
     <Input
       aria-label="Search"
@@ -60,6 +62,7 @@ export const Navbar = () => {
             className="text-sm font-normal text-default-600 bg-default-100"
             startContent={<HeartFilledIcon className="text-primary" />}
             variant="flat"
+            onPress={openModal}
           >
             Cargar Datos
           </Button>

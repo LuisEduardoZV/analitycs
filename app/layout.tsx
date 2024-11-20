@@ -1,11 +1,10 @@
 import "@/styles/globals.css"
-import { Link } from "@nextui-org/link"
 import clsx from "clsx"
 import { Metadata, Viewport } from "next"
 
+import { Home } from "./home"
 import { Providers } from "./providers"
 
-import { Navbar } from "@/components/navbar"
 import { fontSans } from "@/config/fonts"
 import { siteConfig } from "@/config/site"
 
@@ -43,21 +42,7 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col h-screen">
-            <Navbar />
-            <main className="pt-16 px-10 flex-grow">
-              {children}
-            </main>
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">NextUI</p>
-              </Link>
-            </footer>
+            <Home>{children}</Home>
           </div>
         </Providers>
       </body>

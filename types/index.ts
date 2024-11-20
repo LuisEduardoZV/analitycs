@@ -1,4 +1,4 @@
-import { SVGProps } from "react"
+import React, { SVGProps } from "react"
 
 export type IconSvgProps = SVGProps<SVGSVGElement> & {
   size?: number
@@ -58,4 +58,18 @@ export type TotalDataUsers = {
   },
   maxAge: any[],
   minAge: any[]
+}
+
+export type InfoUsersInCountry = {
+  country: string,
+  totalUsers: number,
+  topGender: {
+    gender: string,
+    total: number,
+    Icon: React.FC<React.SVGProps<SVGSVGElement>>
+  },
+  topAge: {
+    age: string,
+    total: number
+  }
 }
