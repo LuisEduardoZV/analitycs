@@ -1,7 +1,7 @@
 'use client'
 
-import { Link } from "@nextui-org/link"
-import { useDisclosure } from "@nextui-org/modal"
+import { Link } from "@heroui/link"
+import { useDisclosure } from "@heroui/modal"
 
 import { Modal } from "@/components/modal"
 import { Navbar } from "@/components/navbar"

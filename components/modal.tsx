@@ -2,17 +2,17 @@
 
 import { Key, useState } from "react";
 
-import { Button } from "@nextui-org/button";
-import { Card } from "@nextui-org/card";
-import { Textarea } from "@nextui-org/input";
-import { ModalBody, ModalContent, ModalFooter, ModalHeader, Modal as NextUIModal } from "@nextui-org/modal";
-import { Tab, Tabs } from "@nextui-org/tabs";
+import { Button } from "@heroui/button";
+import { Card } from "@heroui/card";
+import { Textarea } from "@heroui/input";
+import { ModalBody, ModalContent, ModalFooter, ModalHeader, Modal as NextUIModal } from "@heroui/modal";
+import { Tab, Tabs } from "@heroui/tabs";
 
 import { motion } from 'motion/react';
 
 import { useDropzone } from "react-dropzone";
 
-const MotionCard = motion(Card)
+const MotionCard = motion.create(Card)
 
 export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () => void}) => {
     const { acceptedFiles, getRootProps, getInputProps } = useDropzone();

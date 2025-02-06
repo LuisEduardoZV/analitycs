@@ -1,7 +1,7 @@
 "use client"
 
-import { Card, CardBody, CardHeader } from "@nextui-org/card"
-import { Select, SelectItem } from "@nextui-org/select"
+import { Card, CardBody, CardHeader } from "@heroui/card"
+import { Select, SelectItem } from "@heroui/select"
 import { ChangeEvent, useMemo, useState } from "react"
 
 import { defaultData } from "@/config/defaultData"

@@ -1,13 +1,13 @@
 'use client'
 
-import { Button } from "@nextui-org/button"
+import { Button } from "@heroui/button"
 import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
   Navbar as NextUINavbar,
-} from "@nextui-org/navbar"
+} from "@heroui/navbar"
 import NextLink from "next/link"
 
 import { HeartFilledIcon, Logo /* SearchIcon */ } from "@/components/icons"
@@ -37,7 +37,7 @@ export const Navbar = ({openModal} : {openModal: () => void}) => {
  */
   return (
     <NextUINavbar
-      className="shadow-lg w-full max-w-[35%] self-center justify-between top-2 rounded-lg"
+      className="shadow-lg w-full max-w-[35%] self-center justify-between top-2 rounded-lg transition-transform-colors-opacity"
       position="sticky"
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
