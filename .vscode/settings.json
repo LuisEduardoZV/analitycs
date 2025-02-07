@@ -4,5 +4,6 @@
   "prettier.semi": false,
   "tailwindCSS.experimental.classRegex": [
     ["cx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
-  ]
+  ],
+  "CodeGPT.apiKey": "LM Studio"
 }

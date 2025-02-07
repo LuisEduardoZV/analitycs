@@ -1,0 +1,1059 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Laura Martínez",
+      "edad": 28,
+      "genero": "Femenino",
+      "pais": "España",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Smartphone",
+      "horas_uso_semanal": 14
+    },
+    {
+      "id": 2,
+      "nombre": "Carlos Fernández",
+      "edad": 35,
+      "genero": "Masculino",
+      "pais": "México",
+      "suscripcion_activa": false,
+      "dispositivo_principal": "PC",
+      "horas_uso_semanal": 22
+    },
+    {
+      "id": 3,
+      "nombre": "Andrea Gómez",
+      "edad": 24,
+      "genero": "Femenino",
+      "pais": "Argentina",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Laptop",
+      "horas_uso_semanal": 18
+    },
+    {
+      "id": 4,
+      "nombre": "José Ramírez",
+      "edad": 41,
+      "genero": "Masculino",
+      "pais": "Chile",
+      "suscripcion_activa": false,
+      "dispositivo_principal": "Smartphone",
+      "horas_uso_semanal": 10
+    },
+    {
+      "id": 5,
+      "nombre": "Elena Castro",
+      "edad": 30,
+      "genero": "Femenino",
+      "pais": "Colombia",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Tablet",
+      "horas_uso_semanal": 12
+    },
+    {
+      "id": 6,
+      "nombre": "Miguel Torres",
+      "edad": 29,
+      "genero": "Masculino",
+      "pais": "Perú",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "PC",
+      "horas_uso_semanal": 25
+    },
+    {
+      "id": 7,
+      "nombre": "Patricia López",
+      "edad": 26,
+      "genero": "Femenino",
+      "pais": "España",
+      "suscripcion_activa": false,
+      "dispositivo_principal": "Smartphone",
+      "horas_uso_semanal": 8
+    },
+    {
+      "id": 8,
+      "nombre": "Daniel Morales",
+      "edad": 38,
+      "genero": "Masculino",
+      "pais": "México",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Laptop",
+      "horas_uso_semanal": 20
+    },
+    {
+      "id": 9,
+      "nombre": "Gabriela Sánchez",
+      "edad": 27,
+      "genero": "Femenino",
+      "pais": "Argentina",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Tablet",
+      "horas_uso_semanal": 16
+    },
+    {
+      "id": 10,
+      "nombre": "Juan Pérez",
+      "edad": 33,
+      "genero": "Masculino",
+      "pais": "Chile",
+      "suscripcion_activa": false,
+      "dispositivo_principal": "PC",
+      "horas_uso_semanal": 14
+    },
+    {
+      "id": 11,
+      "nombre": "Mariana Herrera",
+      "edad": 25,
+      "genero": "Femenino",
+      "pais": "Colombia",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Smartphone",
+      "horas_uso_semanal": 17
+    },
+    {
+      "id": 12,
+      "nombre": "Ricardo Salazar",
+      "edad": 39,
+      "genero": "Masculino",
+      "pais": "Perú",
+      "suscripcion_activa": false,
+      "dispositivo_principal": "Laptop",
+      "horas_uso_semanal": 19
+    },
+    {
+      "id": 13,
+      "nombre": "Lucía Domínguez",
+      "edad": 32,
+      "genero": "Femenino",
+      "pais": "España",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Tablet",
+      "horas_uso_semanal": 21
+    },
+    {
+      "id": 14,
+      "nombre": "Sergio Vázquez",
+      "edad": 28,
+      "genero": "Masculino",
+      "pais": "México",
+      "suscripcion_activa": false,
+      "dispositivo_principal": "PC",
+      "horas_uso_semanal": 13
+    },
+    {
+      "id": 15,
+      "nombre": "Natalia Ríos",
+      "edad": 31,
+      "genero": "Femenino",
+      "pais": "Argentina",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Smartphone",
+      "horas_uso_semanal": 15
+    },
+    {
+      "id": 16,
+      "nombre": "Fernando Ortega",
+      "edad": 40,
+      "genero": "Masculino",
+      "pais": "Chile",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Laptop",
+      "horas_uso_semanal": 23
+    },
+    {
+      "id": 17,
+      "nombre": "Valeria Mendoza",
+      "edad": 29,
+      "genero": "Femenino",
+      "pais": "Colombia",
+      "suscripcion_activa": false,
+      "dispositivo_principal": "Tablet",
+      "horas_uso_semanal": 10
+    },
+    {
+      "id": 18,
+      "nombre": "Alejandro Fuentes",
+      "edad": 34,
+      "genero": "Masculino",
+      "pais": "Perú",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "PC",
+      "horas_uso_semanal": 24
+    },
+    {
+      "id": 19,
+      "nombre": "Sofía Carrillo",
+      "edad": 27,
+      "genero": "Femenino",
+      "pais": "España",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Smartphone",
+      "horas_uso_semanal": 12
+    },
+    {
+      "id": 20,
+      "nombre": "Valentina Rojas",
+      "edad": 31,
+      "genero": "Femenino",
+      "pais": "Colombia",
+      "suscripcion_activa": true,
+      "dispositivo_principal": "Tablet",
+      "horas_uso_semanal": 11
+    }
+  ],
+  "trafico": [
+    {
+      "id": 1,
+      "timestamp": "2023-10-01 00:00",
+      "paquetes": 2150,
+      "protocolo": "HTTP",
+      "fuente": "Interno",
+      "latencia_promedio": 42,
+      "tipo_trafico": "Datos"
+    },
+    {
+      "id": 2,
+      "timestamp": "2023-10-01 01:00",
+      "paquetes": 3200,
+      "protocolo": "HTTPS",
+      "fuente": "Externo",
+      "latencia_promedio": 58,
+      "tipo_trafico": "Video"
+    },
+    {
+      "id": 3,
+      "timestamp": "2023-10-01 02:00",
+      "paquetes": 2890,
+      "protocolo": "FTP",
+      "fuente": "Interno",
+      "latencia_promedio": 39,
+      "tipo_trafico": "Archivos"
+    },
+    {
+      "id": 4,
+      "timestamp": "2023-10-01 03:00",
+      "paquetes": 4100,
+      "protocolo": "DNS",
+      "fuente": "Externo",
+      "latencia_promedio": 29,
+      "tipo_trafico": "Consulta"
+    },
+    {
+      "id": 5,
+      "timestamp": "2023-10-01 04:00",
+      "paquetes": 3770,
+      "protocolo": "TCP",
+      "fuente": "Interno",
+      "latencia_promedio": 50,
+      "tipo_trafico": "Control"
+    },
+    {
+      "id": 6,
+      "timestamp": "2023-10-01 05:00",
+      "paquetes": 4400,
+      "protocolo": "UDP",
+      "fuente": "Externo",
+      "latencia_promedio": 45,
+      "tipo_trafico": "Streaming"
+    },
+    {
+      "id": 7,
+      "timestamp": "2023-10-01 06:00",
+      "paquetes": 2350,
+      "protocolo": "HTTPS",
+      "fuente": "Interno",
+      "latencia_promedio": 62,
+      "tipo_trafico": "Video"
+    },
+    {
+      "id": 8,
+      "timestamp": "2023-10-01 07:00",
+      "paquetes": 2900,
+      "protocolo": "FTP",
+      "fuente": "Externo",
+      "latencia_promedio": 38,
+      "tipo_trafico": "Archivos"
+    },
+    {
+      "id": 9,
+      "timestamp": "2023-10-01 08:00",
+      "paquetes": 3980,
+      "protocolo": "HTTP",
+      "fuente": "Interno",
+      "latencia_promedio": 47,
+      "tipo_trafico": "Datos"
+    },
+    {
+      "id": 10,
+      "timestamp": "2023-10-01 09:00",
+      "paquetes": 3270,
+      "protocolo": "DNS",
+      "fuente": "Externo",
+      "latencia_promedio": 33,
+      "tipo_trafico": "Consulta"
+    },
+    {
+      "id": 11,
+      "timestamp": "2023-10-01 10:00",
+      "paquetes": 4550,
+      "protocolo": "TCP",
+      "fuente": "Interno",
+      "latencia_promedio": 51,
+      "tipo_trafico": "Control"
+    },
+    {
+      "id": 12,
+      "timestamp": "2023-10-01 11:00",
+      "paquetes": 3840,
+      "protocolo": "UDP",
+      "fuente": "Externo",
+      "latencia_promedio": 49,
+      "tipo_trafico": "Streaming"
+    },
+    {
+      "id": 13,
+      "timestamp": "2023-10-01 12:00",
+      "paquetes": 2210,
+      "protocolo": "HTTPS",
+      "fuente": "Interno",
+      "latencia_promedio": 61,
+      "tipo_trafico": "Video"
+    },
+    {
+      "id": 14,
+      "timestamp": "2023-10-01 13:00",
+      "paquetes": 2750,
+      "protocolo": "FTP",
+      "fuente": "Externo",
+      "latencia_promedio": 37,
+      "tipo_trafico": "Archivos"
+    },
+    {
+      "id": 15,
+      "timestamp": "2023-10-01 14:00",
+      "paquetes": 4090,
+      "protocolo": "HTTP",
+      "fuente": "Interno",
+      "latencia_promedio": 46,
+      "tipo_trafico": "Datos"
+    },
+    
+  {
+    "id": 16,
+    "timestamp": "2023-10-01 15:00",
+    "paquetes": 3760,
+    "protocolo": "DNS",
+    "fuente": "Externo",
+    "latencia_promedio": 34,
+    "tipo_trafico": "Consulta"
+  },
+  {
+    "id": 17,
+    "timestamp": "2023-10-01 16:00",
+    "paquetes": 4105,
+    "protocolo": "TCP",
+    "fuente": "Interno",
+    "latencia_promedio": 52,
+    "tipo_trafico": "Control"
+  },
+  {
+    "id": 18,
+    "timestamp": "2023-10-01 17:00",
+    "paquetes": 3870,
+    "protocolo": "UDP",
+    "fuente": "Externo",
+    "latencia_promedio": 48,
+    "tipo_trafico": "Streaming"
+  },
+  {
+    "id": 19,
+    "timestamp": "2023-10-01 18:00",
+    "paquetes": 2290,
+    "protocolo": "HTTPS",
+    "fuente": "Interno",
+    "latencia_promedio": 59,
+    "tipo_trafico": "Video"
+  },
+  {
+    "id": 20,
+    "timestamp": "2023-10-01 19:00",
+    "paquetes": 2825,
+    "protocolo": "FTP",
+    "fuente": "Externo",
+    "latencia_promedio": 36,
+    "tipo_trafico": "Archivos"
+  },
+  {
+    "id": 21,
+    "timestamp": "2023-10-01 20:00",
+    "paquetes": 3950,
+    "protocolo": "HTTP",
+    "fuente": "Interno",
+    "latencia_promedio": 44,
+    "tipo_trafico": "Datos"
+  },
+  {
+    "id": 22,
+    "timestamp": "2023-10-01 21:00",
+    "paquetes": 3200,
+    "protocolo": "DNS",
+    "fuente": "Externo",
+    "latencia_promedio": 31,
+    "tipo_trafico": "Consulta"
+  },
+  {
+    "id": 23,
+    "timestamp": "2023-10-01 22:00",
+    "paquetes": 4510,
+    "protocolo": "TCP",
+    "fuente": "Interno",
+    "latencia_promedio": 53,
+    "tipo_trafico": "Control"
+  },
+  {
+    "id": 24,
+    "timestamp": "2023-10-01 23:00",
+    "paquetes": 3790,
+    "protocolo": "UDP",
+    "fuente": "Externo",
+    "latencia_promedio": 47,
+    "tipo_trafico": "Streaming"
+  },
+  {
+    "id": 25,
+    "timestamp": "2023-10-02 00:00",
+    "paquetes": 2195,
+    "protocolo": "HTTPS",
+    "fuente": "Interno",
+    "latencia_promedio": 60,
+    "tipo_trafico": "Video"
+  },
+  {
+    "id": 26,
+    "timestamp": "2023-10-02 01:00",
+    "paquetes": 2710,
+    "protocolo": "FTP",
+    "fuente": "Externo",
+    "latencia_promedio": 35,
+    "tipo_trafico": "Archivos"
+  },
+  {
+    "id": 27,
+    "timestamp": "2023-10-02 02:00",
+    "paquetes": 4050,
+    "protocolo": "HTTP",
+    "fuente": "Interno",
+    "latencia_promedio": 43,
+    "tipo_trafico": "Datos"
+  },
+  {
+    "id": 28,
+    "timestamp": "2023-10-02 03:00",
+    "paquetes": 3295,
+    "protocolo": "DNS",
+    "fuente": "Externo",
+    "latencia_promedio": 30,
+    "tipo_trafico": "Consulta"
+  },
+  {
+    "id": 29,
+    "timestamp": "2023-10-02 04:00",
+    "paquetes": 4600,
+    "protocolo": "TCP",
+    "fuente": "Interno",
+    "latencia_promedio": 54,
+    "tipo_trafico": "Control"
+  },
+  {
+    "id": 30,
+    "timestamp": "2023-10-02 05:00",
+    "paquetes": 3850,
+    "protocolo": "UDP",
+    "fuente": "Externo",
+    "latencia_promedio": 46,
+    "tipo_trafico": "Streaming"
+  },
+  {
+    "id": 31,
+    "timestamp": "2023-10-02 06:00",
+    "paquetes": 2320,
+    "protocolo": "HTTPS",
+    "fuente": "Interno",
+    "latencia_promedio": 57,
+    "tipo_trafico": "Video"
+  },
+  {
+    "id": 32,
+    "timestamp": "2023-10-02 07:00",
+    "paquetes": 2850,
+    "protocolo": "FTP",
+    "fuente": "Externo",
+    "latencia_promedio": 34,
+    "tipo_trafico": "Archivos"
+  },
+  {
+    "id": 33,
+    "timestamp": "2023-10-02 08:00",
+    "paquetes": 3995,
+    "protocolo": "HTTP",
+    "fuente": "Interno",
+    "latencia_promedio": 42,
+    "tipo_trafico": "Datos"
+  },
+  {
+    "id": 34,
+    "timestamp": "2023-10-02 09:00",
+    "paquetes": 3225,
+    "protocolo": "DNS",
+    "fuente": "Externo",
+    "latencia_promedio": 29,
+    "tipo_trafico": "Consulta"
+  },
+  {
+    "id": 35,
+    "timestamp": "2023-10-02 10:00",
+    "paquetes": 4555,
+    "protocolo": "TCP",
+    "fuente": "Interno",
+    "latencia_promedio": 55,
+    "tipo_trafico": "Control"
+  },
+  {
+    "id": 36,
+    "timestamp": "2023-10-02 11:00",
+    "paquetes": 3880,
+    "protocolo": "UDP",
+    "fuente": "Externo",
+    "latencia_promedio": 45,
+    "tipo_trafico": "Streaming"
+  },
+  {
+    "id": 37,
+    "timestamp": "2023-10-02 12:00",
+    "paquetes": 2400,
+    "protocolo": "HTTPS",
+    "fuente": "Interno",
+    "latencia_promedio": 58,
+    "tipo_trafico": "Video"
+  },
+  {
+    "id": 38,
+    "timestamp": "2023-10-02 13:00",
+    "paquetes": 2980,
+    "protocolo": "FTP",
+    "fuente": "Externo",
+    "latencia_promedio": 37,
+    "tipo_trafico": "Archivos"
+  },
+  {
+    "id": 39,
+    "timestamp": "2023-10-02 14:00",
+    "paquetes": 4100,
+    "protocolo": "HTTP",
+    "fuente": "Interno",
+    "latencia_promedio": 40,
+    "tipo_trafico": "Datos"
+  },
+  {
+    "id": 40,
+    "timestamp": "2023-10-02 15:00",
+    "paquetes": 3350,
+    "protocolo": "DNS",
+    "fuente": "Externo",
+    "latencia_promedio": 32,
+    "tipo_trafico": "Consulta"
+  },
+  {
+    "id": 41,
+    "timestamp": "2023-10-02 16:00",
+    "paquetes": 4700,
+    "protocolo": "TCP",
+    "fuente": "Interno",
+    "latencia_promedio": 56,
+    "tipo_trafico": "Control"
+  },
+  {
+    "id": 42,
+    "timestamp": "2023-10-02 17:00",
+    "paquetes": 3900,
+    "protocolo": "UDP",
+    "fuente": "Externo",
+    "latencia_promedio": 49,
+    "tipo_trafico": "Streaming"
+  },
+  {
+    "id": 43,
+    "timestamp": "2023-10-02 18:00",
+    "paquetes": 2550,
+    "protocolo": "HTTPS",
+    "fuente": "Interno",
+    "latencia_promedio": 61,
+    "tipo_trafico": "Video"
+  },
+  {
+    "id": 44,
+    "timestamp": "2023-10-02 19:00",
+    "paquetes": 3100,
+    "protocolo": "FTP",
+    "fuente": "Externo",
+    "latencia_promedio": 39,
+    "tipo_trafico": "Archivos"
+  },
+  {
+    "id": 45,
+    "timestamp": "2023-10-02 20:00",
+    "paquetes": 4300,
+    "protocolo": "HTTP",
+    "fuente": "Interno",
+    "latencia_promedio": 43,
+    "tipo_trafico": "Datos"
+  },
+  {
+    "id": 46,
+    "timestamp": "2023-10-02 21:00",
+    "paquetes": 3450,
+    "protocolo": "DNS",
+    "fuente": "Externo",
+    "latencia_promedio": 33,
+    "tipo_trafico": "Consulta"
+  },
+  {
+    "id": 47,
+    "timestamp": "2023-10-02 22:00",
+    "paquetes": 4850,
+    "protocolo": "TCP",
+    "fuente": "Interno",
+    "latencia_promedio": 57,
+    "tipo_trafico": "Control"
+  },
+  {
+    "id": 48,
+    "timestamp": "2023-10-02 23:00",
+    "paquetes": 4000,
+    "protocolo": "UDP",
+    "fuente": "Externo",
+    "latencia_promedio": 50,
+    "tipo_trafico": "Streaming"
+  }
+  ,{
+    "id": 49,
+    "timestamp": "2023-10-03 12:00",
+    "paquetes": 4205,
+    "protocolo": "HTTP",
+    "fuente": "Interno",
+    "latencia_promedio": 41,
+    "tipo_trafico": "Datos"
+  },
+  {
+    "id": 50,
+    "timestamp": "2023-10-03 13:00",
+    "paquetes": 4321,
+    "protocolo": "FTP",
+    "fuente": "Interno",
+    "latencia_promedio": 38,
+    "tipo_trafico": "Archivos"
+  }
+  ],
+  "inventario": [
+    {
+      "sku": "ELEC-0001",
+      "producto": "Smartphone 5G 128GB",
+      "categoria": "Electrónicos",
+      "marca": "Samsung",
+      "precio": 699.99,
+      "stock": 25,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.8
+    },
+    {
+      "sku": "ELEC-0002",
+      "producto": "Laptop Ultrabook 14''",
+      "categoria": "Electrónicos",
+      "marca": "Dell",
+      "precio": 999.99,
+      "stock": 12,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "ELEC-0003",
+      "producto": "Tablet Pro 11'' 256GB",
+      "categoria": "Electrónicos",
+      "marca": "Apple",
+      "precio": 799.99,
+      "stock": 8,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.9
+    },
+    {
+      "sku": "ELEC-0004",
+      "producto": "Monitor 27'' Full HD",
+      "categoria": "Electrónicos",
+      "marca": "LG",
+      "precio": 199.99,
+      "stock": 15,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.5
+    },
+    {
+      "sku": "ELEC-0005",
+      "producto": "Auriculares Inalámbricos",
+      "categoria": "Electrónicos",
+      "marca": "Sony",
+      "precio": 149.99,
+      "stock": 30,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "HOGAR-0006",
+      "producto": "Aspiradora Robot Inteligente",
+      "categoria": "Hogar",
+      "marca": "Xiaomi",
+      "precio": 299.99,
+      "stock": 20,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "HOGAR-0007",
+      "producto": "Cafetera Espresso Automática",
+      "categoria": "Hogar",
+      "marca": "De'Longhi",
+      "precio": 249.99,
+      "stock": 10,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.8
+    },
+    {
+      "sku": "HOGAR-0008",
+      "producto": "Purificador de Aire HEPA",
+      "categoria": "Hogar",
+      "marca": "Dyson",
+      "precio": 399.99,
+      "stock": 5,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.9
+    },
+    {
+      "sku": "DEP-0009",
+      "producto": "Bicicleta de Montaña 21V",
+      "categoria": "Deportes",
+      "marca": "Trek",
+      "precio": 799.99,
+      "stock": 7,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "DEP-0010",
+      "producto": "Mancuernas Ajustables 20KG",
+      "categoria": "Deportes",
+      "marca": "Bowflex",
+      "precio": 199.99,
+      "stock": 18,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.5
+    },
+    {
+      "sku": "DEP-0011",
+      "producto": "Colchoneta de Yoga Antideslizante",
+      "categoria": "Deportes",
+      "marca": "Manduka",
+      "precio": 79.99,
+      "stock": 25,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.8
+    },
+    {
+      "sku": "MODA-0012",
+      "producto": "Chaqueta Impermeable Unisex",
+      "categoria": "Moda",
+      "marca": "The North Face",
+      "precio": 159.99,
+      "stock": 14,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "MODA-0013",
+      "producto": "Zapatillas Running 2024",
+      "categoria": "Moda",
+      "marca": "Adidas",
+      "precio": 129.99,
+      "stock": 22,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "MODA-0014",
+      "producto": "Reloj Inteligente Fitness",
+      "categoria": "Moda",
+      "marca": "Garmin",
+      "precio": 349.99,
+      "stock": 12,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.9
+    },
+    {
+      "sku": "MODA-0015",
+      "producto": "Bolso de Cuero Premium",
+      "categoria": "Moda",
+      "marca": "Michael Kors",
+      "precio": 259.99,
+      "stock": 10,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.8
+    },
+    {
+      "sku": "BELLEZA-0016",
+      "producto": "Set de Brochas Maquillaje 12 Piezas",
+      "categoria": "Belleza",
+      "marca": "Sephora",
+      "precio": 49.99,
+      "stock": 40,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "BELLEZA-0017",
+      "producto": "Perfume Unisex 100ml",
+      "categoria": "Belleza",
+      "marca": "Tom Ford",
+      "precio": 199.99,
+      "stock": 15,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "BELLEZA-0018",
+      "producto": "Mascarilla Facial Hidratante",
+      "categoria": "Belleza",
+      "marca": "L'Oréal",
+      "precio": 29.99,
+      "stock": 50,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.5
+    },
+    {
+      "sku": "AUTO-0019",
+      "producto": "Cargador Rápido para Auto",
+      "categoria": "Automotriz",
+      "marca": "Anker",
+      "precio": 24.99,
+      "stock": 35,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.8
+    },
+    {
+      "sku": "AUTO-0020",
+      "producto": "Llantas Todo Terreno 4x4",
+      "categoria": "Automotriz",
+      "marca": "Michelin",
+      "precio": 189.99,
+      "stock": 8,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "AUTO-0021",
+      "producto": "Cera para Auto Premium 500ml",
+      "categoria": "Automotriz",
+      "marca": "Meguiar's",
+      "precio": 29.99,
+      "stock": 20,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "AUTO-0022",
+      "producto": "Batería de Auto 12V",
+      "categoria": "Automotriz",
+      "marca": "Bosch",
+      "precio": 119.99,
+      "stock": 10,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "ELEC-0023",
+      "producto": "Cámara de Seguridad 1080p",
+      "categoria": "Electrónicos",
+      "marca": "Ring",
+      "precio": 99.99,
+      "stock": 18,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.8
+    },
+    {
+      "sku": "ELEC-0024",
+      "producto": "Teclado Mecánico RGB",
+      "categoria": "Electrónicos",
+      "marca": "Corsair",
+      "precio": 149.99,
+      "stock": 25,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "ELEC-0025",
+      "producto": "Mouse Inalámbrico Gaming",
+      "categoria": "Electrónicos",
+      "marca": "Logitech",
+      "precio": 79.99,
+      "stock": 30,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "HOGAR-0026",
+      "producto": "Microondas Digital 30L",
+      "categoria": "Hogar",
+      "marca": "Panasonic",
+      "precio": 199.99,
+      "stock": 14,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "HOGAR-0027",
+      "producto": "Juego de Sartenes Antiadherentes",
+      "categoria": "Hogar",
+      "marca": "Tefal",
+      "precio": 89.99,
+      "stock": 20,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "HOGAR-0028",
+      "producto": "Deshumidificador 500ml",
+      "categoria": "Hogar",
+      "marca": "Pro Breeze",
+      "precio": 49.99,
+      "stock": 8,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.5
+    },
+    {
+      "sku": "DEP-0029",
+      "producto": "Guantes de Boxeo Profesionales",
+      "categoria": "Deportes",
+      "marca": "Everlast",
+      "precio": 59.99,
+      "stock": 22,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.8
+    },
+    {
+      "sku": "DEP-0030",
+      "producto": "Rueda de Abdominales con Tapete",
+      "categoria": "Deportes",
+      "marca": "Reebok",
+      "precio": 34.99,
+      "stock": 35,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "DEP-0031",
+      "producto": "Cuerda de Saltar con Pesas",
+      "categoria": "Deportes",
+      "marca": "Nike",
+      "precio": 19.99,
+      "stock": 40,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.5
+    },
+    {
+      "sku": "MODA-0032",
+      "producto": "Jeans Slim Fit Hombre",
+      "categoria": "Moda",
+      "marca": "Levi's",
+      "precio": 59.99,
+      "stock": 28,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "MODA-0033",
+      "producto": "Vestido Largo Elegante Mujer",
+      "categoria": "Moda",
+      "marca": "Zara",
+      "precio": 79.99,
+      "stock": 14,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "MODA-0034",
+      "producto": "Gorra Deportiva Unisex",
+      "categoria": "Moda",
+      "marca": "Puma",
+      "precio": 24.99,
+      "stock": 50,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.5
+    },
+    {
+      "sku": "MODA-0035",
+      "producto": "Cinturón de Cuero Premium",
+      "categoria": "Moda",
+      "marca": "Hugo Boss",
+      "precio": 49.99,
+      "stock": 20,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "BELLEZA-0036",
+      "producto": "Plancha para Cabello Cerámica",
+      "categoria": "Belleza",
+      "marca": "Remington",
+      "precio": 39.99,
+      "stock": 32,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    },
+    {
+      "sku": "BELLEZA-0037",
+      "producto": "Crema Hidratante Facial 50ml",
+      "categoria": "Belleza",
+      "marca": "Neutrogena",
+      "precio": 25.99,
+      "stock": 48,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.6
+    },
+    {
+      "sku": "BELLEZA-0038",
+      "producto": "Cepillo de Dientes Eléctrico",
+      "categoria": "Belleza",
+      "marca": "Oral-B",
+      "precio": 69.99,
+      "stock": 15,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.8
+    },
+    {
+      "sku": "AUTO-0039",
+      "producto": "Juego de Tapetes para Auto",
+      "categoria": "Automotriz",
+      "marca": "Goodyear",
+      "precio": 49.99,
+      "stock": 25,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.5
+    },
+    {
+      "sku": "AUTO-0040",
+      "producto": "Aceite para Motor Sintético 5W-30",
+      "categoria": "Automotriz",
+      "marca": "Castrol",
+      "precio": 39.99,
+      "stock": 18,
+      "estado_stock": "Disponible",
+      "valoracion_promedio": 4.7
+    }
+  ]
+}
