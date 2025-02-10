@@ -1,0 +1,10 @@
+export const DEFAULT_DATA_IDS = [{id: 'usuarios',
+    title: 'Información de usuarios',
+    graphTypes: ['Barras', 'Pie'],
+}, {id: 'trafico',
+    title: 'Tráfico de red',
+    graphTypes: ['Barras', 'Pie', 'Área', 'Líneas'],
+}, {id: 'inventario',
+    title: 'Inventario de e-commerce',
+    graphTypes: ['Barras', 'Pie', 'Polar'],
+}]

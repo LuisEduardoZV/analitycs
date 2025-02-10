@@ -1,13 +1,13 @@
 'use client'
 
 import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks";
-import { clearData, setData, setDataId } from "@/store/slices/main";
-import { Key, useState } from "react";
+import { clearData, setData } from "@/store/slices/main";
+import { Key, useEffect, useState } from "react";
 
 import { Button } from "@heroui/button";
-import { Card } from "@heroui/card";
 import { Textarea } from "@heroui/input";
 import { ModalBody, ModalContent, ModalFooter, ModalHeader, Modal as NextUIModal } from "@heroui/modal";
+import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table";
 import { Tab, Tabs } from "@heroui/tabs";
 
 import { AnimatePresence, motion } from 'motion/react';
@@ -16,30 +16,18 @@ import InforCardData from "./extended/InfoCardData";
  
 import { useDropzone } from "react-dropzone";
 
-const MotionCard = motion.create(Card)
+import { DEFAULT_DATA_IDS } from "@/store/contants";
+
 const MotionButton = motion.create(Button)
 
-const DEFAULT_DATA_IDS = [{id: 'usuarios',
-    title: 'Información de usuarios',
-    graphTypes: ['Barras', 'Pie'],
-}, {id: 'trafico',
-    title: 'Tráfico de red',
-    graphTypes: ['Barras', 'Pie', 'Área', 'Líneas'],
-}, {id: 'inventario',
-    title: 'Inventario de e-commerce',
-    graphTypes: ['Barras', 'Pie', 'Polar'],
-}]
-
 export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () => void}) => {
-    const dispatch = useAppDispatch()
     const mainState = useAppSelector((state) => state.main)
+    const dispatch = useAppDispatch()
 
     const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
     const [tabSelected, setTabSelected] = useState<string>('paste')
 
     const [pasted, setPasted] = useState<string>('')
-
-    const [mainData, setMainData] = useState<Record<string, any>>({})
 
     const variantsSteps = {
         inactive: {
@@ -66,28 +54,19 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
         setTabSelected(key as string)
     }
 
-    const validateData = () => {
-        try {
-            const data = JSON.parse(pasted)
-            if (!data || !Array.isArray(data)) throw new Error('Los datos no son un JSON válido.')
-
-            setMainData(data)
-            
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
     const handleChangeDefaultData = (id: string) => {
         const data = require('@/store/data/defaut.json')
         const newData = data[id] || null
 
-        dispatch(setDataId(id))
-        dispatch(setData(newData))
+        console.log({data: newData, id});
+        
+        dispatch(setData({data: newData, id}))
     }
 
     const isDefaultDataSelected = (id: string) => (mainState.data_id === id)
 
+    console.log(mainState);
+    
     return (
         <NextUIModal backdrop="opaque" isOpen={isOpen} onOpenChange={openChange} size="5xl">
             <ModalContent>
@@ -96,10 +75,10 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                         <ModalHeader className="flex flex-col gap-1">
                             <h1 className="text-2xl font-bold">Personaliza tu gráfico</h1>
                         </ModalHeader>
-                        <ModalBody className="min-h-[500px] h-full flex flex-row">
+                        <ModalBody className="min-h-[500px] h-full flex flex-row relative">
                             <AnimatePresence initial={false} mode="wait">
-                                {!mainState.data && (
-                                    <motion.div key='selectData' variants={variantsSteps} initial="inactive" animate={!mainState.data ? 'active' : 'inactive'} exit={'exit'} className="w-full flex flex-col gap-2">
+                                {!mainState.isReadyToShow && (
+                                    <motion.div key='selectData' variants={variantsSteps} initial="inactive" animate={!mainState.isReadyToShow ? 'active' : 'inactive'} exit={'exit'} className="w-full flex flex-col gap-2">
                                         <h2 className="text-lg font-semibold">1. Carga de datos</h2>
                                         <Tabs color="primary" selectedKey={tabSelected} onSelectionChange={handleChangeTab}>
                                             <Tab key='paste' title='Pegar datos'>
@@ -138,9 +117,29 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                                         </Tabs>
                                     </motion.div>
                                 )}
-                                {mainState.data && (
-                                    <motion.div key={'viewData'} variants={variantsSteps} initial={'inactive'} animate={mainState.data ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2">
+                                {mainState.isReadyToShow && (
+                                    <motion.div key={'viewData'} variants={variantsSteps} initial={'inactive'} animate={mainState.data ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh]">
                                         <h2 className="text-lg font-semibold">2. Vista previa de datos</h2>
+                                        <div className="w-full overflow-y-auto p-2">
+                                            <Table isStriped isCompact removeWrapper>
+                                                <TableHeader columns={mainState.table_columns}>
+                                                    {(column) => (<TableColumn key={column.key}>
+                                                        {column.label}
+                                                    </TableColumn>)}
+                                                </TableHeader>
+                                                <TableBody emptyContent="No hay datos" items={mainState.data}>
+                                                    {(item) => (
+                                                        <TableRow key={item.key}>
+                                                            {(columnKey) => (
+                                                                <TableCell>
+                                                                    {getKeyValue(item, columnKey)}
+                                                                </TableCell>
+                                                            )}
+                                                        </TableRow>
+                                                    )}
+                                                </TableBody>
+                                            </Table>
+                                        </div>
                                     </motion.div>
                                 )}
                             </AnimatePresence>
