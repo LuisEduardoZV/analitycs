@@ -2,16 +2,16 @@
 
 import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks";
 import { clearData, setData } from "@/store/slices/main";
-import { Key, useEffect, useState } from "react";
+import { Key, useState } from "react";
 
 import { Button } from "@heroui/button";
 import { Textarea } from "@heroui/input";
 import { ModalBody, ModalContent, ModalFooter, ModalHeader, Modal as NextUIModal } from "@heroui/modal";
-import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table";
 import { Tab, Tabs } from "@heroui/tabs";
 
 import { AnimatePresence, motion } from 'motion/react';
 
+import DataTable from "./dataTable";
 import InforCardData from "./extended/InfoCardData";
  
 import { useDropzone } from "react-dropzone";
@@ -57,18 +57,14 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
     const handleChangeDefaultData = (id: string) => {
         const data = require('@/store/data/defaut.json')
         const newData = data[id] || null
-
-        console.log({data: newData, id});
         
         dispatch(setData({data: newData, id}))
     }
 
     const isDefaultDataSelected = (id: string) => (mainState.data_id === id)
-
-    console.log(mainState);
     
     return (
-        <NextUIModal backdrop="opaque" isOpen={isOpen} onOpenChange={openChange} size="5xl">
+        <NextUIModal backdrop="opaque" isOpen={isOpen} onOpenChange={openChange}className="max-w-6xl">
             <ModalContent>
                 {(onClose) => (
                     <>
@@ -118,27 +114,10 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                                     </motion.div>
                                 )}
                                 {mainState.isReadyToShow && (
-                                    <motion.div key={'viewData'} variants={variantsSteps} initial={'inactive'} animate={mainState.data ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh]">
+                                    <motion.div key={'viewData'} variants={variantsSteps} initial={'inactive'} animate={mainState.data ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh] relative">
                                         <h2 className="text-lg font-semibold">2. Vista previa de datos</h2>
-                                        <div className="w-full overflow-y-auto p-2">
-                                            <Table isStriped isCompact removeWrapper>
-                                                <TableHeader columns={mainState.table_columns}>
-                                                    {(column) => (<TableColumn key={column.key}>
-                                                        {column.label}
-                                                    </TableColumn>)}
-                                                </TableHeader>
-                                                <TableBody emptyContent="No hay datos" items={mainState.data}>
-                                                    {(item) => (
-                                                        <TableRow key={item.key}>
-                                                            {(columnKey) => (
-                                                                <TableCell>
-                                                                    {getKeyValue(item, columnKey)}
-                                                                </TableCell>
-                                                            )}
-                                                        </TableRow>
-                                                    )}
-                                                </TableBody>
-                                            </Table>
+                                        <div className="w-full overflow-y-auto p-3">
+                                           <DataTable label={tabSelected + "-" + mainState.data_id} data={mainState.data} columns={mainState.table_columns} /> 
                                         </div>
                                     </motion.div>
                                 )}
@@ -160,19 +139,10 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                                     )}
                                 </AnimatePresence>
                             </div>
-                            {/* <Button className="bg-secondary text-white px-4 py-2 rounded" onPress={validateData}>Continuar</Button> */}
                         </ModalFooter>
                     </>
                 )}
             </ModalContent>
-            {/* <ModalContent>
-                <ModalHeader className="flex flex-col gap-1">
-                    <h1 className="text-2xl font-bold">Personaliza tu gráfico</h1>
-                </ModalHeader>
-                <ModalBody className="min-h-[500px] h-full">
-                    nueva
-                </ModalBody>
-            </ModalContent> */}
         </NextUIModal>
     )
 }

@@ -3,202 +3,382 @@
     {
       "key": 1,
       "nombre": "Laura Martínez",
-      "edad": 28,
+      "edad": {
+        "value": 28,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "España",
+      "pais": {
+        "label": "España",
+        "id": "ES"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Smartphone",
-      "horas_uso_semanal": 14
+      "uso_semanal": {
+        "value": 14,
+        "dsc": "horas"
+      }
     },
     {
       "key": 2,
       "nombre": "Carlos Fernández",
-      "edad": 35,
+      "edad": {
+        "value": 35,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "México",
+      "pais": {
+        "label": "México",
+        "id": "MX"
+      },
       "suscripcion_activa": false,
       "dispositivo_principal": "PC",
-      "horas_uso_semanal": 22
+      "uso_semanal": {
+        "value": 22,
+        "dsc": "horas"
+      }
     },
     {
       "key": 3,
       "nombre": "Andrea Gómez",
-      "edad": 24,
+      "edad": {
+        "value": 24,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "Argentina",
+      "pais": {
+        "label": "Argentina",
+        "id": "AR"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Laptop",
-      "horas_uso_semanal": 18
+      "uso_semanal": {
+        "value": 18,
+        "dsc": "horas"
+      }
     },
     {
       "key": 4,
       "nombre": "José Ramírez",
-      "edad": 41,
+      "edad": {
+        "value": 41,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "Chile",
+      "pais": {
+        "label": "Chile",
+        "id": "CL"
+      },
       "suscripcion_activa": false,
       "dispositivo_principal": "Smartphone",
-      "horas_uso_semanal": 10
+      "uso_semanal": {
+        "value": 10,
+        "dsc": "horas"
+      }
     },
     {
       "key": 5,
       "nombre": "Elena Castro",
-      "edad": 30,
+      "edad": {
+        "value": 30,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "Colombia",
+      "pais": {
+        "label": "Colombia",
+        "id": "CO"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Tablet",
-      "horas_uso_semanal": 12
+      "uso_semanal": {
+        "value": 12,
+        "dsc": "horas"
+      }
     },
     {
       "key": 6,
       "nombre": "Miguel Torres",
-      "edad": 29,
+      "edad": {
+        "value": 29,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "Perú",
+      "pais": {
+        "label": "Perú",
+        "id": "PE"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "PC",
-      "horas_uso_semanal": 25
+      "uso_semanal": {
+        "value": 25,
+        "dsc": "horas"
+      }
     },
     {
       "key": 7,
       "nombre": "Patricia López",
-      "edad": 26,
+      "edad": {
+        "value": 26,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "España",
+      "pais": {
+        "label": "España",
+        "id": "ES"
+      },
       "suscripcion_activa": false,
       "dispositivo_principal": "Smartphone",
-      "horas_uso_semanal": 8
+      "uso_semanal": {
+        "value": 8,
+        "dsc": "horas"
+      }
     },
     {
       "key": 8,
       "nombre": "Daniel Morales",
-      "edad": 38,
+      "edad": {
+        "value": 38,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "México",
+      "pais": {
+        "label": "México",
+        "id": "MX"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Laptop",
-      "horas_uso_semanal": 20
+      "uso_semanal": {
+        "value": 20,
+        "dsc": "horas"
+      }
     },
     {
       "key": 9,
       "nombre": "Gabriela Sánchez",
-      "edad": 27,
+      "edad": {
+        "value": 27,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "Argentina",
+      "pais": {
+        "label": "Argentina",
+        "id": "AR"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Tablet",
-      "horas_uso_semanal": 16
+      "uso_semanal": {
+        "value": 16,
+        "dsc": "horas"
+      }
     },
     {
       "key": 10,
       "nombre": "Juan Pérez",
-      "edad": 33,
+      "edad": {
+        "value": 33,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "Chile",
+      "pais": {
+        "label": "Chile",
+        "id": "CL"
+      },
       "suscripcion_activa": false,
       "dispositivo_principal": "PC",
-      "horas_uso_semanal": 14
+      "uso_semanal": {
+        "value": 14,
+        "dsc": "horas"
+      }
     },
     {
       "key": 11,
       "nombre": "Mariana Herrera",
-      "edad": 25,
+      "edad": {
+        "value": 25,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "Colombia",
+      "pais": {
+        "label": "Colombia",
+        "id": "CO"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Smartphone",
-      "horas_uso_semanal": 17
+      "uso_semanal": {
+        "value": 17,
+        "dsc": "horas"
+      }
     },
     {
       "key": 12,
       "nombre": "Ricardo Salazar",
-      "edad": 39,
+      "edad": {
+        "value": 39,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "Perú",
+      "pais": {
+        "label": "Perú",
+        "id": "PE"
+      },
       "suscripcion_activa": false,
       "dispositivo_principal": "Laptop",
-      "horas_uso_semanal": 19
+      "uso_semanal": {
+        "value": 19,
+        "dsc": "horas"
+      }
     },
     {
       "key": 13,
       "nombre": "Lucía Domínguez",
-      "edad": 32,
+      "edad": {
+        "value": 32,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "España",
+      "pais": {
+        "label": "España",
+        "id": "ES"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Tablet",
-      "horas_uso_semanal": 21
+      "uso_semanal": {
+        "value": 21,
+        "dsc": "horas"
+      }
     },
     {
       "key": 14,
       "nombre": "Sergio Vázquez",
-      "edad": 28,
+      "edad": {
+        "value": 28,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "México",
+      "pais": {
+        "label": "México",
+        "id": "MX"
+      },
       "suscripcion_activa": false,
       "dispositivo_principal": "PC",
-      "horas_uso_semanal": 13
+      "uso_semanal": {
+        "value": 13,
+        "dsc": "horas"
+      }
     },
     {
       "key": 15,
       "nombre": "Natalia Ríos",
-      "edad": 31,
+      "edad": {
+        "value": 31,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "Argentina",
+      "pais": {
+        "label": "Argentina",
+        "id": "AR"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Smartphone",
-      "horas_uso_semanal": 15
+      "uso_semanal": {
+        "value": 15,
+        "dsc": "horas"
+      }
     },
     {
       "key": 16,
       "nombre": "Fernando Ortega",
-      "edad": 40,
+      "edad": {
+        "value": 40,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "Chile",
+      "pais": {
+        "label": "Chile",
+        "id": "CL"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Laptop",
-      "horas_uso_semanal": 23
+      "uso_semanal": {
+        "value": 23,
+        "dsc": "horas"
+      }
     },
     {
       "key": 17,
       "nombre": "Valeria Mendoza",
-      "edad": 29,
+      "edad": {
+        "value": 29,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "Colombia",
+      "pais": {
+        "label": "Colombia",
+        "id": "CO"
+      },
       "suscripcion_activa": false,
       "dispositivo_principal": "Tablet",
-      "horas_uso_semanal": 10
+      "uso_semanal": {
+        "value": 10,
+        "dsc": "horas"
+      }
     },
     {
       "key": 18,
       "nombre": "Alejandro Fuentes",
-      "edad": 34,
+      "edad": {
+        "value": 34,
+        "dsc": "años"
+      },
       "genero": "Masculino",
-      "pais": "Perú",
+      "pais": {
+        "label": "Perú",
+        "id": "PE"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "PC",
-      "horas_uso_semanal": 24
+      "uso_semanal": {
+        "value": 24,
+        "dsc": "horas"
+      }
     },
     {
       "key": 19,
       "nombre": "Sofía Carrillo",
-      "edad": 27,
+      "edad": {
+        "value": 27,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "España",
+      "pais": {
+        "label": "España",
+        "id": "ES"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Smartphone",
-      "horas_uso_semanal": 12
+      "uso_semanal": {
+        "value": 12,
+        "dsc": "horas"
+      }
     },
     {
       "key": 20,
       "nombre": "Valentina Rojas",
-      "edad": 31,
+      "edad": {
+        "value": 31,
+        "dsc": "años"
+      },
       "genero": "Femenino",
-      "pais": "Colombia",
+      "pais": {
+        "label": "Colombia",
+        "id": "CO"
+      },
       "suscripcion_activa": true,
       "dispositivo_principal": "Tablet",
-      "horas_uso_semanal": 11
+      "uso_semanal": {
+        "value": 11,
+        "dsc": "horas"
+      }
     }
   ],
   "trafico": [

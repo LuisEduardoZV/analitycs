@@ -11,6 +11,7 @@
  "dependencies": {
   "@heroui/button": "2.2.10",
   "@heroui/card": "2.2.10",
+  "@heroui/chip": "^2.2.7",
   "@heroui/code": "2.2.7",
   "@heroui/input": "2.4.10",
   "@heroui/kbd": "2.2.7",
@@ -27,8 +28,10 @@
   "@heroui/theme": "2.4.6",
   "@react-aria/ssr": "3.9.4",
   "@react-aria/visually-hidden": "3.8.12",
+  "@react-stately/data": "^3.12.1",
   "@reduxjs/toolkit": "^2.5.1",
   "clsx": "^2.1.1",
+  "country-flag-icons": "^1.5.16",
   "intl-messageformat": "^10.5.0",
   "motion": "^11.11.17",
   "next": "^15.1.6",

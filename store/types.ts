@@ -1,8 +1,10 @@
+import DataDefaultType from "./data/types"
+
 type StrDataId = number | string
 export type DefaultDataObject = {
     [key: string]: string
 }
-export type StrData = Array<DefaultDataObject>
+export type StrData = Array<DataDefaultType>
 
 export interface MainState {
     data: StrData,
@@ -17,7 +19,7 @@ export interface TableColumns {
     label: string
 }
 
-type StrDataArray = Array<TableColumns>
+export type StrDataArray = Array<TableColumns>
 
 export interface ObjToChangeData {
     data: StrData

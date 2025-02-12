@@ -16,6 +16,9 @@ module.exports = {
       },
       gridTemplateRows: {
         'grid-byCountry': 'min-content 1fr 1fr'
+      },
+      maxWidth: {
+        '6xl': '82rem'
       }
     },
   },
