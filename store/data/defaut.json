@@ -9,10 +9,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "España",
-        "id": "ES"
+        "value": "España",
+        "code": "ES"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
         "value": 14,
@@ -28,10 +31,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "México",
-        "id": "MX"
+        "value": "México",
+        "code": "MX"
       },
-      "suscripcion_activa": false,
+      "suscripcion_activa": {
+        "value":  false,
+        "dsc": "No"
+      },
       "dispositivo_principal": "PC",
       "uso_semanal": {
         "value": 22,
@@ -47,10 +53,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "Argentina",
-        "id": "AR"
+        "value": "Argentina",
+        "code": "AR"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
         "value": 18,
@@ -66,10 +75,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "Chile",
-        "id": "CL"
+        "value": "Chile",
+        "code": "CL"
       },
-      "suscripcion_activa": false,
+      "suscripcion_activa": {
+        "value":  false,
+        "dsc": "No"
+      },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
         "value": 10,
@@ -85,10 +97,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "Colombia",
-        "id": "CO"
+        "value": "Colombia",
+        "code": "CO"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
         "value": 12,
@@ -104,10 +119,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "Perú",
-        "id": "PE"
+        "value": "Perú",
+        "code": "PE"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "PC",
       "uso_semanal": {
         "value": 25,
@@ -123,10 +141,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "España",
-        "id": "ES"
+        "value": "España",
+        "code": "ES"
       },
-      "suscripcion_activa": false,
+      "suscripcion_activa": {
+        "value":  false,
+        "dsc": "No"
+      },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
         "value": 8,
@@ -142,10 +163,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "México",
-        "id": "MX"
+        "value": "México",
+        "code": "MX"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
         "value": 20,
@@ -161,10 +185,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "Argentina",
-        "id": "AR"
+        "value": "Argentina",
+        "code": "AR"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
         "value": 16,
@@ -180,10 +207,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "Chile",
-        "id": "CL"
+        "value": "Chile",
+        "code": "CL"
       },
-      "suscripcion_activa": false,
+      "suscripcion_activa": {
+        "value":  false,
+        "dsc": "No"
+      },
       "dispositivo_principal": "PC",
       "uso_semanal": {
         "value": 14,
@@ -199,10 +229,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "Colombia",
-        "id": "CO"
+        "value": "Colombia",
+        "code": "CO"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
         "value": 17,
@@ -218,10 +251,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "Perú",
-        "id": "PE"
+        "value": "Perú",
+        "code": "PE"
       },
-      "suscripcion_activa": false,
+      "suscripcion_activa": {
+        "value":  false,
+        "dsc": "No"
+      },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
         "value": 19,
@@ -237,10 +273,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "España",
-        "id": "ES"
+        "value": "España",
+        "code": "ES"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
         "value": 21,
@@ -256,10 +295,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "México",
-        "id": "MX"
+        "value": "México",
+        "code": "MX"
       },
-      "suscripcion_activa": false,
+      "suscripcion_activa": {
+        "value":  false,
+        "dsc": "No"
+      },
       "dispositivo_principal": "PC",
       "uso_semanal": {
         "value": 13,
@@ -275,10 +317,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "Argentina",
-        "id": "AR"
+        "value": "Argentina",
+        "code": "AR"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
         "value": 15,
@@ -294,10 +339,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "Chile",
-        "id": "CL"
+        "value": "Chile",
+        "code": "CL"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
         "value": 23,
@@ -313,10 +361,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "Colombia",
-        "id": "CO"
+        "value": "Colombia",
+        "code": "CO"
       },
-      "suscripcion_activa": false,
+      "suscripcion_activa": {
+        "value":  false,
+        "dsc": "No"
+      },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
         "value": 10,
@@ -332,10 +383,13 @@
       },
       "genero": "Masculino",
       "pais": {
-        "label": "Perú",
-        "id": "PE"
+        "value": "Perú",
+        "code": "PE"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "PC",
       "uso_semanal": {
         "value": 24,
@@ -351,10 +405,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "España",
-        "id": "ES"
+        "value": "España",
+        "code": "ES"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
         "value": 12,
@@ -370,10 +427,13 @@
       },
       "genero": "Femenino",
       "pais": {
-        "label": "Colombia",
-        "id": "CO"
+        "value": "Colombia",
+        "code": "CO"
       },
-      "suscripcion_activa": true,
+      "suscripcion_activa": {
+        "value":  true,
+        "dsc": "Si"
+      },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
         "value": 11,

@@ -1,22 +1,34 @@
-export interface ObjDescType {
-  dsc: string,
+export interface EdadUserType {
   value: number
+  dsc: string
 }
 
-export interface ObjCountryType {
-  label: string
-  id: string
+export interface PaisUserType {
+  value: string
+  code: string
 }
+
+export interface SuscripcionActivaUserType {
+  value: boolean
+  dsc: string
+}
+
+export interface UsoSemanalUserType {
+  value: number
+  dsc: string
+}
+
+export type DefaultCellUserObj = EdadUserType | UsoSemanalUserType
 
 export interface USER {
-    key: number,
-    nombre: string,
-    edad: ObjDescType,
-    genero: string,
-    pais: ObjCountryType,
-    suscripcion_activa: boolean,
-    dispositivo_principal: string,
-    horas_uso_semanal: ObjDescType
+  key: number
+  nombre: string
+  edad: EdadUserType
+  genero: string
+  pais: PaisUserType
+  suscripcion_activa: SuscripcionActivaUserType
+  dispositivo_principal: string
+  uso_semanal: UsoSemanalUserType
 }
 
 export interface TRAFICO {

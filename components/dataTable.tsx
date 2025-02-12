@@ -25,7 +25,7 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
         switch (columnKey) {
             case 'estado_stock': 
             case 'suscripcion_activa':
-                return <TableCellBoolean value={value} />
+                return <TableCellBoolean {...value} />
             case 'pais':
                 return <TableCellCountry {...value} />
             case 'uso_semanal':
@@ -44,15 +44,16 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
         async sort({items, sortDescriptor}){
             return {
                 items: items.sort((a, b) => {
-                  let first = getKeyValue(a, sortDescriptor.column);
-                  let second = getKeyValue(b, sortDescriptor.column);
-                  let cmp = (parseInt(first) || first) < (parseInt(second) || second) ? -1 : 1;
-        
-                  if (sortDescriptor.direction === "descending") {
-                    cmp *= -1;
-                  }
-                  
-                  return cmp;
+                    let first = getKeyValue(a, sortDescriptor.column);
+                    let second = getKeyValue(b, sortDescriptor.column);
+                    if (typeof first === 'object') first = first.value;
+                    if (typeof second === 'object') second = second.value;
+                    
+                    let cmp = (parseInt(first) || first) < (parseInt(second) || second) ? -1 : 1;
+            
+                    if (sortDescriptor.direction === "descending") cmp *= -1
+                    
+                    return cmp;
                 }),
               };
         }

@@ -5,8 +5,9 @@ import { clearData, setData } from "@/store/slices/main";
 import { Key, useState } from "react";
 
 import { Button } from "@heroui/button";
-import { Textarea } from "@heroui/input";
+import { Input, Textarea } from "@heroui/input";
 import { ModalBody, ModalContent, ModalFooter, ModalHeader, Modal as NextUIModal } from "@heroui/modal";
+import { Select, SelectItem } from "@heroui/select";
 import { Tab, Tabs } from "@heroui/tabs";
 
 import { AnimatePresence, motion } from 'motion/react';
@@ -19,6 +20,18 @@ import { useDropzone } from "react-dropzone";
 import { DEFAULT_DATA_IDS } from "@/store/contants";
 
 const MotionButton = motion.create(Button)
+
+const TimeZones = [
+    { key: 'UTC', label: 'UTC' },
+    { key: 'CET', label: 'CET' },
+    { key: 'CEST', label: 'CEST' },
+    { key: 'EST', label: 'EST' },
+    { key: 'EET', label: 'EET' },
+    { key: 'CST', label: 'CST' },
+    { key: 'CET', label: 'CET' },
+    { key: 'AST', label: 'AST' },
+    { key: 'AET', label: 'AET' },
+    { key: 'HST', label: 'HST' },]
 
 export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () => void}) => {
     const mainState = useAppSelector((state) => state.main)
@@ -114,9 +127,33 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                                     </motion.div>
                                 )}
                                 {mainState.isReadyToShow && (
-                                    <motion.div key={'viewData'} variants={variantsSteps} initial={'inactive'} animate={mainState.data ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh] relative">
+                                    <motion.div key={'viewData'} variants={variantsSteps} initial={'inactive'} animate={mainState.isReadyToShow ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh] relative">
                                         <h2 className="text-lg font-semibold">2. Vista previa de datos</h2>
                                         <div className="w-full overflow-y-auto p-3">
+                                            {/* <div className="w-full flex justify-between">
+                                                <Input 
+                                                label="Separador de miles"
+                                                labelPlacement="outside"
+                                                type="text"
+                                                variant="flat"
+                                                value=','
+                                                />
+                                                <Input 
+                                                label="Separador de decimales"
+                                                labelPlacement="outside"
+                                                type="text"
+                                                variant="flat"
+                                                value='.'
+                                                />
+                                                <Select
+                                                label="Zona horaria"
+                                                labelPlacement="outside"
+                                                variant="flat"
+                                                items={TimeZones}
+                                                >
+                                                    {(times) => <SelectItem>{times.label}</SelectItem>}
+                                                </Select>
+                                            </div> */}
                                            <DataTable label={tabSelected + "-" + mainState.data_id} data={mainState.data} columns={mainState.table_columns} /> 
                                         </div>
                                     </motion.div>
