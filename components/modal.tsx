@@ -1,7 +1,7 @@
 'use client'
 
 import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks";
-import { clearData, setData } from "@/store/slices/main";
+import { clearData, setData, setDataType } from "@/store/slices/main";
 import { Key, useState } from "react";
 
 import { Button } from "@heroui/button";
@@ -12,6 +12,7 @@ import { Tab, Tabs } from "@heroui/tabs";
 
 import { AnimatePresence, motion } from 'motion/react';
 
+import { DataTypes } from "@/store/types";
 import DataTable from "./dataTable";
 import InforCardData from "./extended/InfoCardData";
  
@@ -34,11 +35,11 @@ const TimeZones = [
     { key: 'HST', label: 'HST' },]
 
 export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () => void}) => {
-    const mainState = useAppSelector((state) => state.main)
+    const dataInfoState = useAppSelector((state) => state.dataInfo)
     const dispatch = useAppDispatch()
 
     const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
-    const [tabSelected, setTabSelected] = useState<string>('paste')
+    const [tabSelected, setTabSelected] = useState<DataTypes>(dataInfoState.data_type)
 
     const [pasted, setPasted] = useState<string>('')
 
@@ -64,6 +65,7 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
     }
 
     const handleChangeTab = (key: Key) => {
+        dispatch(setDataType(key as string))
         setTabSelected(key as string)
     }
 
@@ -74,7 +76,7 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
         dispatch(setData({data: newData, id}))
     }
 
-    const isDefaultDataSelected = (id: string) => (mainState.data_id === id)
+    const isDefaultDataSelected = (id: string) => (dataInfoState.data_id === id)
     
     return (
         <NextUIModal backdrop="opaque" isOpen={isOpen} onOpenChange={openChange}className="max-w-6xl">
@@ -86,8 +88,8 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                         </ModalHeader>
                         <ModalBody className="min-h-[500px] h-full flex flex-row relative">
                             <AnimatePresence initial={false} mode="wait">
-                                {!mainState.isReadyToShow && (
-                                    <motion.div key='selectData' variants={variantsSteps} initial="inactive" animate={!mainState.isReadyToShow ? 'active' : 'inactive'} exit={'exit'} className="w-full flex flex-col gap-2">
+                                {!dataInfoState.isReadyToShow && (
+                                    <motion.div key='selectData' variants={variantsSteps} initial="inactive" animate={!dataInfoState.isReadyToShow ? 'active' : 'inactive'} exit={'exit'} className="w-full flex flex-col gap-2">
                                         <h2 className="text-lg font-semibold">1. Carga de datos</h2>
                                         <Tabs color="primary" selectedKey={tabSelected} onSelectionChange={handleChangeTab}>
                                             <Tab key='paste' title='Pegar datos'>
@@ -106,7 +108,7 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                                                     <span className="text-xs text-gray-400 pl-1">Se admiten archivos JSON y CSV.</span>
                                                 </div>
                                             </Tab>
-                                            <Tab key='our' title='Nuestros datos'>
+                                            <Tab key='default' title='Nuestros datos'>
                                                 <div className="flex justify-between items-center flex-wrap gap-y-6 p-2">
                                                     {DEFAULT_DATA_IDS.map((item) => {
                                                         const { id } = item
@@ -126,8 +128,8 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                                         </Tabs>
                                     </motion.div>
                                 )}
-                                {mainState.isReadyToShow && (
-                                    <motion.div key={'viewData'} variants={variantsSteps} initial={'inactive'} animate={mainState.isReadyToShow ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh] relative">
+                                {dataInfoState.isReadyToShow && (
+                                    <motion.div key={'viewData'} variants={variantsSteps} initial={'inactive'} animate={dataInfoState.isReadyToShow ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh] relative">
                                         <h2 className="text-lg font-semibold">2. Vista previa de datos</h2>
                                         <div className="w-full overflow-y-auto p-3">
                                             {/* <div className="w-full flex justify-between">
@@ -154,7 +156,7 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                                                     {(times) => <SelectItem>{times.label}</SelectItem>}
                                                 </Select>
                                             </div> */}
-                                           <DataTable label={tabSelected + "-" + mainState.data_id} data={mainState.data} columns={mainState.table_columns} /> 
+                                           <DataTable label={tabSelected + "-" + dataInfoState.data_id} data={dataInfoState.data} columns={dataInfoState.table_columns} /> 
                                         </div>
                                     </motion.div>
                                 )}
@@ -167,7 +169,7 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                                     onClose()
                                     }}>Cerrar</Button>
                                 <AnimatePresence initial={false}>
-                                    {mainState.data !== null && (
+                                    {dataInfoState.data !== null && (
                                         <MotionButton initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="px-4 py-2 rounded" color="secondary" variant="bordered" onPress={() => {
                                             dispatch(clearData())
                                             }}>

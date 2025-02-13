@@ -31,13 +31,36 @@ export interface USER {
   uso_semanal: UsoSemanalUserType
 }
 
+export type Protocolo = "HTTP" | "HTTPS" | "FTP" | "DNS" | "TCP" | "UDP" | string;
+export type FuenteOptionTypes = "Interno" | "Externo";
+export type TipoTrafico = "Datos" | "Video" | "Archivos" | "Consulta" | "Control" | "Streaming" | string;
+
+export interface LatenciaPromedioType {
+  value: string
+  dsc: string
+}
+
+export interface TimestampType {
+  type: string
+  value: string
+}
+
+export interface FuenteType {
+  type: string
+  value: FuenteOptionTypes
+  icon?: string
+  color?: string
+  chip?: boolean
+  dsc?: string
+}
+
 export interface TRAFICO {
     key: number,
-    timestamp: string,
+    timestamp: TimestampType,
     paquetes: number,
     protocolo: string,
-    fuente: string,
-    latencia_promedio: number,
+    fuente: FuenteType,
+    latencia_promedio: LatenciaPromedioType,
     tipo_trafico: string
 }
 

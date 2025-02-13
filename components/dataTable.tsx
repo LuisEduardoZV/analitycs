@@ -2,8 +2,7 @@ import React from "react"
 
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table"
 
-import { SortDescriptor } from "@heroui/table"
-import { TableCellBoolean, TableCellCountry, TableCellWithDsc } from "./extended/TableCells"
+import { TableCellBoolean, TableCellCountry, TableCellCustom, TableCellTimestamp, TableCellWithDsc } from "./extended/TableCells"
 
 import { useAsyncList } from '@react-stately/data'
 
@@ -28,8 +27,14 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
                 return <TableCellBoolean {...value} />
             case 'pais':
                 return <TableCellCountry {...value} />
+            case 'timestamp':
+                return <TableCellTimestamp {...value} />
+            case 'fuente':
+            case 'tipo_trafico':
+                return <TableCellCustom {...value} />
             case 'uso_semanal':
             case 'edad':
+            case 'latencia_promedio':
                 return <TableCellWithDsc {...value} />
             default: 
                 return value
