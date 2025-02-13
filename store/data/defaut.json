@@ -4,20 +4,24 @@
       "key": 1,
       "nombre": "Laura Martínez",
       "edad": {
+        "type": "custom",
         "value": 28,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "España",
         "code": "ES"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
+        "type": "custom",
         "value": 14,
         "dsc": "horas"
       }
@@ -26,20 +30,24 @@
       "key": 2,
       "nombre": "Carlos Fernández",
       "edad": {
+        "type": "custom",
         "value": 35,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "México",
         "code": "MX"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
+        "type": "custom",
         "value": 22,
         "dsc": "horas"
       }
@@ -48,20 +56,24 @@
       "key": 3,
       "nombre": "Andrea Gómez",
       "edad": {
+        "type": "custom",
         "value": 24,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "Argentina",
         "code": "AR"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
+        "type": "custom",
         "value": 18,
         "dsc": "horas"
       }
@@ -70,20 +82,24 @@
       "key": 4,
       "nombre": "José Ramírez",
       "edad": {
+        "type": "custom",
         "value": 41,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "Chile",
         "code": "CL"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
+        "type": "custom",
         "value": 10,
         "dsc": "horas"
       }
@@ -92,20 +108,24 @@
       "key": 5,
       "nombre": "Elena Castro",
       "edad": {
+        "type": "custom",
         "value": 30,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "Colombia",
         "code": "CO"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
+        "type": "custom",
         "value": 12,
         "dsc": "horas"
       }
@@ -114,20 +134,24 @@
       "key": 6,
       "nombre": "Miguel Torres",
       "edad": {
+        "type": "custom",
         "value": 29,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "Perú",
         "code": "PE"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
+        "type": "custom",
         "value": 25,
         "dsc": "horas"
       }
@@ -136,20 +160,24 @@
       "key": 7,
       "nombre": "Patricia López",
       "edad": {
+        "type": "custom",
         "value": 26,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "España",
         "code": "ES"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
+        "type": "custom",
         "value": 8,
         "dsc": "horas"
       }
@@ -158,20 +186,24 @@
       "key": 8,
       "nombre": "Daniel Morales",
       "edad": {
+        "type": "custom",
         "value": 38,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "México",
         "code": "MX"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
+        "type": "custom",
         "value": 20,
         "dsc": "horas"
       }
@@ -180,20 +212,24 @@
       "key": 9,
       "nombre": "Gabriela Sánchez",
       "edad": {
+        "type": "custom",
         "value": 27,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "Argentina",
         "code": "AR"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
+        "type": "custom",
         "value": 16,
         "dsc": "horas"
       }
@@ -202,20 +238,24 @@
       "key": 10,
       "nombre": "Juan Pérez",
       "edad": {
+        "type": "custom",
         "value": 33,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "Chile",
         "code": "CL"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
+        "type": "custom",
         "value": 14,
         "dsc": "horas"
       }
@@ -224,20 +264,24 @@
       "key": 11,
       "nombre": "Mariana Herrera",
       "edad": {
+        "type": "custom",
         "value": 25,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "Colombia",
         "code": "CO"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
+        "type": "custom",
         "value": 17,
         "dsc": "horas"
       }
@@ -246,20 +290,24 @@
       "key": 12,
       "nombre": "Ricardo Salazar",
       "edad": {
+        "type": "custom",
         "value": 39,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "Perú",
         "code": "PE"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
+        "type": "custom",
         "value": 19,
         "dsc": "horas"
       }
@@ -268,20 +316,24 @@
       "key": 13,
       "nombre": "Lucía Domínguez",
       "edad": {
+        "type": "custom",
         "value": 32,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "España",
         "code": "ES"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
+        "type": "custom",
         "value": 21,
         "dsc": "horas"
       }
@@ -290,20 +342,24 @@
       "key": 14,
       "nombre": "Sergio Vázquez",
       "edad": {
+        "type": "custom",
         "value": 28,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "México",
         "code": "MX"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
+        "type": "custom",
         "value": 13,
         "dsc": "horas"
       }
@@ -312,20 +368,24 @@
       "key": 15,
       "nombre": "Natalia Ríos",
       "edad": {
+        "type": "custom",
         "value": 31,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "Argentina",
         "code": "AR"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
+        "type": "custom",
         "value": 15,
         "dsc": "horas"
       }
@@ -334,20 +394,24 @@
       "key": 16,
       "nombre": "Fernando Ortega",
       "edad": {
+        "type": "custom",
         "value": 40,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "Chile",
         "code": "CL"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
+        "type": "custom",
         "value": 23,
         "dsc": "horas"
       }
@@ -356,20 +420,24 @@
       "key": 17,
       "nombre": "Valeria Mendoza",
       "edad": {
+        "type": "custom",
         "value": 29,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "Colombia",
         "code": "CO"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
+        "type": "custom",
         "value": 10,
         "dsc": "horas"
       }
@@ -378,20 +446,24 @@
       "key": 18,
       "nombre": "Alejandro Fuentes",
       "edad": {
+        "type": "custom",
         "value": 34,
         "dsc": "años"
       },
       "genero": "Masculino",
       "pais": {
+        "type": "country",
         "value": "Perú",
         "code": "PE"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
+        "type": "custom",
         "value": 24,
         "dsc": "horas"
       }
@@ -400,20 +472,24 @@
       "key": 19,
       "nombre": "Sofía Carrillo",
       "edad": {
+        "type": "custom",
         "value": 27,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "España",
         "code": "ES"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
+        "type": "custom",
         "value": 12,
         "dsc": "horas"
       }
@@ -422,20 +498,24 @@
       "key": 20,
       "nombre": "Valentina Rojas",
       "edad": {
+        "type": "custom",
         "value": 31,
         "dsc": "años"
       },
       "genero": "Femenino",
       "pais": {
+        "type": "country",
         "value": "Colombia",
         "code": "CO"
       },
       "suscripcion_activa": {
+        "type": "custom",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
+        "type": "custom",
         "value": 11,
         "dsc": "horas"
       }
@@ -445,8 +525,9 @@
     {
       "key": 1,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 00:00"
+        "type": "custom",
+        "value": "2023-10-01 00:00",
+        "parse": "date"
       },
       "paquetes": 2150,
       "protocolo": "HTTP",
@@ -457,6 +538,7 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 42,
         "dsc": "ms"
       },
@@ -470,8 +552,9 @@
     {
       "key": 2,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 01:00"
+        "type": "custom",
+        "value": "2023-10-01 01:00",
+        "parse": "date"
       },
       "paquetes": 3200,
       "protocolo": "HTTPS",
@@ -482,6 +565,7 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 58,
         "dsc": "ms"
       },
@@ -495,8 +579,9 @@
     {
       "key": 3,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 02:00"
+        "type": "custom",
+        "value": "2023-10-01 02:00",
+        "parse": "date"
       },
       "paquetes": 2890,
       "protocolo": "FTP",
@@ -507,6 +592,7 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 39,
         "dsc": "ms"
       },
@@ -520,8 +606,9 @@
     {
       "key": 4,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 03:00"
+        "type": "custom",
+        "value": "2023-10-01 03:00",
+        "parse": "date"
       },
       "paquetes": 4100,
       "protocolo": "DNS",
@@ -532,6 +619,7 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 29,
         "dsc": "ms"
       },
@@ -545,8 +633,9 @@
     {
       "key": 5,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 04:00"
+        "type": "custom",
+        "value": "2023-10-01 04:00",
+        "parse": "date"
       },
       "paquetes": 3770,
       "protocolo": "TCP",
@@ -557,6 +646,7 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 50,
         "dsc": "ms"
       },
@@ -570,8 +660,9 @@
     {
       "key": 6,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 05:00"
+        "type": "custom",
+        "value": "2023-10-01 05:00",
+        "parse": "date"
       },
       "paquetes": 4400,
       "protocolo": "UDP",
@@ -582,6 +673,7 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 45,
         "dsc": "ms"
       },
@@ -595,8 +687,9 @@
     {
       "key": 7,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 06:00"
+        "type": "custom",
+        "value": "2023-10-01 06:00",
+        "parse": "date"
       },
       "paquetes": 2350,
       "protocolo": "HTTPS",
@@ -607,6 +700,7 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 62,
         "dsc": "ms"
       },
@@ -620,8 +714,9 @@
     {
       "key": 8,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 07:00"
+        "type": "custom",
+        "value": "2023-10-01 07:00",
+        "parse": "date"
       },
       "paquetes": 2900,
       "protocolo": "FTP",
@@ -632,6 +727,7 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 38,
         "dsc": "ms"
       },
@@ -645,8 +741,9 @@
     {
       "key": 9,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 08:00"
+        "type": "custom",
+        "value": "2023-10-01 08:00",
+        "parse": "date"
       },
       "paquetes": 3980,
       "protocolo": "HTTP",
@@ -657,6 +754,7 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 47,
         "dsc": "ms"
       },
@@ -670,8 +768,9 @@
     {
       "key": 10,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 09:00"
+        "type": "custom",
+        "value": "2023-10-01 09:00",
+        "parse": "date"
       },
       "paquetes": 3270,
       "protocolo": "DNS",
@@ -682,6 +781,7 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 33,
         "dsc": "ms"
       },
@@ -695,8 +795,9 @@
     {
       "key": 11,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 10:00"
+        "type": "custom",
+        "value": "2023-10-01 10:00",
+        "parse": "date"
       },
       "paquetes": 4550,
       "protocolo": "TCP",
@@ -707,6 +808,7 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 51,
         "dsc": "ms"
       },
@@ -720,8 +822,9 @@
     {
       "key": 12,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 11:00"
+        "type": "custom",
+        "value": "2023-10-01 11:00",
+        "parse": "date"
       },
       "paquetes": 3840,
       "protocolo": "UDP",
@@ -732,6 +835,7 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 49,
         "dsc": "ms"
       },
@@ -745,8 +849,9 @@
     {
       "key": 13,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 12:00"
+        "type": "custom",
+        "value": "2023-10-01 12:00",
+        "parse": "date"
       },
       "paquetes": 2210,
       "protocolo": "HTTPS",
@@ -757,6 +862,7 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 61,
         "dsc": "ms"
       },
@@ -770,8 +876,9 @@
     {
       "key": 14,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 13:00"
+        "type": "custom",
+        "value": "2023-10-01 13:00",
+        "parse": "date"
       },
       "paquetes": 2750,
       "protocolo": "FTP",
@@ -782,6 +889,7 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 37,
         "dsc": "ms"
       },
@@ -795,8 +903,9 @@
     {
       "key": 15,
       "timestamp":{
-        "type": "date",
-        "value": "2023-10-01 14:00"
+        "type": "custom",
+        "value": "2023-10-01 14:00",
+        "parse": "date"
       },
       "paquetes": 4090,
       "protocolo": "HTTP",
@@ -807,6 +916,7 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
+        "type": "custom",
         "value": 46,
         "dsc": "ms"
       },
@@ -821,8 +931,9 @@
   {
     "key": 16,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 15:00"
+      "type": "custom",
+      "value": "2023-10-01 15:00",
+      "parse": "date"
     },
     "paquetes": 3760,
     "protocolo": "DNS",
@@ -833,6 +944,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 34,
       "dsc": "ms"
     },
@@ -846,8 +958,9 @@
   {
     "key": 17,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 16:00"
+      "type": "custom",
+      "value": "2023-10-01 16:00",
+      "parse": "date"
     },
     "paquetes": 4105,
     "protocolo": "TCP",
@@ -858,6 +971,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 52,
       "dsc": "ms"
     },
@@ -871,8 +985,9 @@
   {
     "key": 18,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 17:00"
+      "type": "custom",
+      "value": "2023-10-01 17:00",
+      "parse": "date"
     },
     "paquetes": 3870,
     "protocolo": "UDP",
@@ -883,6 +998,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 48,
       "dsc": "ms"
     },
@@ -896,8 +1012,9 @@
   {
     "key": 19,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 18:00"
+      "type": "custom",
+      "value": "2023-10-01 18:00",
+      "parse": "date"
     },
     "paquetes": 2290,
     "protocolo": "HTTPS",
@@ -908,6 +1025,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 59,
       "dsc": "ms"
     },
@@ -921,8 +1039,9 @@
   {
     "key": 20,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 19:00"
+      "type": "custom",
+      "value": "2023-10-01 19:00",
+      "parse": "date"
     },
     "paquetes": 2825,
     "protocolo": "FTP",
@@ -933,6 +1052,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 36,
       "dsc": "ms"
     },
@@ -946,8 +1066,9 @@
   {
     "key": 21,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 20:00"
+      "type": "custom",
+      "value": "2023-10-01 20:00",
+      "parse": "date"
     },
     "paquetes": 3950,
     "protocolo": "HTTP",
@@ -958,6 +1079,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 44,
       "dsc": "ms"
     },
@@ -971,8 +1093,9 @@
   {
     "key": 22,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 21:00"
+      "type": "custom",
+      "value": "2023-10-01 21:00",
+      "parse": "date"
     },
     "paquetes": 3200,
     "protocolo": "DNS",
@@ -983,6 +1106,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 31,
       "dsc": "ms"
     },
@@ -996,8 +1120,9 @@
   {
     "key": 23,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 22:00"
+      "type": "custom",
+      "value": "2023-10-01 22:00",
+      "parse": "date"
     },
     "paquetes": 4510,
     "protocolo": "TCP",
@@ -1008,6 +1133,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 53,
       "dsc": "ms"
     },
@@ -1021,8 +1147,9 @@
   {
     "key": 24,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-01 23:00"
+      "type": "custom",
+      "value": "2023-10-01 23:00",
+      "parse": "date"
     },
     "paquetes": 3790,
     "protocolo": "UDP",
@@ -1033,6 +1160,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 47,
       "dsc": "ms"
     },
@@ -1046,8 +1174,9 @@
   {
     "key": 25,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 00:00"
+      "type": "custom",
+      "value": "2023-10-02 00:00",
+      "parse": "date"
     },
     "paquetes": 2195,
     "protocolo": "HTTPS",
@@ -1058,6 +1187,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 60,
       "dsc": "ms"
     },
@@ -1071,8 +1201,9 @@
   {
     "key": 26,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 01:00"
+      "type": "custom",
+      "value": "2023-10-02 01:00",
+      "parse": "date"
     },
     "paquetes": 2710,
     "protocolo": "FTP",
@@ -1083,6 +1214,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 35,
       "dsc": "ms"
     },
@@ -1096,8 +1228,9 @@
   {
     "key": 27,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 02:00"
+      "type": "custom",
+      "value": "2023-10-02 02:00",
+      "parse": "date"
     },
     "paquetes": 4050,
     "protocolo": "HTTP",
@@ -1108,6 +1241,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 43,
       "dsc": "ms"
     },
@@ -1121,8 +1255,9 @@
   {
     "key": 28,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 03:00"
+      "type": "custom",
+      "value": "2023-10-02 03:00",
+      "parse": "date"
     },
     "paquetes": 3295,
     "protocolo": "DNS",
@@ -1133,6 +1268,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 30,
       "dsc": "ms"
     },
@@ -1146,8 +1282,9 @@
   {
     "key": 29,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 04:00"
+      "type": "custom",
+      "value": "2023-10-02 04:00",
+      "parse": "date"
     },
     "paquetes": 4600,
     "protocolo": "TCP",
@@ -1158,6 +1295,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 54,
       "dsc": "ms"
     },
@@ -1171,8 +1309,9 @@
   {
     "key": 30,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 05:00"
+      "type": "custom",
+      "value": "2023-10-02 05:00",
+      "parse": "date"
     },
     "paquetes": 3850,
     "protocolo": "UDP",
@@ -1183,6 +1322,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 46,
       "dsc": "ms"
     },
@@ -1196,8 +1336,9 @@
   {
     "key": 31,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 06:00"
+      "type": "custom",
+      "value": "2023-10-02 06:00",
+      "parse": "date"
     },
     "paquetes": 2320,
     "protocolo": "HTTPS",
@@ -1208,6 +1349,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 57,
       "dsc": "ms"
     },
@@ -1221,8 +1363,9 @@
   {
     "key": 32,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 07:00"
+      "type": "custom",
+      "value": "2023-10-02 07:00",
+      "parse": "date"
     },
     "paquetes": 2850,
     "protocolo": "FTP",
@@ -1233,6 +1376,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 34,
       "dsc": "ms"
     },
@@ -1246,8 +1390,9 @@
   {
     "key": 33,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 08:00"
+      "type": "custom",
+      "value": "2023-10-02 08:00",
+      "parse": "date"
     },
     "paquetes": 3995,
     "protocolo": "HTTP",
@@ -1258,6 +1403,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 42,
       "dsc": "ms"
     },
@@ -1271,8 +1417,9 @@
   {
     "key": 34,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 09:00"
+      "type": "custom",
+      "value": "2023-10-02 09:00",
+      "parse": "date"
     },
     "paquetes": 3225,
     "protocolo": "DNS",
@@ -1283,6 +1430,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 29,
       "dsc": "ms"
     },
@@ -1296,8 +1444,9 @@
   {
     "key": 35,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 10:00"
+      "type": "custom",
+      "value": "2023-10-02 10:00",
+      "parse": "date"
     },
     "paquetes": 4555,
     "protocolo": "TCP",
@@ -1308,6 +1457,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 55,
       "dsc": "ms"
     },
@@ -1321,8 +1471,9 @@
   {
     "key": 36,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 11:00"
+      "type": "custom",
+      "value": "2023-10-02 11:00",
+      "parse": "date"
     },
     "paquetes": 3880,
     "protocolo": "UDP",
@@ -1333,6 +1484,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 45,
       "dsc": "ms"
     },
@@ -1346,8 +1498,9 @@
   {
     "key": 37,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 12:00"
+      "type": "custom",
+      "value": "2023-10-02 12:00",
+      "parse": "date"
     },
     "paquetes": 2400,
     "protocolo": "HTTPS",
@@ -1358,6 +1511,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 58,
       "dsc": "ms"
     },
@@ -1371,8 +1525,9 @@
   {
     "key": 38,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 13:00"
+      "type": "custom",
+      "value": "2023-10-02 13:00",
+      "parse": "date"
     },
     "paquetes": 2980,
     "protocolo": "FTP",
@@ -1383,6 +1538,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 37,
       "dsc": "ms"
     },
@@ -1396,8 +1552,9 @@
   {
     "key": 39,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 14:00"
+      "type": "custom",
+      "value": "2023-10-02 14:00",
+      "parse": "date"
     },
     "paquetes": 4100,
     "protocolo": "HTTP",
@@ -1408,6 +1565,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 40,
       "dsc": "ms"
     },
@@ -1421,8 +1579,9 @@
   {
     "key": 40,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 15:00"
+      "type": "custom",
+      "value": "2023-10-02 15:00",
+      "parse": "date"
     },
     "paquetes": 3350,
     "protocolo": "DNS",
@@ -1433,6 +1592,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 32,
       "dsc": "ms"
     },
@@ -1446,8 +1606,9 @@
   {
     "key": 41,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 16:00"
+      "type": "custom",
+      "value": "2023-10-02 16:00",
+      "parse": "date"
     },
     "paquetes": 4700,
     "protocolo": "TCP",
@@ -1458,6 +1619,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 56,
       "dsc": "ms"
     },
@@ -1471,8 +1633,9 @@
   {
     "key": 42,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 17:00"
+      "type": "custom",
+      "value": "2023-10-02 17:00",
+      "parse": "date"
     },
     "paquetes": 3900,
     "protocolo": "UDP",
@@ -1483,6 +1646,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 49,
       "dsc": "ms"
     },
@@ -1496,8 +1660,9 @@
   {
     "key": 43,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 18:00"
+      "type": "custom",
+      "value": "2023-10-02 18:00",
+      "parse": "date"
     },
     "paquetes": 2550,
     "protocolo": "HTTPS",
@@ -1508,6 +1673,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 61,
       "dsc": "ms"
     },
@@ -1521,8 +1687,9 @@
   {
     "key": 44,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 19:00"
+      "type": "custom",
+      "value": "2023-10-02 19:00",
+      "parse": "date"
     },
     "paquetes": 3100,
     "protocolo": "FTP",
@@ -1533,6 +1700,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 39,
       "dsc": "ms"
     },
@@ -1546,8 +1714,9 @@
   {
     "key": 45,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 20:00"
+      "type": "custom",
+      "value": "2023-10-02 20:00",
+      "parse": "date"
     },
     "paquetes": 4300,
     "protocolo": "HTTP",
@@ -1558,6 +1727,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 43,
       "dsc": "ms"
     },
@@ -1571,8 +1741,9 @@
   {
     "key": 46,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 21:00"
+      "type": "custom",
+      "value": "2023-10-02 21:00",
+      "parse": "date"
     },
     "paquetes": 3450,
     "protocolo": "DNS",
@@ -1583,6 +1754,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 33,
       "dsc": "ms"
     },
@@ -1596,8 +1768,9 @@
   {
     "key": 47,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 22:00"
+      "type": "custom",
+      "value": "2023-10-02 22:00",
+      "parse": "date"
     },
     "paquetes": 4850,
     "protocolo": "TCP",
@@ -1608,6 +1781,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 57,
       "dsc": "ms"
     },
@@ -1621,8 +1795,9 @@
   {
     "key": 48,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-02 23:00"
+      "type": "custom",
+      "value": "2023-10-02 23:00",
+      "parse": "date"
     },
     "paquetes": 4000,
     "protocolo": "UDP",
@@ -1633,6 +1808,7 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 50,
       "dsc": "ms"
     },
@@ -1646,8 +1822,9 @@
   ,{
     "key": 49,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-03 12:00"
+      "type": "custom",
+      "value": "2023-10-03 12:00",
+      "parse": "date"
     },
     "paquetes": 4205,
     "protocolo": "HTTP",
@@ -1658,6 +1835,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 41,
       "dsc": "ms"
     },
@@ -1671,8 +1849,9 @@
   {
     "key": 50,
     "timestamp":{
-      "type": "date",
-      "value": "2023-10-03 13:00"
+      "type": "custom",
+      "value": "2023-10-03 13:00",
+      "parse": "date"
     },
     "paquetes": 4321,
     "protocolo": "FTP",
@@ -1683,6 +1862,7 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
+      "type": "custom",
       "value": 38,
       "dsc": "ms"
     },

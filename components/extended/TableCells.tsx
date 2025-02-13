@@ -2,22 +2,11 @@ import { useCallback } from "react";
 
 import { Chip } from "@heroui/chip";
 
-import { DefaultCellUserObj, EdadUserType, FuenteType, PaisUserType, TimestampType } from "@/store/data/types";
+import { CountryObjectDataType, CustomObjectDataType } from "./types/TableCellTypes";
 
 import * as Icons from "@heroicons/react/24/solid";
 
-const TableCellBoolean = (data: EdadUserType) => {
-    const {value, dsc} = data
-    return (
-        <Chip radius='sm' variant={value ? 'shadow' : 'flat'}
-        color={value ? 'success' : 'danger'} className="absolute left-1/3 -translate-x-1/2">
-            {dsc}
-        </Chip>
-    )
-}
-
-const TableCellCountry = (country: PaisUserType) => {
-    const {value, code} = country
+const TableCellCountry = ({value, code}: CountryObjectDataType) => {
     const FlagComponent = require(`country-flag-icons/react/3x2`)[code]
 
     return (
@@ -28,29 +17,7 @@ const TableCellCountry = (country: PaisUserType) => {
     )
 }
 
-const TableCellWithDsc = (data: DefaultCellUserObj) => {
-    const {value, dsc} = data
-
-    return (
-        <div className="flex gap-2">
-            <span>{value}</span>
-            <span>{dsc}</span>
-        </div>
-    )
-}
-
-const TableCellTimestamp = (data: TimestampType) => {
-    const { value } = data
-    const date = new Date(value).toLocaleString("es-MX")
-
-    return (
-        <div className="flex gap-2">
-            <span>{date}</span>
-        </div>
-    )
-}
-
-const TableCellCustom = ({ value, icon, color, chip }: FuenteType) => {
+const TableCellCustom = ({ value, icon, color, chip, parse, dsc }: CustomObjectDataType) => {
     let IconComponent = null
 
     if (icon) {
@@ -65,21 +32,49 @@ const TableCellCustom = ({ value, icon, color, chip }: FuenteType) => {
     }
 
     const renderValue = useCallback(() => {
-        if (chip) return <Chip radius='sm' variant='faded'
-        classNames={{
-            base: `text-${color ? color : 'primary'}-700 bg-${color ? color : 'primary'}-100/25 border-${color ? color : 'primary'}-500`,
-        }}>{value}</Chip>
+        let newValue = value
+        if (typeof value === 'string') {
+            switch (parse) {
+                case 'date':
+                    newValue = new Date(value).toLocaleString("es-MX")
+                    break;
+                default:
+                    newValue = value
+                    break;
+            }
+        }
+
+        if (typeof newValue === 'boolean') {
+            return (
+                <Chip radius='sm' variant={newValue ? 'shadow' : 'flat'}
+                color={newValue ? 'success' : 'danger'} className="absolute left-1/3 -translate-x-1/2">
+                    {dsc}
+                </Chip>
+            )
+        }
+
+        if (chip) {
+            return (
+                <Chip radius='sm' variant='faded'
+                    classNames={{
+                        base: `text-${color ? color : 'primary'}-700 bg-${color ? color : 'primary'}-100/25 border-${color ? color : 'primary'}-500`,
+                    }}>
+                    {newValue}
+                </Chip>
+            )
+        }
         
-        return <span>{value}</span>
+        return <span>{newValue}</span>
     }, [])
     
     return (
         <div className="flex gap-2 items-center">
             {renderValue()}
+            {typeof value !== 'boolean' && dsc}
             {IconComponent && <IconComponent className={`size-4 ${color ? `text-${color}-500` : ''}`}/>}
         </div>
     )
 }
 
-export { TableCellBoolean, TableCellCountry, TableCellCustom, TableCellTimestamp, TableCellWithDsc };
+export { TableCellCountry, TableCellCustom };
 

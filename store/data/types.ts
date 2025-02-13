@@ -1,24 +1,22 @@
-export interface EdadUserType {
+interface EdadUserType {
   value: number
   dsc: string
 }
 
-export interface PaisUserType {
+interface PaisUserType {
   value: string
   code: string
 }
 
-export interface SuscripcionActivaUserType {
+interface SuscripcionActivaUserType {
   value: boolean
   dsc: string
 }
 
-export interface UsoSemanalUserType {
+interface UsoSemanalUserType {
   value: number
   dsc: string
 }
-
-export type DefaultCellUserObj = EdadUserType | UsoSemanalUserType
 
 export interface USER {
   key: number
@@ -31,13 +29,12 @@ export interface USER {
   uso_semanal: UsoSemanalUserType
 }
 
-export type Protocolo = "HTTP" | "HTTPS" | "FTP" | "DNS" | "TCP" | "UDP" | string;
 export type FuenteOptionTypes = "Interno" | "Externo";
-export type TipoTrafico = "Datos" | "Video" | "Archivos" | "Consulta" | "Control" | "Streaming" | string;
 
 export interface LatenciaPromedioType {
+  type: string
   value: string
-  dsc: string
+  dsc?: string
 }
 
 export interface TimestampType {

@@ -2,7 +2,7 @@ import React from "react"
 
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table"
 
-import { TableCellBoolean, TableCellCountry, TableCellCustom, TableCellTimestamp, TableCellWithDsc } from "./extended/TableCells"
+import { TableCellCountry, TableCellCustom } from "./extended/TableCells"
 
 import { useAsyncList } from '@react-stately/data'
 
@@ -21,24 +21,18 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
     const renderSwitchCell = React.useCallback((item: DataDefaultType, columnKey: string) => {
         const value = getKeyValue(item, columnKey)
 
-        switch (columnKey) {
-            case 'estado_stock': 
-            case 'suscripcion_activa':
-                return <TableCellBoolean {...value} />
-            case 'pais':
-                return <TableCellCountry {...value} />
-            case 'timestamp':
-                return <TableCellTimestamp {...value} />
-            case 'fuente':
-            case 'tipo_trafico':
-                return <TableCellCustom {...value} />
-            case 'uso_semanal':
-            case 'edad':
-            case 'latencia_promedio':
-                return <TableCellWithDsc {...value} />
-            default: 
-                return value
+        if (typeof value === 'object') {
+            const objType = value.type
+            switch (objType) {
+                case 'country': 
+                    return <TableCellCountry {...value} />
+                case 'custom':
+                default:
+                    return <TableCellCustom {...value} />
+            }
         }
+
+        return value
     }, [])
 
     let list = useAsyncList({
