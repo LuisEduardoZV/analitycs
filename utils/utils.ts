@@ -19,3 +19,12 @@ export function getColumns(data: StrData) {
 export function isValidHexa(hexa: string) {
   return /^#[0-9A-F]{6}[0-9a-f]{0,2}$/i.test(hexa)
 }
+
+export function isJSONValid(json: string) {
+  try {
+    JSON.parse(json)
+  } catch (e) {
+    return false
+  }
+  return true
+}

@@ -1,10 +1,10 @@
 import React from "react"
 
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table"
+import { useAsyncList } from '@react-stately/data'
 
 import { TableCellCountry, TableCellCustom } from "./extended/TableCells"
-
-import { useAsyncList } from '@react-stately/data'
+import LoadingData from "./loadingData"
 
 import DataDefaultType from "@/store/data/types"
 import { StrData, StrDataArray } from "@/store/types"
@@ -71,7 +71,7 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
                     )
                 }}
             </TableHeader>
-            <TableBody emptyContent="No hay datos" isLoading={loading} items={list.items}>
+            <TableBody emptyContent="No hay datos" isLoading={loading} items={list.items} loadingContent={<LoadingData />}>
                 {(item) => (
                     <TableRow key={item.key}>
                         {(columnKey) => {
