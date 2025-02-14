@@ -1876,1004 +1876,2404 @@
   ],
   "inventario": [
     {
-      "key": "ELEC-0001",
+      "uuid": "ELEC-0001",
       "producto": "Smartphone 5G 128GB",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Samsung",
-      "precio": 699.99,
+      "precio": {
+        "type": "custom",
+        "value":  699.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0002",
+      "uuid": "ELEC-0002",
       "producto": "Laptop Ultrabook 14''",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Dell",
-      "precio": 999.99,
+      "precio": {
+        "type": "custom",
+        "value":  999.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0003",
+      "uuid": "ELEC-0003",
       "producto": "Tablet Pro 11'' 256GB",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Apple",
-      "precio": 799.99,
+      "precio": {
+        "type": "custom",
+        "value":  799.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 8,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0004",
+      "uuid": "ELEC-0004",
       "producto": "Monitor 27'' Full HD",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "LG",
-      "precio": 199.99,
+      "precio": {
+        "type": "custom",
+        "value":  199.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.5
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.5,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0005",
+      "uuid": "ELEC-0005",
       "producto": "Auriculares Inalámbricos",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Sony",
-      "precio": 149.99,
+      "precio": {
+        "type": "custom",
+        "value":  149.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0006",
+      "uuid": "HOGAR-0006",
       "producto": "Aspiradora Robot Inteligente",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Xiaomi",
-      "precio": 299.99,
+      "precio": {
+        "type": "custom",
+        "value":  299.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0007",
+      "uuid": "HOGAR-0007",
       "producto": "Cafetera Espresso Automática",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "De'Longhi",
-      "precio": 249.99,
+      "precio": {
+        "type": "custom",
+        "value":  249.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0008",
+      "uuid": "HOGAR-0008",
       "producto": "Purificador de Aire HEPA",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Dyson",
-      "precio": 399.99,
+      "precio": {
+        "type": "custom",
+        "value":  399.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 5,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0009",
+      "uuid": "DEP-0009",
       "producto": "Bicicleta de Montaña 21V",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Trek",
-      "precio": 799.99,
+      "precio": {
+        "type": "custom",
+        "value":  799.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 7,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0010",
+      "uuid": "DEP-0010",
       "producto": "Mancuernas Ajustables 20KG",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Bowflex",
-      "precio": 199.99,
+      "precio": {
+        "type": "custom",
+        "value":  199.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 18,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.5
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.5,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0011",
+      "uuid": "DEP-0011",
       "producto": "Colchoneta de Yoga Antideslizante",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Manduka",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0012",
+      "uuid": "MODA-0012",
       "producto": "Chaqueta Impermeable Unisex",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "The North Face",
-      "precio": 159.99,
+      "precio": {
+        "type": "custom",
+        "value":  159.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 14,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0013",
+      "uuid": "MODA-0013",
       "producto": "Zapatillas Running 2024",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Adidas",
-      "precio": 129.99,
+      "precio": {
+        "type": "custom",
+        "value":  129.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 22,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0014",
+      "uuid": "MODA-0014",
       "producto": "Reloj Inteligente Fitness",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Garmin",
-      "precio": 349.99,
+      "precio": {
+        "type": "custom",
+        "value":  349.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0015",
+      "uuid": "MODA-0015",
       "producto": "Bolso de Cuero Premium",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Michael Kors",
-      "precio": 259.99,
+      "precio": {
+        "type": "custom",
+        "value":  259.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0016",
+      "uuid": "BELLEZA-0016",
       "producto": "Set de Brochas Maquillaje 12 Piezas",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Sephora",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 40,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0017",
+      "uuid": "BELLEZA-0017",
       "producto": "Perfume Unisex 100ml",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Tom Ford",
-      "precio": 199.99,
+      "precio": {
+        "type": "custom",
+        "value":  199.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0018",
+      "uuid": "BELLEZA-0018",
       "producto": "Mascarilla Facial Hidratante",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "L'Oréal",
-      "precio": 29.99,
+      "precio": {
+        "type": "custom",
+        "value":  29.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 50,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.5
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.5,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0019",
+      "uuid": "AUTO-0019",
       "producto": "Cargador Rápido para Auto",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Anker",
-      "precio": 24.99,
+      "precio": {
+        "type": "custom",
+        "value":  24.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 35,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0020",
+      "uuid": "AUTO-0020",
       "producto": "Llantas Todo Terreno 4x4",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Michelin",
-      "precio": 189.99,
+      "precio": {
+        "type": "custom",
+        "value":  189.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 8,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0021",
+      "uuid": "AUTO-0021",
       "producto": "Cera para Auto Premium 500ml",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Meguiar's",
-      "precio": 29.99,
+      "precio": {
+        "type": "custom",
+        "value":  29.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0022",
+      "uuid": "AUTO-0022",
       "producto": "Batería de Auto 12V",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Bosch",
-      "precio": 119.99,
+      "precio": {
+        "type": "custom",
+        "value":  119.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0023",
+      "uuid": "ELEC-0023",
       "producto": "Cámara de Seguridad 1080p",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Ring",
-      "precio": 99.99,
+      "precio": {
+        "type": "custom",
+        "value":  99.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 18,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0024",
+      "uuid": "ELEC-0024",
       "producto": "Teclado Mecánico RGB",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Corsair",
-      "precio": 149.99,
+      "precio": {
+        "type": "custom",
+        "value":  149.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0025",
+      "uuid": "ELEC-0025",
       "producto": "Mouse Inalámbrico Gaming",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Logitech",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0026",
+      "uuid": "HOGAR-0026",
       "producto": "Microondas Digital 30L",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Panasonic",
-      "precio": 199.99,
+      "precio": {
+        "type": "custom",
+        "value":  199.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 14,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0027",
+      "uuid": "HOGAR-0027",
       "producto": "Juego de Sartenes Antiadherentes",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Tefal",
-      "precio": 89.99,
+      "precio": {
+        "type": "custom",
+        "value":  89.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0028",
+      "uuid": "HOGAR-0028",
       "producto": "Deshumidificador 500ml",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Pro Breeze",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 8,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.5
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.5,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0029",
+      "uuid": "DEP-0029",
       "producto": "Guantes de Boxeo Profesionales",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Everlast",
-      "precio": 59.99,
+      "precio": {
+        "type": "custom",
+        "value":  59.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 22,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0030",
+      "uuid": "DEP-0030",
       "producto": "Rueda de Abdominales con Tapete",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Reebok",
-      "precio": 34.99,
+      "precio": {
+        "type": "custom",
+        "value":  34.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 35,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0031",
+      "uuid": "DEP-0031",
       "producto": "Cuerda de Saltar con Pesas",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Nike",
-      "precio": 19.99,
+      "precio": {
+        "type": "custom",
+        "value":  19.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 40,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.5
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.5,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0032",
+      "uuid": "MODA-0032",
       "producto": "Jeans Slim Fit Hombre",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Levi's",
-      "precio": 59.99,
+      "precio": {
+        "type": "custom",
+        "value":  59.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 28,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0033",
+      "uuid": "MODA-0033",
       "producto": "Vestido Largo Elegante Mujer",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Zara",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 14,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0034",
+      "uuid": "MODA-0034",
       "producto": "Gorra Deportiva Unisex",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Puma",
-      "precio": 24.99,
+      "precio": {
+        "type": "custom",
+        "value":  24.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 50,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.5
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.5,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0035",
+      "uuid": "MODA-0035",
       "producto": "Cinturón de Cuero Premium",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Hugo Boss",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0036",
+      "uuid": "BELLEZA-0036",
       "producto": "Plancha para Cabello Cerámica",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Remington",
-      "precio": 39.99,
+      "precio": {
+        "type": "custom",
+        "value":  39.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 32,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0037",
+      "uuid": "BELLEZA-0037",
       "producto": "Crema Hidratante Facial 50ml",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Neutrogena",
-      "precio": 25.99,
+      "precio": {
+        "type": "custom",
+        "value":  25.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 48,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0038",
+      "uuid": "BELLEZA-0038",
       "producto": "Cepillo de Dientes Eléctrico",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Oral-B",
-      "precio": 69.99,
+      "precio": {
+        "type": "custom",
+        "value":  69.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0039",
+      "uuid": "AUTO-0039",
       "producto": "Juego de Tapetes para Auto",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Goodyear",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.5
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.5,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0040",
+      "uuid": "AUTO-0040",
       "producto": "Aceite para Motor Sintético 5W-30",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Castrol",
-      "precio": 39.99,
+      "precio": {
+        "type": "custom",
+        "value":  39.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 18,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0041",
+      "uuid": "AUTO-0041",
       "producto": "Cargador de Batería para Auto 12V",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Schumacher",
-      "precio": 69.99,
+      "precio": {
+        "type": "custom",
+        "value":  69.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0042",
+      "uuid": "AUTO-0042",
       "producto": "Juego de Limpiaparabrisas Premium",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Bosch",
-      "precio": 29.99,
+      "precio": {
+        "type": "custom",
+        "value":  29.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0043",
+      "uuid": "ELEC-0043",
       "producto": "Bocina Bluetooth Portátil",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "JBL",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0044",
+      "uuid": "ELEC-0044",
       "producto": "Power Bank 20000mAh",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Anker",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 40,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0045",
+      "uuid": "ELEC-0045",
       "producto": "Lámpara LED Recargable",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Philips",
-      "precio": 34.99,
+      "precio": {
+        "type": "custom",
+        "value":  34.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 18,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.5
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.5,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0046",
+      "uuid": "HOGAR-0046",
       "producto": "Aspiradora Robot Inteligente",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Roomba",
-      "precio": 299.99,
+      "precio": {
+        "type": "custom",
+        "value":  299.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0047",
+      "uuid": "HOGAR-0047",
       "producto": "Purificador de Aire con Filtro HEPA",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Dyson",
-      "precio": 499.99,
+      "precio": {
+        "type": "custom",
+        "value":  499.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 5,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0048",
+      "uuid": "HOGAR-0048",
       "producto": "Cafetera Espresso Automática",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "De'Longhi",
-      "precio": 259.99,
+      "precio": {
+        "type": "custom",
+        "value":  259.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0049",
+      "uuid": "DEP-0049",
       "producto": "Mancuernas Ajustables 20kg",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Bowflex",
-      "precio": 179.99,
+      "precio": {
+        "type": "custom",
+        "value":  179.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0050",
+      "uuid": "DEP-0050",
       "producto": "Bicicleta Estática Profesional",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Schwinn",
-      "precio": 599.99,
+      "precio": {
+        "type": "custom",
+        "value":  599.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 7,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0051",
+      "uuid": "DEP-0051",
       "producto": "Balón de Baloncesto Oficial",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Spalding",
-      "precio": 29.99,
+      "precio": {
+        "type": "custom",
+        "value":  29.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0052",
+      "uuid": "MODA-0052",
       "producto": "Sudadera con Capucha Unisex",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Adidas",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 22,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0053",
+      "uuid": "MODA-0053",
       "producto": "Zapatos de Vestir Hombre",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Clarks",
-      "precio": 89.99,
+      "precio": {
+        "type": "custom",
+        "value":  89.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 14,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0054",
+      "uuid": "MODA-0054",
       "producto": "Pantalón de Yoga Mujer",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Lululemon",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 18,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0055",
+      "uuid": "MODA-0055",
       "producto": "Chaqueta Impermeable Unisex",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "North Face",
-      "precio": 119.99,
+      "precio": {
+        "type": "custom",
+        "value":  119.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0056",
+      "uuid": "BELLEZA-0056",
       "producto": "Perfume Eau de Parfum 100ml",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Chanel",
-      "precio": 129.99,
+      "precio": {
+        "type": "custom",
+        "value":  129.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 8,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0057",
+      "uuid": "BELLEZA-0057",
       "producto": "Set de Brochas de Maquillaje",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Real Techniques",
-      "precio": 39.99,
+      "precio": {
+        "type": "custom",
+        "value":  39.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0058",
+      "uuid": "BELLEZA-0058",
       "producto": "Kit de Manicura y Pedicura",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Beurer",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 16,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0059",
+      "uuid": "AUTO-0059",
       "producto": "GPS para Auto con Pantalla 6\"",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Garmin",
-      "precio": 199.99,
+      "precio": {
+        "type": "custom",
+        "value":  199.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 9,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0060",
+      "uuid": "AUTO-0060",
       "producto": "Juego de Herramientas 108 Piezas",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Stanley",
-      "precio": 89.99,
+      "precio": {
+        "type": "custom",
+        "value":  89.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0061",
+      "uuid": "AUTO-0061",
       "producto": "Cera para Auto Premium",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Meguiar's",
-      "precio": 24.99,
+      "precio": {
+        "type": "custom",
+        "value":  24.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0062",
+      "uuid": "AUTO-0062",
       "producto": "Compresor de Aire Portátil",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Makita",
-      "precio": 149.99,
+      "precio": {
+        "type": "custom",
+        "value":  149.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0063",
+      "uuid": "ELEC-0063",
       "producto": "Teclado Mecánico RGB",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Razer",
-      "precio": 129.99,
+      "precio": {
+        "type": "custom",
+        "value":  129.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0064",
+      "uuid": "ELEC-0064",
       "producto": "Mouse Inalámbrico Ergonomico",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Logitech",
-      "precio": 59.99,
+      "precio": {
+        "type": "custom",
+        "value":  59.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0065",
+      "uuid": "ELEC-0065",
       "producto": "Monitor Gamer 27\" 144Hz",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "ASUS",
-      "precio": 349.99,
+      "precio": {
+        "type": "custom",
+        "value":  349.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0066",
+      "uuid": "HOGAR-0066",
       "producto": "Batidora de Mano 5 Velocidades",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "KitchenAid",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0067",
+      "uuid": "HOGAR-0067",
       "producto": "Sartén Antiadherente 30cm",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "T-fal",
-      "precio": 34.99,
+      "precio": {
+        "type": "custom",
+        "value":  34.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0068",
+      "uuid": "HOGAR-0068",
       "producto": "Juego de Cuchillos de Cocina",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Zwilling",
-      "precio": 149.99,
+      "precio": {
+        "type": "custom",
+        "value":  149.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0069",
+      "uuid": "DEP-0069",
       "producto": "Rodillo de Espuma para Masaje",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "TriggerPoint",
-      "precio": 29.99,
+      "precio": {
+        "type": "custom",
+        "value":  29.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0070",
+      "uuid": "DEP-0070",
       "producto": "Cuerda para Saltar Profesional",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Rogue",
-      "precio": 19.99,
+      "precio": {
+        "type": "custom",
+        "value":  19.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 50,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0071",
+      "uuid": "DEP-0071",
       "producto": "Guantes de Boxeo 12oz",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Everlast",
-      "precio": 69.99,
+      "precio": {
+        "type": "custom",
+        "value":  69.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 18,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0072",
+      "uuid": "MODA-0072",
       "producto": "Gafas de Sol Polarizadas",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Ray-Ban",
-      "precio": 129.99,
+      "precio": {
+        "type": "custom",
+        "value":  129.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0073",
+      "uuid": "MODA-0073",
       "producto": "Reloj Inteligente Deportivo",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Garmin",
-      "precio": 299.99,
+      "precio": {
+        "type": "custom",
+        "value":  299.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0074",
+      "uuid": "MODA-0074",
       "producto": "Bolsa de Mano de Cuero",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Michael Kors",
-      "precio": 249.99,
+      "precio": {
+        "type": "custom",
+        "value":  249.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0075",
+      "uuid": "MODA-0075",
       "producto": "Bufanda de Lana Unisex",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Burberry",
-      "precio": 99.99,
+      "precio": {
+        "type": "custom",
+        "value":  99.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 18,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0076",
+      "uuid": "BELLEZA-0076",
       "producto": "Crema Hidratante Facial 50ml",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "La Roche-Posay",
-      "precio": 29.99,
+      "precio": {
+        "type": "custom",
+        "value":  29.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0077",
+      "uuid": "BELLEZA-0077",
       "producto": "Sérum Facial Antiedad",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Estée Lauder",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0078",
+      "uuid": "BELLEZA-0078",
       "producto": "Mascarilla Facial de Carbón",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Garnier",
-      "precio": 12.99,
+      "precio": {
+        "type": "custom",
+        "value":  12.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 50,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0079",
+      "uuid": "AUTO-0079",
       "producto": "Cámara de Reversa para Auto",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Pioneer",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0080",
+      "uuid": "AUTO-0080",
       "producto": "Aceite Sintético 5W-30",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Mobil 1",
-      "precio": 39.99,
+      "precio": {
+        "type": "custom",
+        "value":  39.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 35,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0081",
+      "uuid": "AUTO-0081",
       "producto": "Limpiador de Inyectores",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "STP",
-      "precio": 14.99,
+      "precio": {
+        "type": "custom",
+        "value":  14.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 40,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0082",
+      "uuid": "AUTO-0082",
       "producto": "Luz LED para Faros H7",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Philips",
-      "precio": 39.99,
+      "precio": {
+        "type": "custom",
+        "value":  39.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0083",
+      "uuid": "ELEC-0083",
       "producto": "Cargador Rápido USB-C 65W",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Anker",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0084",
+      "uuid": "ELEC-0084",
       "producto": "Cámara de Seguridad WiFi",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Xiaomi",
-      "precio": 69.99,
+      "precio": {
+        "type": "custom",
+        "value":  69.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "ELEC-0085",
+      "uuid": "ELEC-0085",
       "producto": "Bocina Bluetooth Portátil",
-      "categoria": "Electrónicos",
+      "categoria": {
+        "type": "custom",
+        "value":  "Electrónicos",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "JBL",
-      "precio": 99.99,
+      "precio": {
+        "type": "custom",
+        "value":  99.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0086",
+      "uuid": "HOGAR-0086",
       "producto": "Aspiradora Robot Inteligente",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "iRobot",
-      "precio": 349.99,
+      "precio": {
+        "type": "custom",
+        "value":  349.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0087",
+      "uuid": "HOGAR-0087",
       "producto": "Juego de Sábanas 100% Algodón",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Amazon Basics",
-      "precio": 49.99,
+      "precio": {
+        "type": "custom",
+        "value":  49.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "HOGAR-0088",
+      "uuid": "HOGAR-0088",
       "producto": "Lámpara LED de Escritorio",
-      "categoria": "Hogar",
+      "categoria": {
+        "type": "custom",
+        "value":  "Hogar",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Philips",
-      "precio": 29.99,
+      "precio": {
+        "type": "custom",
+        "value":  29.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0089",
+      "uuid": "DEP-0089",
       "producto": "Mancuernas Ajustables 20kg",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Bowflex",
-      "precio": 199.99,
+      "precio": {
+        "type": "custom",
+        "value":  199.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0090",
+      "uuid": "DEP-0090",
       "producto": "Colchoneta para Yoga",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Manduka",
-      "precio": 79.99,
+      "precio": {
+        "type": "custom",
+        "value":  79.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 25,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "DEP-0091",
+      "uuid": "DEP-0091",
       "producto": "Bicicleta Estática Profesional",
-      "categoria": "Deportes",
+      "categoria": {
+        "type": "custom",
+        "value":  "Deportes",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Schwinn",
-      "precio": 499.99,
+      "precio": {
+        "type": "custom",
+        "value":  499.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 5,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0092",
+      "uuid": "MODA-0092",
       "producto": "Chaqueta de Cuero Genuino",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Hugo Boss",
-      "precio": 349.99,
+      "precio": {
+        "type": "custom",
+        "value":  349.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 10,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0093",
+      "uuid": "MODA-0093",
       "producto": "Zapatillas Urbanas Unisex",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Adidas",
-      "precio": 89.99,
+      "precio": {
+        "type": "custom",
+        "value":  89.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0094",
+      "uuid": "MODA-0094",
       "producto": "Sombrero Panamá de Paja",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Stetson",
-      "precio": 59.99,
+      "precio": {
+        "type": "custom",
+        "value":  59.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.6
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.6,
+        "rating": true
+      }
     },
     {
-      "key": "MODA-0095",
+      "uuid": "MODA-0095",
       "producto": "Pantalón Vaquero Slim Fit",
-      "categoria": "Moda",
+      "categoria": {
+        "type": "custom",
+        "value":  "Moda",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Levi's",
-      "precio": 69.99,
+      "precio": {
+        "type": "custom",
+        "value":  69.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 18,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0096",
+      "uuid": "BELLEZA-0096",
       "producto": "Perfume de Hombre 100ml",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Dolce & Gabbana",
-      "precio": 89.99,
+      "precio": {
+        "type": "custom",
+        "value":  89.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 22,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0097",
+      "uuid": "BELLEZA-0097",
       "producto": "Labial Mate Larga Duración",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "MAC Cosmetics",
-      "precio": 24.99,
+      "precio": {
+        "type": "custom",
+        "value":  24.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 30,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "BELLEZA-0098",
+      "uuid": "BELLEZA-0098",
       "producto": "Plancha para Cabello Profesional",
-      "categoria": "Belleza",
+      "categoria": {
+        "type": "custom",
+        "value":  "Belleza",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "GHD",
-      "precio": 149.99,
+      "precio": {
+        "type": "custom",
+        "value":  149.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 15,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.9
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.9,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0099",
+      "uuid": "AUTO-0099",
       "producto": "Kit Herramientas Emergencia",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "Michelin",
-      "precio": 89.99,
+      "precio": {
+        "type": "custom",
+        "value":  89.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 12,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.7
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.7,
+        "rating": true
+      }
     },
     {
-      "key": "AUTO-0100",
+      "uuid": "AUTO-0100",
       "producto": "Tapetes de Auto Universales",
-      "categoria": "Automotriz",
+      "categoria": {
+        "type": "custom",
+        "value":  "Automotriz",
+        "chip": true,
+        "color": "#607196"
+      },
       "marca": "WeatherTech",
-      "precio": 129.99,
+      "precio": {
+        "type": "custom",
+        "value":  129.99,
+        "dsc": "$",
+        "money": true
+      },
       "stock": 20,
       "estado_stock": "Disponible",
-      "valoracion_promedio": 4.8
+      "valoracion_promedio": {
+        "type": "custom",
+        "value": 4.8,
+        "rating": true
+      }
     }
   ]
 }

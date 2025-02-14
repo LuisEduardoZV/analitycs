@@ -15,3 +15,7 @@ export function getColumns(data: StrData) {
     key, label: key.toUpperCase().replaceAll(/_/g, ' ')
   }))
 }
+
+export function isValidHexa(hexa: string) {
+  return /^#[0-9A-F]{6}[0-9a-f]{0,2}$/i.test(hexa)
+}

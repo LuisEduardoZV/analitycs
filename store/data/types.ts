@@ -42,34 +42,71 @@ export interface TimestampType {
   value: string
 }
 
-export interface FuenteType {
+export interface Timestamp {
   type: string
-  value: FuenteOptionTypes
-  icon?: string
-  color?: string
-  chip?: boolean
-  dsc?: string
+  value: string
+  parse: string
+}
+
+export interface Fuente {
+  type: string
+  value: string
+  icon: string
+  color: string
+}
+
+export interface LatenciaPromedio {
+  type: string
+  value: number
+  dsc: string
+}
+
+export interface TipoTrafico {
+  type: string
+  value: string
+  chip: boolean
+  color: string
 }
 
 export interface TRAFICO {
-    key: number,
-    timestamp: TimestampType,
-    paquetes: number,
-    protocolo: string,
-    fuente: FuenteType,
-    latencia_promedio: LatenciaPromedioType,
-    tipo_trafico: string
+  key: number
+  timestamp: Timestamp
+  paquetes: number
+  protocolo: string
+  fuente: Fuente
+  latencia_promedio: LatenciaPromedio
+  tipo_trafico: TipoTrafico
+}
+
+export interface Categoria {
+  type: string
+  value: string
+  chip: boolean
+  color: string
+}
+
+export interface Precio {
+  type: string
+  value: number
+  dsc: string
+}
+
+export interface ValoracionPromedio {
+  type: string
+  value: number
+  rating: boolean
 }
 
 export interface INVENTARIO {
-      key: string,
-      producto: string,
-      categoria: string,
-      marca: string,
-      precio: number,
-      stock: number,
-      estado_stock: string,
-      valoracion_promedio: number
+  key?: string
+  uuid: string
+  producto: string
+  categoria: Categoria
+  marca: string
+  precio: Precio
+  stock: number
+  estado_stock: string
+  valoracion_promedio: ValoracionPromedio
 }
 
 type DataDefaultType = USER | TRAFICO | INVENTARIO

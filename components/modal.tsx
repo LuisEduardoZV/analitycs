@@ -71,7 +71,9 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
 
     const handleChangeDefaultData = (id: string) => {
         const data = require('@/store/data/defaut.json')
-        const newData = data[id] || null
+        let newData = data[id] || null
+
+        if (Array.isArray(newData) && newData.length > 0 && !newData[0]?.key) newData = newData.map((item: any, idx: number) => ({ key: idx + 1, ...item }))
         
         dispatch(setData({data: newData, id}))
     }

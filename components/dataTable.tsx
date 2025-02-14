@@ -20,19 +20,20 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
 
     const renderSwitchCell = React.useCallback((item: DataDefaultType, columnKey: string) => {
         const value = getKeyValue(item, columnKey)
+        const isKey = columnKey === 'key'
 
         if (typeof value === 'object') {
             const objType = value.type
             switch (objType) {
                 case 'country': 
-                    return <TableCellCountry {...value} />
+                    return <TableCellCountry {...value} key={columnKey} />
                 case 'custom':
                 default:
-                    return <TableCellCustom {...value} />
+                    return <TableCellCustom {...value} key={columnKey} />
             }
         }
 
-        return value
+        return <span className={`${isKey ? 'font-light text-default-400' : ''}`}>{`${isKey ? '#' : ''}`}{value}</span>
     }, [])
 
     let list = useAsyncList({
@@ -73,7 +74,13 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
             <TableBody emptyContent="No hay datos" isLoading={loading} items={list.items}>
                 {(item) => (
                     <TableRow key={item.key}>
-                        {(columnKey) => <TableCell className="w-max relative">{renderSwitchCell(item, columnKey.toString())}</TableCell>}
+                        {(columnKey) => {
+                            return (
+                                <TableCell className="w-max relative">
+                                    {renderSwitchCell(item, columnKey.toString())}
+                                </TableCell>
+                            )
+                        }}
                     </TableRow>
                 )}
             </TableBody>
