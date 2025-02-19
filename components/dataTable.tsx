@@ -3,7 +3,7 @@ import React from "react"
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table"
 import { useAsyncList } from '@react-stately/data'
 
-import { TableCellCountry, TableCellCustom } from "./extended/TableCells"
+import { TableCellBoolean, TableCellCategory, TableCellCountry, TableCellCustom, TableCellDates, TableCellMoney, TableCellNumber, TableCellRating } from "./extended/TableCells"
 import LoadingData from "./loadingData"
 
 import { ArrayTableColumnsType, BaseObjectDataType, MainDataArrayType } from "@/store/types"
@@ -26,6 +26,18 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
             switch (objType) {
                 case 'country': 
                     return <TableCellCountry {...value} key={columnKey} />
+                case 'number': 
+                    return <TableCellNumber {...value} key={columnKey} />
+                case 'money':
+                    return <TableCellMoney {...value} key={columnKey} />
+                case 'boolean':
+                    return <TableCellBoolean {...value} key={columnKey} />
+                case 'category':
+                    return <TableCellCategory {...value} key={columnKey} />
+                case 'date':
+                    return <TableCellDates {...value} key={columnKey} />
+                case 'rating':
+                    return <TableCellRating {...value} key={columnKey} />
                 case 'custom':
                 default:
                     return <TableCellCustom {...value} key={columnKey} />
