@@ -4,7 +4,7 @@
       "key": 1,
       "nombre": "Laura Martínez",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 28,
         "dsc": "años"
       },
@@ -15,13 +15,13 @@
         "code": "ES"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 14,
         "dsc": "horas"
       }
@@ -30,7 +30,7 @@
       "key": 2,
       "nombre": "Carlos Fernández",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 35,
         "dsc": "años"
       },
@@ -41,13 +41,13 @@
         "code": "MX"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 22,
         "dsc": "horas"
       }
@@ -56,7 +56,7 @@
       "key": 3,
       "nombre": "Andrea Gómez",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 24,
         "dsc": "años"
       },
@@ -67,13 +67,13 @@
         "code": "AR"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 18,
         "dsc": "horas"
       }
@@ -82,7 +82,7 @@
       "key": 4,
       "nombre": "José Ramírez",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 41,
         "dsc": "años"
       },
@@ -93,13 +93,13 @@
         "code": "CL"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 10,
         "dsc": "horas"
       }
@@ -108,7 +108,7 @@
       "key": 5,
       "nombre": "Elena Castro",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 30,
         "dsc": "años"
       },
@@ -119,13 +119,13 @@
         "code": "CO"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 12,
         "dsc": "horas"
       }
@@ -134,7 +134,7 @@
       "key": 6,
       "nombre": "Miguel Torres",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 29,
         "dsc": "años"
       },
@@ -145,13 +145,13 @@
         "code": "PE"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 25,
         "dsc": "horas"
       }
@@ -160,7 +160,7 @@
       "key": 7,
       "nombre": "Patricia López",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 26,
         "dsc": "años"
       },
@@ -171,13 +171,13 @@
         "code": "ES"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 8,
         "dsc": "horas"
       }
@@ -186,7 +186,7 @@
       "key": 8,
       "nombre": "Daniel Morales",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 38,
         "dsc": "años"
       },
@@ -197,13 +197,13 @@
         "code": "MX"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 20,
         "dsc": "horas"
       }
@@ -212,7 +212,7 @@
       "key": 9,
       "nombre": "Gabriela Sánchez",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 27,
         "dsc": "años"
       },
@@ -223,13 +223,13 @@
         "code": "AR"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 16,
         "dsc": "horas"
       }
@@ -238,7 +238,7 @@
       "key": 10,
       "nombre": "Juan Pérez",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 33,
         "dsc": "años"
       },
@@ -249,13 +249,13 @@
         "code": "CL"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 14,
         "dsc": "horas"
       }
@@ -264,7 +264,7 @@
       "key": 11,
       "nombre": "Mariana Herrera",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 25,
         "dsc": "años"
       },
@@ -275,13 +275,13 @@
         "code": "CO"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 17,
         "dsc": "horas"
       }
@@ -290,7 +290,7 @@
       "key": 12,
       "nombre": "Ricardo Salazar",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 39,
         "dsc": "años"
       },
@@ -301,13 +301,13 @@
         "code": "PE"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 19,
         "dsc": "horas"
       }
@@ -316,7 +316,7 @@
       "key": 13,
       "nombre": "Lucía Domínguez",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 32,
         "dsc": "años"
       },
@@ -327,13 +327,13 @@
         "code": "ES"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 21,
         "dsc": "horas"
       }
@@ -342,7 +342,7 @@
       "key": 14,
       "nombre": "Sergio Vázquez",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 28,
         "dsc": "años"
       },
@@ -353,13 +353,13 @@
         "code": "MX"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 13,
         "dsc": "horas"
       }
@@ -368,7 +368,7 @@
       "key": 15,
       "nombre": "Natalia Ríos",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 31,
         "dsc": "años"
       },
@@ -379,13 +379,13 @@
         "code": "AR"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 15,
         "dsc": "horas"
       }
@@ -394,7 +394,7 @@
       "key": 16,
       "nombre": "Fernando Ortega",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 40,
         "dsc": "años"
       },
@@ -405,13 +405,13 @@
         "code": "CL"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Laptop",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 23,
         "dsc": "horas"
       }
@@ -420,7 +420,7 @@
       "key": 17,
       "nombre": "Valeria Mendoza",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 29,
         "dsc": "años"
       },
@@ -431,13 +431,13 @@
         "code": "CO"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  false,
         "dsc": "No"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 10,
         "dsc": "horas"
       }
@@ -446,7 +446,7 @@
       "key": 18,
       "nombre": "Alejandro Fuentes",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 34,
         "dsc": "años"
       },
@@ -457,13 +457,13 @@
         "code": "PE"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "PC",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 24,
         "dsc": "horas"
       }
@@ -472,7 +472,7 @@
       "key": 19,
       "nombre": "Sofía Carrillo",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 27,
         "dsc": "años"
       },
@@ -483,13 +483,13 @@
         "code": "ES"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Smartphone",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 12,
         "dsc": "horas"
       }
@@ -498,7 +498,7 @@
       "key": 20,
       "nombre": "Valentina Rojas",
       "edad": {
-        "type": "custom",
+        "type": "number",
         "value": 31,
         "dsc": "años"
       },
@@ -509,13 +509,13 @@
         "code": "CO"
       },
       "suscripcion_activa": {
-        "type": "custom",
+        "type": "boolean",
         "value":  true,
         "dsc": "Si"
       },
       "dispositivo_principal": "Tablet",
       "uso_semanal": {
-        "type": "custom",
+        "type": "number",
         "value": 11,
         "dsc": "horas"
       }
@@ -525,11 +525,14 @@
     {
       "key": 1,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 00:00",
         "parse": "date"
       },
-      "paquetes": 2150,
+      "paquetes": {
+        "type": "number",
+        "value": 2150
+      },
       "protocolo": "HTTP",
       "fuente": {
         "type": "custom",
@@ -538,25 +541,27 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 42,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Datos",
-        "chip": true,
         "color": "aquaBlue"
       }
     },
     {
       "key": 2,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 01:00",
         "parse": "date"
       },
-      "paquetes": 3200,
+      "paquetes": {
+        "type": "number",
+        "value": 3200
+      },
       "protocolo": "HTTPS",
       "fuente": {
         "type": "custom",
@@ -565,25 +570,27 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 58,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Video",
-        "chip": true,
         "color": "limeGreen"
       }
     },
     {
       "key": 3,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 02:00",
         "parse": "date"
       },
-      "paquetes": 2890,
+      "paquetes": {
+        "type": "number",
+        "value": 2890
+      },
       "protocolo": "FTP",
       "fuente": {
         "type": "custom",
@@ -592,25 +599,27 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 39,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Archivos",
-        "chip": true,
         "color": "electricPurple"
       }
     },
     {
       "key": 4,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 03:00",
         "parse": "date"
       },
-      "paquetes": 4100,
+      "paquetes": {
+        "type": "number",
+        "value": 4100
+      },
       "protocolo": "DNS",
       "fuente": {
         "type": "custom",
@@ -619,25 +628,27 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 29,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Consulta",
-        "chip": true,
         "color": "softCoral"
       }
     },
     {
       "key": 5,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 04:00",
         "parse": "date"
       },
-      "paquetes": 3770,
+      "paquetes": {
+        "type": "number",
+        "value": 3770
+      },
       "protocolo": "TCP",
       "fuente": {
         "type": "custom",
@@ -646,25 +657,27 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 50,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Control",
-        "chip": true,
         "color": "deepIndigo"
       }
     },
     {
       "key": 6,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 05:00",
         "parse": "date"
       },
-      "paquetes": 4400,
+      "paquetes": {
+        "type": "number",
+        "value": 4400
+      },
       "protocolo": "UDP",
       "fuente": {
         "type": "custom",
@@ -673,25 +686,27 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 45,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Streaming",
-        "chip": true,
         "color": "blushPink"
       }
     },
     {
       "key": 7,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 06:00",
         "parse": "date"
       },
-      "paquetes": 2350,
+      "paquetes": {
+        "type": "number",
+        "value": 2350
+      },
       "protocolo": "HTTPS",
       "fuente": {
         "type": "custom",
@@ -700,25 +715,27 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 62,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Video",
-        "chip": true,
         "color": "limeGreen"
       }
     },
     {
       "key": 8,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 07:00",
         "parse": "date"
       },
-      "paquetes": 2900,
+      "paquetes": {
+        "type": "number",
+        "value": 2900
+      },
       "protocolo": "FTP",
       "fuente": {
         "type": "custom",
@@ -727,25 +744,27 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 38,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Archivos",
-        "chip": true,
         "color": "electricPurple"
       }
     },
     {
       "key": 9,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 08:00",
         "parse": "date"
       },
-      "paquetes": 3980,
+      "paquetes": {
+        "type": "number",
+        "value": 3980
+      },
       "protocolo": "HTTP",
       "fuente": {
         "type": "custom",
@@ -754,25 +773,27 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 47,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Datos",
-        "chip": true,
         "color": "aquaBlue"
       }
     },
     {
       "key": 10,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 09:00",
         "parse": "date"
       },
-      "paquetes": 3270,
+      "paquetes": {
+        "type": "number",
+        "value": 3270
+      },
       "protocolo": "DNS",
       "fuente": {
         "type": "custom",
@@ -781,25 +802,27 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 33,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Consulta",
-        "chip": true,
         "color": "softCoral"
       }
     },
     {
       "key": 11,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 10:00",
         "parse": "date"
       },
-      "paquetes": 4550,
+      "paquetes": {
+        "type": "number",
+        "value": 4550
+      },
       "protocolo": "TCP",
       "fuente": {
         "type": "custom",
@@ -808,25 +831,27 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 51,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Control",
-        "chip": true,
         "color": "deepIndigo"
       }
     },
     {
       "key": 12,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 11:00",
         "parse": "date"
       },
-      "paquetes": 3840,
+      "paquetes": {
+        "type": "number",
+        "value": 3840
+      },
       "protocolo": "UDP",
       "fuente": {
         "type": "custom",
@@ -835,25 +860,27 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 49,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Streaming",
-        "chip": true,
         "color": "blushPink"
       }
     },
     {
       "key": 13,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 12:00",
         "parse": "date"
       },
-      "paquetes": 2210,
+      "paquetes": {
+        "type": "number",
+        "value": 2210
+      },
       "protocolo": "HTTPS",
       "fuente": {
         "type": "custom",
@@ -862,25 +889,27 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 61,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Video",
-        "chip": true,
         "color": "limeGreen"
       }
     },
     {
       "key": 14,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 13:00",
         "parse": "date"
       },
-      "paquetes": 2750,
+      "paquetes": {
+        "type": "number",
+        "value": 2750
+      },
       "protocolo": "FTP",
       "fuente": {
         "type": "custom",
@@ -889,25 +918,27 @@
         "color": "warmYellow"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 37,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Archivos",
-        "chip": true,
         "color": "electricPurple"
       }
     },
     {
       "key": 15,
       "timestamp":{
-        "type": "custom",
+        "type": "date",
         "value": "2023-10-01 14:00",
         "parse": "date"
       },
-      "paquetes": 4090,
+      "paquetes": {
+        "type": "number",
+        "value": 4090
+      },
       "protocolo": "HTTP",
       "fuente": {
         "type": "custom",
@@ -916,14 +947,13 @@
         "color": "aquaBlue"
       },
       "latencia_promedio": {
-        "type": "custom",
+        "type": "number",
         "value": 46,
         "dsc": "ms"
       },
       "tipo_trafico": {
-        "type": "custom",
+        "type": "category",
         "value": "Datos",
-        "chip": true,
         "color": "aquaBlue"
       }
     },
@@ -931,11 +961,14 @@
   {
     "key": 16,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 15:00",
       "parse": "date"
     },
-    "paquetes": 3760,
+    "paquetes": {
+      "type": "number",
+      "value": 3760
+    },
     "protocolo": "DNS",
     "fuente": {
       "type": "custom",
@@ -944,25 +977,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 34,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Consulta",
-      "chip": true,
       "color": "softCoral"
     }
   },
   {
     "key": 17,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 16:00",
       "parse": "date"
     },
-    "paquetes": 4105,
+    "paquetes": {
+      "type": "number",
+      "value": 4105
+    },
     "protocolo": "TCP",
     "fuente": {
       "type": "custom",
@@ -971,25 +1006,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 52,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Control",
-      "chip": true,
       "color": "deepIndigo"
     }
   },
   {
     "key": 18,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 17:00",
       "parse": "date"
     },
-    "paquetes": 3870,
+    "paquetes": {
+      "type": "number",
+      "value": 3870
+    },
     "protocolo": "UDP",
     "fuente": {
       "type": "custom",
@@ -998,25 +1035,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 48,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Streaming",
-      "chip": true,
       "color": "blushPink"
     }
   },
   {
     "key": 19,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 18:00",
       "parse": "date"
     },
-    "paquetes": 2290,
+    "paquetes": {
+      "type": "number",
+      "value": 2290
+    },
     "protocolo": "HTTPS",
     "fuente": {
       "type": "custom",
@@ -1025,25 +1064,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 59,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Video",
-      "chip": true,
       "color": "limeGreen"
     }
   },
   {
     "key": 20,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 19:00",
       "parse": "date"
     },
-    "paquetes": 2825,
+    "paquetes": {
+      "type": "number",
+      "value": 2825
+    },
     "protocolo": "FTP",
     "fuente": {
       "type": "custom",
@@ -1052,25 +1093,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 36,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Archivos",
-      "chip": true,
       "color": "electricPurple"
     }
   },
   {
     "key": 21,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 20:00",
       "parse": "date"
     },
-    "paquetes": 3950,
+    "paquetes": {
+      "type": "number",
+      "value": 3950
+    },
     "protocolo": "HTTP",
     "fuente": {
       "type": "custom",
@@ -1079,25 +1122,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 44,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Datos",
-      "chip": true,
       "color": "aquaBlue"
     }
   },
   {
     "key": 22,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 21:00",
       "parse": "date"
     },
-    "paquetes": 3200,
+    "paquetes": {
+      "type": "number",
+      "value": 3200
+    },
     "protocolo": "DNS",
     "fuente": {
       "type": "custom",
@@ -1106,25 +1151,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 31,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Consulta",
-      "chip": true,
       "color": "softCoral"
     }
   },
   {
     "key": 23,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 22:00",
       "parse": "date"
     },
-    "paquetes": 4510,
+    "paquetes": {
+      "type": "number",
+      "value": 4510
+    },
     "protocolo": "TCP",
     "fuente": {
       "type": "custom",
@@ -1133,25 +1180,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 53,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Control",
-      "chip": true,
       "color": "deepIndigo"
     }
   },
   {
     "key": 24,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-01 23:00",
       "parse": "date"
     },
-    "paquetes": 3790,
+    "paquetes": {
+      "type": "number",
+      "value": 3790
+    },
     "protocolo": "UDP",
     "fuente": {
       "type": "custom",
@@ -1160,25 +1209,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 47,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Streaming",
-      "chip": true,
       "color": "blushPink"
     }
   },
   {
     "key": 25,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 00:00",
       "parse": "date"
     },
-    "paquetes": 2195,
+    "paquetes": {
+      "type": "number",
+      "value": 2195
+    },
     "protocolo": "HTTPS",
     "fuente": {
       "type": "custom",
@@ -1187,25 +1238,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 60,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Video",
-      "chip": true,
       "color": "limeGreen"
     }
   },
   {
     "key": 26,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 01:00",
       "parse": "date"
     },
-    "paquetes": 2710,
+    "paquetes": {
+      "type": "number",
+      "value": 2710
+    },
     "protocolo": "FTP",
     "fuente": {
       "type": "custom",
@@ -1214,25 +1267,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 35,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Archivos",
-      "chip": true,
       "color": "electricPurple"
     }
   },
   {
     "key": 27,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 02:00",
       "parse": "date"
     },
-    "paquetes": 4050,
+    "paquetes": {
+      "type": "number",
+      "value": 4050
+    },
     "protocolo": "HTTP",
     "fuente": {
       "type": "custom",
@@ -1241,25 +1296,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 43,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Datos",
-      "chip": true,
       "color": "aquaBlue"
     }
   },
   {
     "key": 28,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 03:00",
       "parse": "date"
     },
-    "paquetes": 3295,
+    "paquetes": {
+      "type": "number",
+      "value": 3295
+    },
     "protocolo": "DNS",
     "fuente": {
       "type": "custom",
@@ -1268,25 +1325,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 30,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Consulta",
-      "chip": true,
       "color": "softCoral"
     }
   },
   {
     "key": 29,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 04:00",
       "parse": "date"
     },
-    "paquetes": 4600,
+    "paquetes": {
+      "type": "number",
+      "value": 4600
+    },
     "protocolo": "TCP",
     "fuente": {
       "type": "custom",
@@ -1295,25 +1354,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 54,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Control",
-      "chip": true,
       "color": "deepIndigo"
     }
   },
   {
     "key": 30,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 05:00",
       "parse": "date"
     },
-    "paquetes": 3850,
+    "paquetes": {
+      "type": "number",
+      "value": 3850
+    },
     "protocolo": "UDP",
     "fuente": {
       "type": "custom",
@@ -1322,25 +1383,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 46,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Streaming",
-      "chip": true,
       "color": "blushPink"
     }
   },
   {
     "key": 31,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 06:00",
       "parse": "date"
     },
-    "paquetes": 2320,
+    "paquetes": {
+      "type": "number",
+      "value": 2320
+    },
     "protocolo": "HTTPS",
     "fuente": {
       "type": "custom",
@@ -1349,25 +1412,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 57,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Video",
-      "chip": true,
       "color": "limeGreen"
     }
   },
   {
     "key": 32,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 07:00",
       "parse": "date"
     },
-    "paquetes": 2850,
+    "paquetes": {
+      "type": "number",
+      "value": 2850
+    },
     "protocolo": "FTP",
     "fuente": {
       "type": "custom",
@@ -1376,25 +1441,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 34,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Archivos",
-      "chip": true,
       "color": "electricPurple"
     }
   },
   {
     "key": 33,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 08:00",
       "parse": "date"
     },
-    "paquetes": 3995,
+    "paquetes": {
+      "type": "number",
+      "value": 3995
+    },
     "protocolo": "HTTP",
     "fuente": {
       "type": "custom",
@@ -1403,25 +1470,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 42,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Datos",
-      "chip": true,
       "color": "aquaBlue"
     }
   },
   {
     "key": 34,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 09:00",
       "parse": "date"
     },
-    "paquetes": 3225,
+    "paquetes": {
+      "type": "number",
+      "value": 3225
+    },
     "protocolo": "DNS",
     "fuente": {
       "type": "custom",
@@ -1430,25 +1499,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 29,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Consulta",
-      "chip": true,
       "color": "softCoral"
     }
   },
   {
     "key": 35,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 10:00",
       "parse": "date"
     },
-    "paquetes": 4555,
+    "paquetes": {
+      "type": "number",
+      "value": 4555
+    },
     "protocolo": "TCP",
     "fuente": {
       "type": "custom",
@@ -1457,25 +1528,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 55,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Control",
-      "chip": true,
       "color": "deepIndigo"
     }
   },
   {
     "key": 36,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 11:00",
       "parse": "date"
     },
-    "paquetes": 3880,
+    "paquetes": {
+      "type": "number",
+      "value": 3880
+    },
     "protocolo": "UDP",
     "fuente": {
       "type": "custom",
@@ -1484,25 +1557,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 45,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Streaming",
-      "chip": true,
       "color": "blushPink"
     }
   },
   {
     "key": 37,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 12:00",
       "parse": "date"
     },
-    "paquetes": 2400,
+    "paquetes": {
+      "type": "number",
+      "value": 2400
+    },
     "protocolo": "HTTPS",
     "fuente": {
       "type": "custom",
@@ -1511,25 +1586,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 58,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Video",
-      "chip": true,
       "color": "limeGreen"
     }
   },
   {
     "key": 38,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 13:00",
       "parse": "date"
     },
-    "paquetes": 2980,
+    "paquetes": {
+      "type": "number",
+      "value": 2980
+    },
     "protocolo": "FTP",
     "fuente": {
       "type": "custom",
@@ -1538,25 +1615,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 37,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Archivos",
-      "chip": true,
       "color": "electricPurple"
     }
   },
   {
     "key": 39,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 14:00",
       "parse": "date"
     },
-    "paquetes": 4100,
+    "paquetes": {
+      "type": "number",
+      "value": 4100
+    },
     "protocolo": "HTTP",
     "fuente": {
       "type": "custom",
@@ -1565,25 +1644,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 40,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Datos",
-      "chip": true,
       "color": "aquaBlue"
     }
   },
   {
     "key": 40,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 15:00",
       "parse": "date"
     },
-    "paquetes": 3350,
+    "paquetes": {
+      "type": "number",
+      "value": 3350
+    },
     "protocolo": "DNS",
     "fuente": {
       "type": "custom",
@@ -1592,25 +1673,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 32,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Consulta",
-      "chip": true,
       "color": "softCoral"
     }
   },
   {
     "key": 41,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 16:00",
       "parse": "date"
     },
-    "paquetes": 4700,
+    "paquetes": {
+      "type": "number",
+      "value": 4700
+    },
     "protocolo": "TCP",
     "fuente": {
       "type": "custom",
@@ -1619,25 +1702,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 56,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Control",
-      "chip": true,
       "color": "deepIndigo"
     }
   },
   {
     "key": 42,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 17:00",
       "parse": "date"
     },
-    "paquetes": 3900,
+    "paquetes": {
+      "type": "number",
+      "value": 3900
+    },
     "protocolo": "UDP",
     "fuente": {
       "type": "custom",
@@ -1646,25 +1731,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 49,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Streaming",
-      "chip": true,
       "color": "blushPink"
     }
   },
   {
     "key": 43,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 18:00",
       "parse": "date"
     },
-    "paquetes": 2550,
+    "paquetes": {
+      "type": "number",
+      "value": 2550
+    },
     "protocolo": "HTTPS",
     "fuente": {
       "type": "custom",
@@ -1673,25 +1760,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 61,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Video",
-      "chip": true,
       "color": "limeGreen"
     }
   },
   {
     "key": 44,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 19:00",
       "parse": "date"
     },
-    "paquetes": 3100,
+    "paquetes": {
+      "type": "number",
+      "value": 3100
+    },
     "protocolo": "FTP",
     "fuente": {
       "type": "custom",
@@ -1700,25 +1789,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 39,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Archivos",
-      "chip": true,
       "color": "electricPurple"
     }
   },
   {
     "key": 45,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 20:00",
       "parse": "date"
     },
-    "paquetes": 4300,
+    "paquetes": {
+      "type": "number",
+      "value": 4300
+    },
     "protocolo": "HTTP",
     "fuente": {
       "type": "custom",
@@ -1727,25 +1818,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 43,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Datos",
-      "chip": true,
       "color": "aquaBlue"
     }
   },
   {
     "key": 46,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 21:00",
       "parse": "date"
     },
-    "paquetes": 3450,
+    "paquetes": {
+      "type": "number",
+      "value": 3450
+    },
     "protocolo": "DNS",
     "fuente": {
       "type": "custom",
@@ -1754,25 +1847,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 33,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Consulta",
-      "chip": true,
       "color": "softCoral"
     }
   },
   {
     "key": 47,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 22:00",
       "parse": "date"
     },
-    "paquetes": 4850,
+    "paquetes": {
+      "type": "number",
+      "value": 4850
+    },
     "protocolo": "TCP",
     "fuente": {
       "type": "custom",
@@ -1781,25 +1876,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 57,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Control",
-      "chip": true,
       "color": "deepIndigo"
     }
   },
   {
     "key": 48,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-02 23:00",
       "parse": "date"
     },
-    "paquetes": 4000,
+    "paquetes": {
+      "type": "number",
+      "value": 4000
+    },
     "protocolo": "UDP",
     "fuente": {
       "type": "custom",
@@ -1808,25 +1905,27 @@
       "color": "warmYellow"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 50,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Streaming",
-      "chip": true,
       "color": "blushPink"
     }
   }
   ,{
     "key": 49,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-03 12:00",
       "parse": "date"
     },
-    "paquetes": 4205,
+    "paquetes": {
+      "type": "number",
+      "value": 4205
+    },
     "protocolo": "HTTP",
     "fuente": {
       "type": "custom",
@@ -1835,25 +1934,27 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 41,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Datos",
-      "chip": true,
       "color": "aquaBlue"
     }
   },
   {
     "key": 50,
     "timestamp":{
-      "type": "custom",
+      "type": "date",
       "value": "2023-10-03 13:00",
       "parse": "date"
     },
-    "paquetes": 4321,
+    "paquetes": {
+      "type": "number",
+      "value": 4321
+    },
     "protocolo": "FTP",
     "fuente": {
       "type": "custom",
@@ -1862,14 +1963,13 @@
       "color": "aquaBlue"
     },
     "latencia_promedio": {
-      "type": "custom",
+      "type": "number",
       "value": 38,
       "dsc": "ms"
     },
     "tipo_trafico": {
-      "type": "custom",
+      "type": "category",
       "value": "Archivos",
-      "chip": true,
       "color": "electricPurple"
     }
   }
@@ -1879,2400 +1979,2400 @@
       "uuid": "ELEC-0001",
       "producto": "Smartphone 5G 128GB",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Samsung",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  699.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "ELEC-0002",
       "producto": "Laptop Ultrabook 14''",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Dell",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  999.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "ELEC-0003",
       "producto": "Tablet Pro 11'' 256GB",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Apple",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  799.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 8,
+      "stock": {
+        "type": "number",
+        "value":  8
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "ELEC-0004",
       "producto": "Monitor 27'' Full HD",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "LG",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  199.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.5,
-        "rating": true
+        "type": "rating",
+        "value": 4.5
       }
     },
     {
       "uuid": "ELEC-0005",
       "producto": "Auriculares Inalámbricos",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Sony",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  149.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "HOGAR-0006",
       "producto": "Aspiradora Robot Inteligente",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Xiaomi",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  299.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "HOGAR-0007",
       "producto": "Cafetera Espresso Automática",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "De'Longhi",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  249.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "HOGAR-0008",
       "producto": "Purificador de Aire HEPA",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Dyson",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  399.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 5,
+      "stock": {
+        "type": "number",
+        "value":  5
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "DEP-0009",
       "producto": "Bicicleta de Montaña 21V",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Trek",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  799.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 7,
+      "stock": {
+        "type": "number",
+        "value":  7
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "DEP-0010",
       "producto": "Mancuernas Ajustables 20KG",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Bowflex",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  199.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 18,
+      "stock": {
+        "type": "number",
+        "value":  18
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.5,
-        "rating": true
+        "type": "rating",
+        "value": 4.5
       }
     },
     {
       "uuid": "DEP-0011",
       "producto": "Colchoneta de Yoga Antideslizante",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Manduka",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "MODA-0012",
       "producto": "Chaqueta Impermeable Unisex",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "The North Face",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  159.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 14,
+      "stock": {
+        "type": "number",
+        "value":  14
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "MODA-0013",
       "producto": "Zapatillas Running 2024",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Adidas",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  129.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 22,
+      "stock": {
+        "type": "number",
+        "value":  22
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "MODA-0014",
       "producto": "Reloj Inteligente Fitness",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Garmin",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  349.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "MODA-0015",
       "producto": "Bolso de Cuero Premium",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Michael Kors",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  259.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "BELLEZA-0016",
       "producto": "Set de Brochas Maquillaje 12 Piezas",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Sephora",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 40,
+      "stock": {
+        "type": "number",
+        "value":  40
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "BELLEZA-0017",
       "producto": "Perfume Unisex 100ml",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Tom Ford",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  199.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "BELLEZA-0018",
       "producto": "Mascarilla Facial Hidratante",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "L'Oréal",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  29.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 50,
+      "stock": {
+        "type": "number",
+        "value":  50
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.5,
-        "rating": true
+        "type": "rating",
+        "value": 4.5
       }
     },
     {
       "uuid": "AUTO-0019",
       "producto": "Cargador Rápido para Auto",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Anker",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  24.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 35,
+      "stock": {
+        "type": "number",
+        "value":  35
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "AUTO-0020",
       "producto": "Llantas Todo Terreno 4x4",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Michelin",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  189.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 8,
+      "stock": {
+        "type": "number",
+        "value":  8
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "AUTO-0021",
       "producto": "Cera para Auto Premium 500ml",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Meguiar's",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  29.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "AUTO-0022",
       "producto": "Batería de Auto 12V",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Bosch",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  119.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "ELEC-0023",
       "producto": "Cámara de Seguridad 1080p",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Ring",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  99.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 18,
+      "stock": {
+        "type": "number",
+        "value":  18
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "ELEC-0024",
       "producto": "Teclado Mecánico RGB",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Corsair",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  149.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "ELEC-0025",
       "producto": "Mouse Inalámbrico Gaming",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Logitech",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "HOGAR-0026",
       "producto": "Microondas Digital 30L",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Panasonic",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  199.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 14,
+      "stock": {
+        "type": "number",
+        "value":  14
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "HOGAR-0027",
       "producto": "Juego de Sartenes Antiadherentes",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Tefal",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  89.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "HOGAR-0028",
       "producto": "Deshumidificador 500ml",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Pro Breeze",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 8,
+      "stock": {
+        "type": "number",
+        "value":  8
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.5,
-        "rating": true
+        "type": "rating",
+        "value": 4.5
       }
     },
     {
       "uuid": "DEP-0029",
       "producto": "Guantes de Boxeo Profesionales",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Everlast",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  59.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 22,
+      "stock": {
+        "type": "number",
+        "value":  22
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "DEP-0030",
       "producto": "Rueda de Abdominales con Tapete",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Reebok",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  34.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 35,
+      "stock": {
+        "type": "number",
+        "value":  35
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "DEP-0031",
       "producto": "Cuerda de Saltar con Pesas",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Nike",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  19.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 40,
+      "stock": {
+        "type": "number",
+        "value":  40
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.5,
-        "rating": true
+        "type": "rating",
+        "value": 4.5
       }
     },
     {
       "uuid": "MODA-0032",
       "producto": "Jeans Slim Fit Hombre",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Levi's",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  59.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 28,
+      "stock": {
+        "type": "number",
+        "value":  28
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "MODA-0033",
       "producto": "Vestido Largo Elegante Mujer",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Zara",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 14,
+      "stock": {
+        "type": "number",
+        "value":  14
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "MODA-0034",
       "producto": "Gorra Deportiva Unisex",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Puma",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  24.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 50,
+      "stock": {
+        "type": "number",
+        "value":  50
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.5,
-        "rating": true
+        "type": "rating",
+        "value": 4.5
       }
     },
     {
       "uuid": "MODA-0035",
       "producto": "Cinturón de Cuero Premium",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Hugo Boss",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "BELLEZA-0036",
       "producto": "Plancha para Cabello Cerámica",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Remington",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  39.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 32,
+      "stock": {
+        "type": "number",
+        "value":  32
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "BELLEZA-0037",
       "producto": "Crema Hidratante Facial 50ml",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Neutrogena",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  25.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 48,
+      "stock": {
+        "type": "number",
+        "value":  48
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "BELLEZA-0038",
       "producto": "Cepillo de Dientes Eléctrico",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Oral-B",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  69.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "AUTO-0039",
       "producto": "Juego de Tapetes para Auto",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Goodyear",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.5,
-        "rating": true
+        "type": "rating",
+        "value": 4.5
       }
     },
     {
       "uuid": "AUTO-0040",
       "producto": "Aceite para Motor Sintético 5W-30",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Castrol",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  39.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 18,
+      "stock": {
+        "type": "number",
+        "value":  18
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "AUTO-0041",
       "producto": "Cargador de Batería para Auto 12V",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Schumacher",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  69.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "AUTO-0042",
       "producto": "Juego de Limpiaparabrisas Premium",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Bosch",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  29.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "ELEC-0043",
       "producto": "Bocina Bluetooth Portátil",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "JBL",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "ELEC-0044",
       "producto": "Power Bank 20000mAh",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Anker",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 40,
+      "stock": {
+        "type": "number",
+        "value":  40
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "ELEC-0045",
       "producto": "Lámpara LED Recargable",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Philips",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  34.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 18,
+      "stock": {
+        "type": "number",
+        "value":  18
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.5,
-        "rating": true
+        "type": "rating",
+        "value": 4.5
       }
     },
     {
       "uuid": "HOGAR-0046",
       "producto": "Aspiradora Robot Inteligente",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Roomba",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  299.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "HOGAR-0047",
       "producto": "Purificador de Aire con Filtro HEPA",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Dyson",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  499.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 5,
+      "stock": {
+        "type": "number",
+        "value":  5
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "HOGAR-0048",
       "producto": "Cafetera Espresso Automática",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "De'Longhi",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  259.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "DEP-0049",
       "producto": "Mancuernas Ajustables 20kg",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Bowflex",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  179.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "DEP-0050",
       "producto": "Bicicleta Estática Profesional",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Schwinn",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  599.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 7,
+      "stock": {
+        "type": "number",
+        "value":  7
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "DEP-0051",
       "producto": "Balón de Baloncesto Oficial",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Spalding",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  29.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "MODA-0052",
       "producto": "Sudadera con Capucha Unisex",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Adidas",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 22,
+      "stock": {
+        "type": "number",
+        "value":  22
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "MODA-0053",
       "producto": "Zapatos de Vestir Hombre",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Clarks",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  89.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 14,
+      "stock": {
+        "type": "number",
+        "value":  14
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "MODA-0054",
       "producto": "Pantalón de Yoga Mujer",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Lululemon",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 18,
+      "stock": {
+        "type": "number",
+        "value":  18
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "MODA-0055",
       "producto": "Chaqueta Impermeable Unisex",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "North Face",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  119.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "BELLEZA-0056",
       "producto": "Perfume Eau de Parfum 100ml",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Chanel",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  129.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 8,
+      "stock": {
+        "type": "number",
+        "value":  8
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "BELLEZA-0057",
       "producto": "Set de Brochas de Maquillaje",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Real Techniques",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  39.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "BELLEZA-0058",
       "producto": "Kit de Manicura y Pedicura",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Beurer",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 16,
+      "stock": {
+        "type": "number",
+        "value":  16
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "AUTO-0059",
       "producto": "GPS para Auto con Pantalla 6\"",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Garmin",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  199.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 9,
+      "stock": {
+        "type": "number",
+        "value":  9
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "AUTO-0060",
       "producto": "Juego de Herramientas 108 Piezas",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Stanley",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  89.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "AUTO-0061",
       "producto": "Cera para Auto Premium",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Meguiar's",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  24.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "AUTO-0062",
       "producto": "Compresor de Aire Portátil",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Makita",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  149.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "ELEC-0063",
       "producto": "Teclado Mecánico RGB",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Razer",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  129.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "ELEC-0064",
       "producto": "Mouse Inalámbrico Ergonomico",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Logitech",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  59.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "ELEC-0065",
       "producto": "Monitor Gamer 27\" 144Hz",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "ASUS",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  349.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "HOGAR-0066",
       "producto": "Batidora de Mano 5 Velocidades",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "KitchenAid",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "HOGAR-0067",
       "producto": "Sartén Antiadherente 30cm",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "T-fal",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  34.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "HOGAR-0068",
       "producto": "Juego de Cuchillos de Cocina",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Zwilling",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  149.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "DEP-0069",
       "producto": "Rodillo de Espuma para Masaje",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "TriggerPoint",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  29.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "DEP-0070",
       "producto": "Cuerda para Saltar Profesional",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Rogue",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  19.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 50,
+      "stock": {
+        "type": "number",
+        "value":  50
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "DEP-0071",
       "producto": "Guantes de Boxeo 12oz",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Everlast",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  69.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 18,
+      "stock": {
+        "type": "number",
+        "value":  18
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "MODA-0072",
       "producto": "Gafas de Sol Polarizadas",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Ray-Ban",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  129.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "MODA-0073",
       "producto": "Reloj Inteligente Deportivo",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Garmin",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  299.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "MODA-0074",
       "producto": "Bolsa de Mano de Cuero",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Michael Kors",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  249.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "MODA-0075",
       "producto": "Bufanda de Lana Unisex",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Burberry",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  99.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 18,
+      "stock": {
+        "type": "number",
+        "value":  18
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "BELLEZA-0076",
       "producto": "Crema Hidratante Facial 50ml",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "La Roche-Posay",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  29.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "BELLEZA-0077",
       "producto": "Sérum Facial Antiedad",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Estée Lauder",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "BELLEZA-0078",
       "producto": "Mascarilla Facial de Carbón",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Garnier",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  12.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 50,
+      "stock": {
+        "type": "number",
+        "value":  50
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "AUTO-0079",
       "producto": "Cámara de Reversa para Auto",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Pioneer",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "AUTO-0080",
       "producto": "Aceite Sintético 5W-30",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Mobil 1",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  39.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 35,
+      "stock": {
+        "type": "number",
+        "value":  35
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "AUTO-0081",
       "producto": "Limpiador de Inyectores",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "STP",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  14.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 40,
+      "stock": {
+        "type": "number",
+        "value":  40
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "AUTO-0082",
       "producto": "Luz LED para Faros H7",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Philips",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  39.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "ELEC-0083",
       "producto": "Cargador Rápido USB-C 65W",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Anker",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "ELEC-0084",
       "producto": "Cámara de Seguridad WiFi",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Xiaomi",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  69.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "ELEC-0085",
       "producto": "Bocina Bluetooth Portátil",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Electrónicos",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "JBL",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  99.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "HOGAR-0086",
       "producto": "Aspiradora Robot Inteligente",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "iRobot",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  349.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "HOGAR-0087",
       "producto": "Juego de Sábanas 100% Algodón",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Amazon Basics",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  49.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "HOGAR-0088",
       "producto": "Lámpara LED de Escritorio",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Hogar",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Philips",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  29.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "DEP-0089",
       "producto": "Mancuernas Ajustables 20kg",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Bowflex",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  199.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "DEP-0090",
       "producto": "Colchoneta para Yoga",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Manduka",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  79.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 25,
+      "stock": {
+        "type": "number",
+        "value":  25
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "DEP-0091",
       "producto": "Bicicleta Estática Profesional",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Deportes",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Schwinn",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  499.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 5,
+      "stock": {
+        "type": "number",
+        "value":  5
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "MODA-0092",
       "producto": "Chaqueta de Cuero Genuino",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Hugo Boss",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  349.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 10,
+      "stock": {
+        "type": "number",
+        "value":  10
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "MODA-0093",
       "producto": "Zapatillas Urbanas Unisex",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Adidas",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  89.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "MODA-0094",
       "producto": "Sombrero Panamá de Paja",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Stetson",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  59.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.6,
-        "rating": true
+        "type": "rating",
+        "value": 4.6
       }
     },
     {
       "uuid": "MODA-0095",
       "producto": "Pantalón Vaquero Slim Fit",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Moda",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Levi's",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  69.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 18,
+      "stock": {
+        "type": "number",
+        "value":  18
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "BELLEZA-0096",
       "producto": "Perfume de Hombre 100ml",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Dolce & Gabbana",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  89.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 22,
+      "stock": {
+        "type": "number",
+        "value":  22
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     },
     {
       "uuid": "BELLEZA-0097",
       "producto": "Labial Mate Larga Duración",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "MAC Cosmetics",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  24.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 30,
+      "stock": {
+        "type": "number",
+        "value":  30
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "BELLEZA-0098",
       "producto": "Plancha para Cabello Profesional",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Belleza",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "GHD",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  149.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 15,
+      "stock": {
+        "type": "number",
+        "value":  15
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.9,
-        "rating": true
+        "type": "rating",
+        "value": 4.9
       }
     },
     {
       "uuid": "AUTO-0099",
       "producto": "Kit Herramientas Emergencia",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "Michelin",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  89.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 12,
+      "stock": {
+        "type": "number",
+        "value":  12
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.7,
-        "rating": true
+        "type": "rating",
+        "value": 4.7
       }
     },
     {
       "uuid": "AUTO-0100",
       "producto": "Tapetes de Auto Universales",
       "categoria": {
-        "type": "custom",
+        "type": "category",
         "value":  "Automotriz",
-        "chip": true,
         "color": "#607196"
       },
       "marca": "WeatherTech",
       "precio": {
-        "type": "custom",
+        "type": "money",
         "value":  129.99,
-        "dsc": "$",
-        "money": true
+        "dsc": "$"
       },
-      "stock": 20,
+      "stock": {
+        "type": "number",
+        "value":  20
+      },
       "estado_stock": "Disponible",
       "valoracion_promedio": {
-        "type": "custom",
-        "value": 4.8,
-        "rating": true
+        "type": "rating",
+        "value": 4.8
       }
     }
   ]

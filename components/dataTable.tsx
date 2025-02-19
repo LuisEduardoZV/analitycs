@@ -6,19 +6,18 @@ import { useAsyncList } from '@react-stately/data'
 import { TableCellCountry, TableCellCustom } from "./extended/TableCells"
 import LoadingData from "./loadingData"
 
-import DataDefaultType from "@/store/data/types"
-import { StrData, StrDataArray } from "@/store/types"
+import { ArrayTableColumnsType, BaseObjectDataType, MainDataArrayType } from "@/store/types"
 
 interface DataTableProps {
     label: string
-    data: StrData
-    columns: StrDataArray
+    data: MainDataArrayType
+    columns: ArrayTableColumnsType
 }
 
 const DataTable = ({label, data, columns}: DataTableProps) => {
     const [loading, setLoading] = React.useState(true)
 
-    const renderSwitchCell = React.useCallback((item: DataDefaultType, columnKey: string) => {
+    const renderSwitchCell = React.useCallback((item: BaseObjectDataType, columnKey: string) => {
         const value = getKeyValue(item, columnKey)
         const isKey = columnKey === 'key'
 
@@ -71,8 +70,8 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
                     )
                 }}
             </TableHeader>
-            <TableBody emptyContent="No hay datos" isLoading={loading} items={list.items as DataDefaultType[]} loadingContent={<LoadingData />}>
-                {(item: DataDefaultType) => (
+            <TableBody emptyContent="No hay datos" isLoading={loading} items={list.items as BaseObjectDataType[]} loadingContent={<LoadingData />}>
+                {(item: BaseObjectDataType) => (
                     <TableRow key={item.key}>
                         {(columnKey) => {
                             return (

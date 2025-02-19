@@ -1,21 +1,24 @@
-interface EdadUserType {
-  value: number
-  dsc: string
+interface BaseType {
+  type: string
+  value: string | number | boolean 
+  dsc?: string
 }
 
-interface PaisUserType {
+interface EdadUserType extends BaseType {
+  value: number
+}
+
+interface PaisUserType extends BaseType {
   value: string
   code: string
 }
 
-interface SuscripcionActivaUserType {
+interface SuscripcionActivaUserType extends BaseType {
   value: boolean
-  dsc: string
 }
 
-interface UsoSemanalUserType {
+interface UsoSemanalUserType extends BaseType {
   value: number
-  dsc: string
 }
 
 export interface USER {
@@ -29,84 +32,72 @@ export interface USER {
   uso_semanal: UsoSemanalUserType
 }
 
-export type FuenteOptionTypes = "Interno" | "Externo";
-
-export interface LatenciaPromedioType {
-  type: string
-  value: string
-  dsc?: string
+export interface LatenciaPromedioType extends BaseType {
+  value: number
 }
 
-export interface TimestampType {
-  type: string
-  value: string
-}
-
-export interface Timestamp {
-  type: string
+export interface TimestampType extends BaseType {
   value: string
   parse: string
 }
 
-export interface Fuente {
-  type: string
+export interface FuenteType extends BaseType {
   value: string
   icon: string
   color: string
 }
 
-export interface LatenciaPromedio {
-  type: string
+interface PaquetesType extends BaseType {
+  value: number
+}
+
+export interface LatenciaPromedioType extends BaseType {
   value: number
   dsc: string
 }
 
-export interface TipoTrafico {
-  type: string
+export interface TipoTraficoType extends BaseType {
   value: string
-  chip: boolean
   color: string
 }
 
 export interface TRAFICO {
   key: number
-  timestamp: Timestamp
-  paquetes: number
+  timestamp: TimestampType
+  paquetes: PaquetesType
   protocolo: string
-  fuente: Fuente
-  latencia_promedio: LatenciaPromedio
-  tipo_trafico: TipoTrafico
+  fuente: FuenteType
+  latencia_promedio: LatenciaPromedioType
+  tipo_trafico: TipoTraficoType
 }
 
-export interface Categoria {
-  type: string
+export interface INVENTARIO {
+  uuid: string
+  producto: string
+  categoria: CategoriaType
+  marca: string
+  precio: PrecioType
+  stock: StockType
+  estado_stock: string
+  valoracion_promedio: ValoracionPromedioType
+}
+
+interface CategoriaType extends BaseType {
   value: string
-  chip: boolean
   color: string
 }
 
-export interface Precio {
-  type: string
+interface PrecioType extends BaseType {
   value: number
   dsc: string
 }
 
-export interface ValoracionPromedio {
-  type: string
+interface StockType extends BaseType {
   value: number
-  rating: boolean
 }
 
-export interface INVENTARIO {
-  key?: string
-  uuid: string
-  producto: string
-  categoria: Categoria
-  marca: string
-  precio: Precio
-  stock: number
-  estado_stock: string
-  valoracion_promedio: ValoracionPromedio
+interface ValoracionPromedioType extends BaseType {
+  value: number
 }
 
 type DataDefaultType = USER | TRAFICO | INVENTARIO

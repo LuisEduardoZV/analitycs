@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import { Chip } from "@heroui/chip";
 
 import { isValidHexa } from "@/utils/utils";
-import { CountryObjectDataType, CustomObjectDataType } from "./types/TableCellTypes";
+import { CountryObjectDataType, CustomObjectDataType } from "./types/tableCellTypes";
 
 import * as Icons from "@heroicons/react/24/solid";
 
