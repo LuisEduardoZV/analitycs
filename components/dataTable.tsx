@@ -37,8 +37,8 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
     }, [])
 
     let list = useAsyncList({
-        async load() {
-            setLoading(false)
+        async load({ cursor }) {
+            if (!cursor) setLoading(false)
             return { items: data }
         },
         async sort({items, sortDescriptor}){
@@ -71,8 +71,8 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
                     )
                 }}
             </TableHeader>
-            <TableBody emptyContent="No hay datos" isLoading={loading} items={list.items} loadingContent={<LoadingData />}>
-                {(item) => (
+            <TableBody emptyContent="No hay datos" isLoading={loading} items={list.items as DataDefaultType[]} loadingContent={<LoadingData />}>
+                {(item: DataDefaultType) => (
                     <TableRow key={item.key}>
                         {(columnKey) => {
                             return (

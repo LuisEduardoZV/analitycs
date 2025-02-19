@@ -6,10 +6,14 @@ import DataTable from "../dataTable"
 
 import { variantsModalSteps } from "@/config/variantsAnimate"
 
-const StepCustomData = () => {
+interface StepCustomDataProps {
+    view: number
+}
+
+const StepCustomData = ({ view }: StepCustomDataProps) => {
     const dataInfoState = useAppSelector((state) => state.dataInfo)
 
-    if(dataInfoState.isReadyToShow)
+    if(!view)
     return (
         <motion.div key={'viewData'} variants={variantsModalSteps} initial={'inactive'} animate={dataInfoState.isReadyToShow ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh] relative">
             <h2 className="text-lg font-semibold">2. Vista previa de datos</h2>

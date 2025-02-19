@@ -2,12 +2,14 @@
 
 import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks";
 import { clearData } from "@/store/slices/main";
+import { useState } from "react";
 
 import { Form } from "@heroui/form";
 import { ModalBody, ModalContent, ModalHeader, Modal as NextUIModal } from "@heroui/modal";
 
 import { AnimatePresence } from 'motion/react';
 
+import { modal } from "@heroui/theme";
 import MyModalFooter from "./extended/MyModalFooter";
 import StepCustomData from "./extended/StepCustomData";
 import StepSetData from "./extended/StepSetData";
@@ -28,13 +30,21 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
     const dataInfoState = useAppSelector((state) => state.dataInfo)
     const dispatch = useAppDispatch()
 
+    const [modalView, setModalView] = useState<number>(1)
+
     const handleCloseModal = (closeModal: () => void) => {
         dispatch(clearData())
         closeModal()
+        setModalView(1)
     }
 
     const handleBackModal = () => {
+        setModalView(1)
         dispatch(clearData())
+    }
+
+    const handleContinueModal = () => {
+        setModalView(0)
     }
     
     return (
@@ -47,13 +57,13 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
                         </ModalHeader>
                         <ModalBody className="min-h-[500px] h-full flex flex-col relative transition-height duration-200 ease-in-out">
                             <AnimatePresence>
-                                <StepSetData key="stepSetData" />
-                                <StepCustomData key="stepCustomData" />
+                                <StepSetData key="stepSetData" view={modalView} handleContinue={handleContinueModal}/>
+                                <StepCustomData key="stepCustomData" view={modalView} />
                             </AnimatePresence>
                         </ModalBody>
                         <MyModalFooter onClose={() => {
                             handleCloseModal(onClose)
-                        }} onBack={handleBackModal} hasValidData={dataInfoState.isReadyToShow} />
+                        }} onBack={handleBackModal} onContinue={handleContinueModal} viewType={modalView} />
                     </>
                 )}
             </ModalContent>
