@@ -16,7 +16,7 @@ export const Home = ({
     return (
         <>
             <Navbar openModal={onOpen} />
-            <main className="pt-16 px-10 flex-grow">
+            <main className="relative pt-16 px-10 flex-grow">
                 {children}
                 <Modal isOpen={isOpen} openChange={onOpenChange} />
             </main>

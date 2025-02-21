@@ -14,8 +14,6 @@ const StepCustomData = ({ view }: StepCustomDataProps) => {
     const dataInfoState = useAppSelector((state) => state.dataInfo)
     const columns = useAppSelector((state) => state.dataInfo.table_columns)
 
-    console.log(columns);
-
     if(!view)
     return (
         <motion.div key={'viewData'} variants={variantsModalSteps} initial={'inactive'} animate={dataInfoState.isReadyToShow ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh] relative">
