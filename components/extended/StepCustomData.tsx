@@ -12,6 +12,9 @@ interface StepCustomDataProps {
 
 const StepCustomData = ({ view }: StepCustomDataProps) => {
     const dataInfoState = useAppSelector((state) => state.dataInfo)
+    const columns = useAppSelector((state) => state.dataInfo.table_columns)
+
+    console.log(columns);
 
     if(!view)
     return (
@@ -42,7 +45,7 @@ const StepCustomData = ({ view }: StepCustomDataProps) => {
                         {(times) => <SelectItem>{times.label}</SelectItem>}
                     </Select>
                 </div> */}
-                <DataTable label={dataInfoState.data_type + "-data-table-" + dataInfoState.data_id} data={dataInfoState.data} columns={dataInfoState.table_columns} /> 
+                <DataTable label={dataInfoState.data_type + "-data-table-" + dataInfoState.data_id} data={dataInfoState.data} columns={columns} /> 
             </div>
         </motion.div>
     )

@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react"
 
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table"
@@ -7,6 +9,7 @@ import { TableCellBoolean, TableCellCategory, TableCellCountry, TableCellCustom,
 import LoadingData from "./loadingData"
 
 import { ArrayTableColumnsType, BaseObjectDataType, MainDataArrayType } from "@/store/types"
+import SelectTypeColumn from "./extended/SelectTypeColumn"
 
 interface DataTableProps {
     label: string
@@ -74,10 +77,16 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
         <Table isStriped removeWrapper aria-label={`Tabla de datos para ${label}`} className="w-full" onSortChange={list.sort} sortDescriptor={list.sortDescriptor}>
             <TableHeader columns={columns}>
                 {(column) => {
-                    const centered = typeof getKeyValue(data[0], column.key) === 'boolean'
                     return (
-                        <TableColumn key={column.key} allowsSorting align={centered ? 'start' : 'start'}>
-                            {column.label}
+                        <TableColumn 
+                            key={column.key} 
+                            allowsSorting 
+                            className="relative"
+                            >
+                            <div className="flex items-center gap-2 w-fit">
+                                <SelectTypeColumn columnKey={column.key} type={column.type} />
+                                <span className="whitespace-nowrap hover:cursor-pointer">{column.label}</span>
+                            </div>
                         </TableColumn>
                     )
                 }}

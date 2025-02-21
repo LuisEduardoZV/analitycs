@@ -7,7 +7,8 @@ export type DefaultDataObject = {
 
 export interface TableColumns {
     key: string,
-    label: string
+    label: string,
+    type: string
 }
 
 export type ArrayTableColumnsType = Array<TableColumns>

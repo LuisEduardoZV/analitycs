@@ -3,7 +3,7 @@
 import clsx, { type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 
-import { MainDataArrayType } from "@/store/types"
+import { ArrayTableColumnsType, MainDataArrayType } from "@/store/types"
 
 export function cx(...args: ClassValue[]) {
   return twMerge(clsx(...args))
@@ -11,9 +11,23 @@ export function cx(...args: ClassValue[]) {
 
 export function getColumns(data: MainDataArrayType) {
   if (!data) return []
-  return [...new Set(data.flatMap(item => Object.keys(item)))].map(key => ({
-    key, label: key.toUpperCase().replaceAll(/_/g, ' ')
-  }))
+  const allKeys = [...new Set(data.flatMap(item => Object.keys(item)))]
+  return allKeys.map(key => {
+    let type = 'string'
+    if (typeof data[0][key] === 'object') type = data[0][key].type
+    if (key === 'key') type = 'number'
+    return {
+      key, label: key.toUpperCase().replaceAll(/_/g, ' '), type
+    }
+  })
+}
+
+export function changeTypeColumn(columns: ArrayTableColumnsType, key: string, type: string) {
+  if (!columns) return []
+  const info = columns.map(item => item.key === key ? { ...item, type } : item)
+  // console.log(info);
+  
+  return info
 }
 
 export function isValidHexa(hexa: string) {

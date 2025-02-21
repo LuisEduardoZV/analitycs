@@ -2,13 +2,13 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { DataTypes, MainState, ObjToChangeData } from "../types";
 
-import { getColumns } from "@/utils/utils";
+import { changeTypeColumn, getColumns } from "@/utils/utils";
 
 const initialState: MainState = {
     data: [],
     data_type: "paste",
     data_id: 0,
-    table_columns: [{ key: '', label: '' }],
+    table_columns: [{ key: '', label: '', type: '' }],
     messages: null,
     isReadyToShow: false
 }
@@ -31,10 +31,16 @@ export const dataInfoSlice = createSlice({
             state.data_id = 0
             state.table_columns = []
             state.isReadyToShow = false
+        },
+        setColumnType: (state, action: PayloadAction<{ key: string, type: string }>) => {
+            const newCols = changeTypeColumn(state.table_columns, action.payload.key, action.payload.type)
+            //console.log(newCols);
+            
+            state.table_columns = newCols
         }
     }
 })
 
-export const { setData, clearData, setDataType } = dataInfoSlice.actions
+export const { setData, clearData, setDataType, setColumnType } = dataInfoSlice.actions
 
 export default dataInfoSlice.reducer
