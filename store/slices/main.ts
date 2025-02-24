@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { DataTypes, MainState, ObjToChangeData } from "../types";
+import { ColumnConfigPayload, ColumnTypePayload, DataTypes, MainState, ObjToChangeData } from "../types";
 
-import { changeTypeColumn, getColumns } from "@/utils/utils";
+import { changeColumnConfig, changeTypeColumn, getColumns } from "@/utils/utils";
 
 const initialState: MainState = {
     data: [],
@@ -32,15 +32,18 @@ export const dataInfoSlice = createSlice({
             state.table_columns = []
             state.isReadyToShow = false
         },
-        setColumnType: (state, action: PayloadAction<{ key: string, type: string }>) => {
+        setColumnType: (state, action: PayloadAction<ColumnTypePayload>) => {
             const newCols = changeTypeColumn(state.table_columns, action.payload.key, action.payload.type)
-            //console.log(newCols);
+            state.table_columns = newCols
+        },
+        setColumnConfig: (state, action: PayloadAction<ColumnConfigPayload>) => {
+            const newCols = changeColumnConfig(state.table_columns, action.payload.key, action.payload.config)
             
             state.table_columns = newCols
         }
     }
 })
 
-export const { setData, clearData, setDataType, setColumnType } = dataInfoSlice.actions
+export const { setData, clearData, setDataType, setColumnType, setColumnConfig } = dataInfoSlice.actions
 
 export default dataInfoSlice.reducer

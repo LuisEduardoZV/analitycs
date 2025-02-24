@@ -13,13 +13,27 @@ export function getColumns(data: MainDataArrayType) {
   if (!data) return []
   const allKeys = [...new Set(data.flatMap(item => Object.keys(item)))]
   return allKeys.map(key => {
-    let type = 'string'
-    if (typeof data[0][key] === 'object') type = data[0][key].type
-    if (key === 'key') type = 'number'
+    const config: {type: string, parse?: string, dsc?: string} = {
+      type: 'string'
+    }
+    if (typeof data[0][key] === 'object') {
+      config.type = data[0][key].type
+      if (data[0][key].parse !== null) config.parse = data[0][key].parse
+      if (data[0][key].dsc !== null) config.dsc = data[0][key].dsc
+    }
+    if (key === 'key') config.type = 'number'
     return {
-      key, label: key.toUpperCase().replaceAll(/_/g, ' '), type
+      key, label: key.toUpperCase().replaceAll(/_/g, ' '), ...config,
     }
   })
+}
+
+export function changeColumnConfig(columns: ArrayTableColumnsType, key: string, config: { type: string, parse?: string, dsc?: string }) {
+  if (!columns) return []
+  const info = columns.map(item => item.key === key ? { ...item, ...config } : item)
+  // console.log(info);
+  
+  return info
 }
 
 export function changeTypeColumn(columns: ArrayTableColumnsType, key: string, type: string) {

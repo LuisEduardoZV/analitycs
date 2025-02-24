@@ -31,8 +31,7 @@ const items = [
     { key: 'country', icon: '🌍', label: 'País', hasSubmenu: false, items: null },
     { key: 'boolean', icon: '👍', label: 'Booleano', hasSubmenu: false, items: null },
     { key: 'category', icon: '🎉', label: 'Categoría', hasSubmenu: false, items: null },
-    { key: 'money', icon: '$', label: 'Dinero', hasSubmenu: true, items: TypesOfMoney },
-    { key: 'custom', icon: 'Cc', label: 'Personalizado', hasSubmenu: false, items: null }
+    { key: 'money', icon: '$', label: 'Dinero', hasSubmenu: true, items: TypesOfMoney }
 ]
 
 type onChangeType = (e: PointerEvent<HTMLDivElement>, type: string) => void
@@ -70,7 +69,7 @@ const ModalMenuTypes = ({open, columnKey, onCloseModal, onChangeType}: ModalMenu
                             const onClickItem = op.hasSubmenu ? handleOpenSubmenu : onChangeType
                             
                             return (
-                                <MenuTypeItem hasSubmenu={op.hasSubmenu} icon={op.icon} key={op.key} label={op.label} selected={typeOpened} type={op.key} items={op.items} onChangeType={onClickItem}/>
+                                <MenuTypeItem hasSubmenu={op.hasSubmenu} icon={op.icon} key={op.key} label={op.label} selected={typeOpened} type={op.key} items={op.items} onChangeType={onClickItem} columnKey={columnKey}/>
                             )
                         })}
                     </motion.div>

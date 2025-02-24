@@ -17,6 +17,7 @@ th svg {
     transform: translateY(-50%);
     margin: 0;
     transition: transform 0.2s ease-in-out, top 0.2s ease-in-out, translateY 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 th svg[data-direction="ascending"] {

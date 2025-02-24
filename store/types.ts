@@ -5,14 +5,6 @@ export type DefaultDataObject = {
     [key: string]: string
 }
 
-export interface TableColumns {
-    key: string,
-    label: string,
-    type: string
-}
-
-export type ArrayTableColumnsType = Array<TableColumns>
-
 export interface ObjToChangeData {
     data: MainDataArrayType
     id: StrDataId
@@ -26,7 +18,17 @@ interface OptionsCustomType {
     dsc?: string
     parse?: string
     code?: string
-  }
+}
+
+export interface ColumnTypePayload {
+    key: string
+    type: string
+}
+
+export interface ColumnConfigPayload {
+    key: string
+    config: { type: string, parse?: string, dsc?: string }
+}
 
 export interface BaseObjectDataType {
     key: string
@@ -34,6 +36,16 @@ export interface BaseObjectDataType {
   }
   
 export type MainDataArrayType = Array<BaseObjectDataType>
+
+export interface TableColumns {
+    key: string,
+    label: string,
+    type: string
+    parse?: string
+    dsc?: string
+}
+
+export type ArrayTableColumnsType = Array<TableColumns>
   
 export interface MainState {
     data: MainDataArrayType,
