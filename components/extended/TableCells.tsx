@@ -1,11 +1,14 @@
+import { useAppSelector } from "@/hooks/reduxHooks";
 import { useCallback } from "react";
 
+import * as Icons from "@heroicons/react/24/solid";
 import { Chip } from "@heroui/chip";
+import dayjs from "dayjs";
 
 import { isValidHexa } from "@/utils/utils";
 import { CountryObjectDataType, CustomObjectDataType } from "./types/tableCellTypes";
 
-import * as Icons from "@heroicons/react/24/solid";
+import { TypesOfDates } from '../../store/contants';
 
 const TableCellCountry = ({value, code}: CountryObjectDataType) => {
     const FlagComponent = require(`country-flag-icons/react/3x2`)[code]
@@ -87,23 +90,21 @@ const TableCellNumber = ({ value, parse, dsc }: CustomObjectDataType) => {
     )
 }
 
-const TableCellDates = ({ value, parse, dsc }: CustomObjectDataType) => {
+const TableCellDates = ({ value, id }: CustomObjectDataType) => {
+    const tableCols = useAppSelector(state => state.dataInfo.table_columns)
+    
+    const colConfig = tableCols.find(item => item.key === id)
 
     const renderValue = useCallback(() => {
         let newValue = value
         if (typeof value === 'string') {
-            switch (parse) {
-                case 'date':
-                    newValue = new Date(value).toLocaleString("es-MX")
-                    break;
-                default:
-                    newValue = value
-                    break;
-            }
+            if (colConfig && colConfig?.parse && TypesOfDates.find(item => item.key === colConfig.parse)) {
+                newValue = dayjs(value).format(colConfig.parse)
+            } else newValue = new Date(value).toLocaleString("es-MX")
         }
         
-        return <div className={`flex flex-row gap-1`}><span>{newValue}</span> <span>{dsc}</span></div>
-    }, [])
+        return <div className={`flex flex-row gap-1`}><span>{newValue}</span></div>
+    }, [colConfig])
     
     return (
         <div className="flex gap-2 items-center">
@@ -125,27 +126,15 @@ const TableCellBoolean = ({ value, dsc }: CustomObjectDataType) => {
     )
 }
 
-const TableCellMoney = ({ value, parse, dsc }: CustomObjectDataType) => {
-
-    const renderValue = useCallback(() => {
-        let newValue = value
-        if (typeof value === 'string') {
-            switch (parse) {
-                case 'date':
-                    newValue = new Date(value).toLocaleString("es-MX")
-                    break;
-                default:
-                    newValue = value
-                    break;
-            }
-        }
-        
-        return <div className={`flex flex-row gap-1`}><span>{newValue}</span> <span>{dsc}</span></div>
-    }, [])
+const TableCellMoney = ({ value, id }: CustomObjectDataType) => {
+    const tableCols = useAppSelector(state => state.dataInfo.table_columns)
+    
+    const colConfig = tableCols.find(item => item.key === id)
+    const dsc = colConfig?.dsc || ''
     
     return (
         <div className="flex gap-2 items-center">
-            {renderValue()}
+            <div className={`flex flex-row gap-1`}><span>{dsc}</span><span>{value}</span></div>
         </div>
     )
 }

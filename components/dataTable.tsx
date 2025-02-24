@@ -28,22 +28,22 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
             const objType = value.type
             switch (objType) {
                 case 'country': 
-                    return <TableCellCountry {...value} key={columnKey} />
+                    return <TableCellCountry {...value} id={columnKey} key={columnKey} />
                 case 'number': 
-                    return <TableCellNumber {...value} key={columnKey} />
+                    return <TableCellNumber {...value} id={columnKey} key={columnKey} />
                 case 'money':
-                    return <TableCellMoney {...value} key={columnKey} />
+                    return <TableCellMoney {...value} id={columnKey} key={columnKey} />
                 case 'boolean':
-                    return <TableCellBoolean {...value} key={columnKey} />
+                    return <TableCellBoolean {...value} id={columnKey} key={columnKey} />
                 case 'category':
-                    return <TableCellCategory {...value} key={columnKey} />
+                    return <TableCellCategory {...value} id={columnKey} key={columnKey} />
                 case 'date':
-                    return <TableCellDates {...value} key={columnKey} />
+                    return <TableCellDates {...value} id={columnKey} key={columnKey} />
                 case 'rating':
-                    return <TableCellRating {...value} key={columnKey} />
+                    return <TableCellRating {...value} id={columnKey} key={columnKey} />
                 case 'custom':
                 default:
-                    return <TableCellCustom {...value} key={columnKey} />
+                    return <TableCellCustom {...value} id={columnKey} key={columnKey} />
             }
         }
 

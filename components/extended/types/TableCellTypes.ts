@@ -4,6 +4,7 @@ type TableCellTypeTypes = 'custom' | 'country' | string
 
 export interface BaseObjectDataType {
     key?: string
+    id?: string
   type: TableCellTypeTypes
   value: string | number | boolean
 }

@@ -2,37 +2,8 @@
 import { AnimatePresence, motion } from "motion/react"
 import { PointerEvent, useState } from "react"
 
+import { itemsTypesColumns } from "@/store/contants"
 import MenuTypeItem from "./MenuTypeItem"
-
-const TypesOfDates = [
-    { key: 'YYYY/MM/DD', label: 'YYYY/MM/DD' },
-    { key: 'DD/MM/YYYY', label: 'DD/MM/YYYY' },
-    { key: 'MM/YYYY', label: 'MM/YYYY' },
-    { key: 'YYYY/MM', label: 'YYYY/MM' },
-    { key: 'DD/MM', label: 'DD/MM' },
-    { key: 'MM/DD', label: 'MM/DD' },
-    { key: 'YYYY/MM/DD HH:mm', label: 'YYYY/MM/DD HH:mm' },
-]
-
-const TypesOfMoney = [
-    { key: '$', label: '$' },
-    { key: '€', label: '€' },
-    { key: '¥', label: '¥' },
-    { key: '£', label: '£' },
-    { key: '₹', label: '₹' },
-    { key: '₩', label: '₩' },
-    { key: '₪', label: '₪' },
-    { key: '元', label: '元' },
-]
-
-const items = [
-    { key: 'number', icon: '#', label: 'Número', hasSubmenu: false, items: null },
-    { key: 'date', icon: '📅', label: 'Fecha', hasSubmenu: true, items: TypesOfDates },
-    { key: 'country', icon: '🌍', label: 'País', hasSubmenu: false, items: null },
-    { key: 'boolean', icon: '👍', label: 'Booleano', hasSubmenu: false, items: null },
-    { key: 'category', icon: '🎉', label: 'Categoría', hasSubmenu: false, items: null },
-    { key: 'money', icon: '$', label: 'Dinero', hasSubmenu: true, items: TypesOfMoney }
-]
 
 type onChangeType = (e: PointerEvent<HTMLDivElement>, type: string) => void
 
@@ -65,7 +36,7 @@ const ModalMenuTypes = ({open, columnKey, onCloseModal, onChangeType}: ModalMenu
                             e.stopPropagation()
                             e.preventDefault()
                         }}>
-                        {items.map((op) => {
+                        {itemsTypesColumns.map((op) => {
                             const onClickItem = op.hasSubmenu ? handleOpenSubmenu : onChangeType
                             
                             return (

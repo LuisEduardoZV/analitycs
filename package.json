@@ -35,6 +35,7 @@
   "@reduxjs/toolkit": "^2.5.1",
   "clsx": "^2.1.1",
   "country-flag-icons": "^1.5.16",
+  "dayjs": "^1.11.13",
   "intl-messageformat": "^10.5.0",
   "motion": "^11.11.17",
   "next": "^15.1.6",
