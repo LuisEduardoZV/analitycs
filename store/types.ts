@@ -46,12 +46,16 @@ export interface TableColumns {
 }
 
 export type ArrayTableColumnsType = Array<TableColumns>
+
+export type MessagesColumn = {
+    [key: string]: any
+}
   
 export interface MainState {
     data: MainDataArrayType,
     data_id: StrDataId,
     data_type: string,
     table_columns: ArrayTableColumnsType,
-    messages: null,
+    messages: MessagesColumn,
     isReadyToShow: boolean
 }

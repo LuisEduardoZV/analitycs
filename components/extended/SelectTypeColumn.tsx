@@ -3,7 +3,6 @@
 import { useAppDispatch } from "@/hooks/reduxHooks"
 import { PointerEvent, useState } from "react"
 
-import { AnimatePresence, motion } from "motion/react"
 
 import { setColumnType } from "@/store/slices/main"
 import ModalMenuTypes from "./ModalMenuTypes"
@@ -54,7 +53,7 @@ const SelectTypeColumn = ({columnKey, type}: {columnKey: string, type: string}) 
     return (
 		<>
 			<div
-				className=' text-gray-400 rounded-full w-6 h-6 flex items-center justify-center border border-gray-300 text-xs hover:cursor-pointer hover:bg-gray-100'
+				className='text-gray-400 rounded-full w-6 h-6 flex items-center justify-center border border-gray-300 text-xs hover:cursor-pointer'
 				onPointerDown={(e) => {
 					e.stopPropagation()
 					e.preventDefault()

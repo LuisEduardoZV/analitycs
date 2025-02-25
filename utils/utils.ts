@@ -44,8 +44,51 @@ export function changeTypeColumn(columns: ArrayTableColumnsType, key: string, ty
   return info
 }
 
+export function checkTypeColumn(columns: ArrayTableColumnsType, key: string, data: MainDataArrayType) {
+  if (!columns || !data) return ''
+  const colType = columns.find(item => item.key === key)?.type;
+  
+  let error = null
+
+  for (let i = 0; i < data.length; i++) {
+    const element = data[i];
+    try {
+      let value = element[key]
+      if (typeof value === 'object') value = value.value
+
+      switch(colType) {
+        case 'number':
+        case 'money':
+          if (isNaN(parseInt(value.toString()))) throw new Error(`${key} is not a number`)
+          break;
+        case 'string':
+          if (!String(value)) throw new Error(`${key} is not a string`)
+          break;
+        case 'boolean':
+          if (value !== true && value !== false) throw new Error(`${key} is not a boolean`)
+          break;
+        case 'date':
+          if (isNaN(Date.parse(value.toString()))) throw new Error(`${key} is not a date`)
+          break;
+      }
+     
+    } catch (e: any) {
+      error = e.message
+      break
+    }
+  }
+
+  console.log(error);
+  
+  return error
+}
+
 export function isValidHexa(hexa: string) {
   return /^#[0-9A-F]{6}[0-9a-f]{0,2}$/i.test(hexa)
+}
+
+function randomHexa() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`
 }
 
 export function isJSONValid(json: string) {

@@ -1,5 +1,6 @@
 'use client'
 
+import { useAppSelector } from "@/hooks/reduxHooks"
 import React from "react"
 
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table"
@@ -18,6 +19,8 @@ interface DataTableProps {
 }
 
 const DataTable = ({label, data, columns}: DataTableProps) => {
+    const columnsErrors = useAppSelector(state => state.dataInfo.messages)
+    
     const [loading, setLoading] = React.useState(true)
 
     const renderSwitchCell = React.useCallback((item: BaseObjectDataType, columnKey: string) => {
@@ -77,13 +80,15 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
         <Table isStriped removeWrapper aria-label={`Tabla de datos para ${label}`} className="w-full" onSortChange={list.sort} sortDescriptor={list.sortDescriptor}>
             <TableHeader columns={columns}>
                 {(column) => {
+                    const hasError = !!columnsErrors[column.key]
+
                     return (
                         <TableColumn 
                             key={column.key} 
                             allowsSorting 
-                            className="relative"
+                            className={`relative ${hasError ? 'bg-red-100/50' : ''} transition-background duration-200 ease-in`}
                             >
-                            <div className="flex items-center gap-2 w-fit">
+                            <div className={`flex items-center gap-2 w-fit ${hasError ? 'text-red-600' : ''} transition-colors duration-200 ease-in`}>
                                 <SelectTypeColumn columnKey={column.key} type={column.type} />
                                 <span className="whitespace-nowrap hover:cursor-pointer">{column.label}</span>
                             </div>

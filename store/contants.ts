@@ -32,6 +32,7 @@ export const TypesOfMoney = [
 ]
 
 export const itemsTypesColumns = [
+    { key: 'string', icon: 'Aa', label: 'Cadena', hasSubmenu: false, items: null },
     { key: 'number', icon: '#', label: 'Número', hasSubmenu: false, items: null },
     { key: 'date', icon: '📅', label: 'Fecha', hasSubmenu: true, items: TypesOfDates },
     { key: 'country', icon: '🌍', label: 'País', hasSubmenu: false, items: null },

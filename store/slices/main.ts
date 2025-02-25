@@ -2,14 +2,14 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { ColumnConfigPayload, ColumnTypePayload, DataTypes, MainState, ObjToChangeData } from "../types";
 
-import { changeColumnConfig, changeTypeColumn, getColumns } from "@/utils/utils";
+import { changeColumnConfig, changeTypeColumn, checkTypeColumn, getColumns } from "@/utils/utils";
 
 const initialState: MainState = {
     data: [],
     data_type: "paste",
     data_id: 0,
     table_columns: [{ key: '', label: '', type: '' }],
-    messages: null,
+    messages: {},
     isReadyToShow: false
 }
 
@@ -34,10 +34,16 @@ export const dataInfoSlice = createSlice({
         },
         setColumnType: (state, action: PayloadAction<ColumnTypePayload>) => {
             const newCols = changeTypeColumn(state.table_columns, action.payload.key, action.payload.type)
+            const newErrors = checkTypeColumn(newCols, action.payload.key, state.data)
+            
+            state.messages[action.payload.key] = newErrors
             state.table_columns = newCols
         },
         setColumnConfig: (state, action: PayloadAction<ColumnConfigPayload>) => {
             const newCols = changeColumnConfig(state.table_columns, action.payload.key, action.payload.config)
+            const newErrors = checkTypeColumn(newCols, action.payload.key, state.data)
+            
+            state.messages[action.payload.key] = newErrors
             
             state.table_columns = newCols
         }
