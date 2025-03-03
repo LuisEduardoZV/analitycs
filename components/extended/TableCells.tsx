@@ -7,10 +7,10 @@ import * as Icons from "@heroicons/react/24/solid";
 import { Chip } from "@heroui/chip";
 import dayjs from "dayjs";
 
+import { CountryObjectDataType, CustomObjectDataType } from "@/components/extended/types/tableCellTypes";
 import { isValidHexa } from "@/utils/utils";
-import { CountryObjectDataType, CustomObjectDataType } from "./types/tableCellTypes";
 
-import { TypesOfDates } from '../../store/contants';
+import { TypesOfDates } from '@/store/contants';
 
 const TableCellCountry = ({value, code}: CountryObjectDataType) => {
     const FlagComponent = require(`country-flag-icons/react/3x2`)[code]

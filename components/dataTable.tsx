@@ -6,11 +6,11 @@ import React from "react"
 import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow, getKeyValue } from "@heroui/table"
 import { useAsyncList } from '@react-stately/data'
 
-import { TableCellBoolean, TableCellCategory, TableCellCountry, TableCellCustom, TableCellDates, TableCellMoney, TableCellNumber, TableCellRating } from "./extended/TableCells"
-import LoadingData from "./loadingData"
+import { TableCellBoolean, TableCellCategory, TableCellCountry, TableCellCustom, TableCellDates, TableCellMoney, TableCellNumber, TableCellRating } from "@/components/extended/TableCells"
+import LoadingData from "@/components/loadingData"
 
+import SelectTypeColumn from "@/components/extended/SelectTypeColumn"
 import { ArrayTableColumnsType, BaseObjectDataType, MainDataArrayType } from "@/store/types"
-import SelectTypeColumn from "./extended/SelectTypeColumn"
 
 interface DataTableProps {
     label: string

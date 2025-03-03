@@ -2,7 +2,7 @@ import "@/styles/globals.css"
 import clsx from "clsx"
 import { Metadata, Viewport } from "next"
 
-import { Providers } from "./providers"
+import { Providers } from "@/app/providers"
 
 import { fontSans } from "@/config/fonts"
 import { siteConfig } from "@/config/site"

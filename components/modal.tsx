@@ -8,9 +8,9 @@ import { ModalBody, ModalContent, ModalHeader, Modal as NextUIModal } from "@her
 
 import { AnimatePresence, motion } from 'motion/react';
 
-import MyModalFooter from "./extended/MyModalFooter";
-import StepCustomData from "./extended/StepCustomData";
-import StepSetData from "./extended/StepSetData";
+import MyModalFooter from "@/components/extended/MyModalFooter";
+import StepCustomData from "@/components/extended/StepCustomData";
+import StepSetData from "@/components/extended/StepSetData";
 
 import { variantsModalSteps } from "@/config/variantsAnimate";
 

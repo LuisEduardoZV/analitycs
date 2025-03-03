@@ -6,10 +6,10 @@ import { Tab, Tabs } from "@heroui/tabs";
 import { motion } from "motion/react";
 import { useDropzone } from "react-dropzone";
 
+import InforCardData from "@/components/extended/InfoCardData";
+import { DEFAULT_DATA_IDS } from '@/store/contants';
 import { DataTypes } from "@/store/types";
 import { isJSONValid } from "@/utils/utils";
-import { DEFAULT_DATA_IDS } from '../../store/contants';
-import InforCardData from "./InfoCardData";
 
 import { variantsModalSteps } from "@/config/variantsAnimate";
 import { setData, setDataType } from "@/store/slices/main";

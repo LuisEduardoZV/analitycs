@@ -1,7 +1,7 @@
 import { useAppSelector } from "@/hooks/reduxHooks"
 
+import DataTable from "@/components/dataTable"
 import { motion } from "motion/react"
-import DataTable from "../dataTable"
 
 import { variantsModalSteps } from "@/config/variantsAnimate"
 

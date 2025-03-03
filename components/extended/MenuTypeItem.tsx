@@ -1,5 +1,5 @@
+import SubmenuTypeCol from "@/components/extended/SubmenuTypeCol";
 import { PointerEvent } from "react";
-import SubmenuTypeCol from "./SubmenuTypeCol";
 
 type onChangeType = (e: PointerEvent<HTMLDivElement>, type: string) => void
 

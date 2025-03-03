@@ -12,8 +12,8 @@ import {
 import NextLink from "next/link"
 
 import { HeartFilledIcon, Logo /* SearchIcon */ } from "@/components/icons"
+import { Modal } from "@/components/modal"
 import { ThemeSwitch } from "@/components/theme-switch"
-import { Modal } from "./modal"
 
 export const Navbar = () => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure()

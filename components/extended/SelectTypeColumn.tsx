@@ -4,8 +4,8 @@ import { useAppDispatch } from "@/hooks/reduxHooks"
 import { PointerEvent, useState } from "react"
 
 
+import ModalMenuTypes from "@/components/extended/ModalMenuTypes"
 import { setColumnType } from "@/store/slices/main"
-import ModalMenuTypes from "./ModalMenuTypes"
 
 const SelectTypeColumn = ({columnKey, type}: {columnKey: string, type: string}) => {
     if (columnKey === 'key') return null
