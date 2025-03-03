@@ -1,22 +1,18 @@
+'use client'
+
 import { useAppSelector } from "@/hooks/reduxHooks"
 
 import { motion } from "motion/react"
-
 import DataTable from "../dataTable"
 
 import { variantsModalSteps } from "@/config/variantsAnimate"
 
-interface StepCustomDataProps {
-    view: number
-}
-
-const StepCustomData = ({ view }: StepCustomDataProps) => {
+const StepCustomData = () => {
     const dataInfoState = useAppSelector((state) => state.dataInfo)
     const columns = useAppSelector((state) => state.dataInfo.table_columns)
-
-    if(!view)
+    
     return (
-        <motion.div key={'viewData'} variants={variantsModalSteps} initial={'inactive'} animate={dataInfoState.isReadyToShow ? 'active' : 'inactive'} exit={'inactive'} className="w-full flex flex-col gap-2 max-h-[60vh] relative">
+        <motion.div key="viewData" variants={variantsModalSteps} initial='inactive' animate='active' exit='exit' className="w-full flex flex-col gap-2 max-h-[60vh] relative">
             <h2 className="text-lg font-semibold">2. Vista previa de datos</h2>
             <div className="w-full overflow-y-auto p-3">
                 {/* <div className="w-full flex justify-between">

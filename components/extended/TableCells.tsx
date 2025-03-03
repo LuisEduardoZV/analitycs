@@ -1,3 +1,5 @@
+'use client'
+
 import { useAppSelector } from "@/hooks/reduxHooks";
 import { useCallback } from "react";
 

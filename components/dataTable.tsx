@@ -20,15 +20,20 @@ interface DataTableProps {
 
 const DataTable = ({label, data, columns}: DataTableProps) => {
     const columnsErrors = useAppSelector(state => state.dataInfo.messages)
+    const isReady = useAppSelector(state => state.dataInfo.isReadyToShow)
     
     const [loading, setLoading] = React.useState(true)
 
     const renderSwitchCell = React.useCallback((item: BaseObjectDataType, columnKey: string) => {
         const value = getKeyValue(item, columnKey)
         const isKey = columnKey === 'key'
+        console.log(item, columnKey);
+        
 
         if (typeof value === 'object') {
             const objType = value.type
+            console.log(value);
+            
             switch (objType) {
                 case 'country': 
                     return <TableCellCountry {...value} id={columnKey} key={columnKey} />
@@ -51,7 +56,7 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
         }
 
         return <span className={`${isKey ? 'font-light text-default-400' : ''}`}>{`${isKey ? '#' : ''}`}{value}</span>
-    }, [])
+    }, [data])
 
     let list = useAsyncList({
         async load({ cursor }) {
@@ -73,9 +78,13 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
                     return cmp;
                 }),
               };
-        }
+        },
     })
 
+    console.log(list);
+    console.log(list.items);
+    
+    if (!isReady) return null
     return (
         <Table isStriped removeWrapper aria-label={`Tabla de datos para ${label}`} className="w-full" onSortChange={list.sort} sortDescriptor={list.sortDescriptor}>
             <TableHeader columns={columns}>
@@ -100,6 +109,8 @@ const DataTable = ({label, data, columns}: DataTableProps) => {
                 {(item: BaseObjectDataType) => (
                     <TableRow key={item.key}>
                         {(columnKey) => {
+                            console.log(columnKey);
+                            
                             return (
                                 <TableCell className="w-max relative">
                                     {renderSwitchCell(item, columnKey.toString())}

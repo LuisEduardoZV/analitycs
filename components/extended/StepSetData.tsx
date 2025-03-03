@@ -6,20 +6,19 @@ import { Tab, Tabs } from "@heroui/tabs";
 import { motion } from "motion/react";
 import { useDropzone } from "react-dropzone";
 
-import { variantsModalSteps } from "@/config/variantsAnimate";
 import { DataTypes } from "@/store/types";
 import { isJSONValid } from "@/utils/utils";
 import { DEFAULT_DATA_IDS } from '../../store/contants';
 import InforCardData from "./InfoCardData";
 
+import { variantsModalSteps } from "@/config/variantsAnimate";
 import { setData, setDataType } from "@/store/slices/main";
 
 interface StepSetDataProps {
-    view: number,
     handleContinue: () => void
 }
 
-const StepSetData = ({ view, handleContinue }: StepSetDataProps) => {
+const StepSetData = ({ handleContinue }: StepSetDataProps) => {
     const initType = useAppSelector((state) => state.dataInfo.data_type)
     const defaultDataId = useAppSelector((state) => state.dataInfo.data_id)
 
@@ -43,12 +42,11 @@ const StepSetData = ({ view, handleContinue }: StepSetDataProps) => {
         if (Array.isArray(newData) && newData.length > 0 && !newData[0]?.key) newData = newData.map((item: any, idx: number) => ({ key: idx + 1, ...item }))
         
         dispatch(setData({data: newData, id}))
-        handleContinue()
+        // handleContinue()
     }
     
-    if(view)
     return (
-        <motion.div key='selectData' variants={variantsModalSteps} initial="inactive" animate={view ? 'active' : 'inactive'} exit={'exit'} className="w-full flex flex-col gap-2">
+        <motion.div key="selectData" variants={variantsModalSteps} initial="inactive" animate='active' exit='exit' className="w-full flex flex-col gap-2">
             <h2 className="text-lg font-semibold">1. Carga de datos</h2>
             <Tabs color="primary" selectedKey={tabSelected} onSelectionChange={handleChangeTab}>
                 <Tab key='paste' title='Pegar datos'>

@@ -23,7 +23,7 @@ const ModalMenuTypes = ({open, columnKey, onCloseModal, onChangeType}: ModalMenu
     }
 
     return (
-        <AnimatePresence mode='wait' initial={false} propagate>
+        <AnimatePresence mode='wait' initial={false}>
             {open && (
                 <>
                     <motion.div
