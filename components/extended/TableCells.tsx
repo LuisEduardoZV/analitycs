@@ -9,7 +9,8 @@ import { useCallback } from "react"
 import {
   CountryObjectDataType,
   CustomObjectDataType,
-} from "@/components/extended/types/tableCellTypes"
+} from "./types/tableCellTypes"
+
 import { useAppSelector } from "@/hooks/reduxHooks"
 import { TypesOfDates } from "@/store/contants"
 import { isValidHexa } from "@/utils/utils"
