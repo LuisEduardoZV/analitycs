@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from "@heroui/button"
+import { useDisclosure } from "@heroui/modal"
 import {
   NavbarBrand,
   NavbarContent,
@@ -12,8 +13,10 @@ import NextLink from "next/link"
 
 import { HeartFilledIcon, Logo /* SearchIcon */ } from "@/components/icons"
 import { ThemeSwitch } from "@/components/theme-switch"
+import { Modal } from "./modal"
 
-export const Navbar = ({openModal} : {openModal: () => void}) => {
+export const Navbar = () => {
+  const {isOpen, onOpen, onOpenChange} = useDisclosure()
   /* const searchInput = (
     <Input
       aria-label="Search"
@@ -36,6 +39,7 @@ export const Navbar = ({openModal} : {openModal: () => void}) => {
   )
  */
   return (
+    <>
     <NextUINavbar
       className="shadow-lg w-full max-w-[35%] self-center justify-between top-2 rounded-lg transition-transform-colors-opacity"
       position="sticky"
@@ -62,7 +66,7 @@ export const Navbar = ({openModal} : {openModal: () => void}) => {
             className="text-sm font-normal text-default-600 bg-default-100"
             startContent={<HeartFilledIcon className="text-primary" />}
             variant="flat"
-            onPress={openModal}
+            onPress={onOpen}
           >
             Cargar Datos
           </Button>
@@ -74,5 +78,7 @@ export const Navbar = ({openModal} : {openModal: () => void}) => {
         <NavbarMenuToggle />
       </NavbarContent>
     </NextUINavbar>
+    <Modal isOpen={isOpen} openChange={onOpenChange} />
+    </>
   )
 }

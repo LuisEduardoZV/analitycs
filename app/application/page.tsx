@@ -1,13 +1,12 @@
-import { Home } from "../home"
+import { Navbar } from "@/components/navbar"
 
-export default function Page({
-    children,
-  }: {
-    children: React.ReactNode
-  }) {
+export default function Page() {
     return (
-        <Home>
-            {children}
-        </Home>
+        <>
+            <Navbar />
+            <section className="relative pt-16 px-10 flex-grow">
+                graficas aqui
+            </section>
+        </>
     )
 }
