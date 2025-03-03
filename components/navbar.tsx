@@ -44,7 +44,7 @@ export const Navbar = ({openModal} : {openModal: () => void}) => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Logo />
-            <p className="font-bold text-inherit">DAMO | Data Monitoring</p>
+            <p className="font-bold text-inherit">GRADA | Graficador de Datos</p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>

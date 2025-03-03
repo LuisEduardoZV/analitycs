@@ -1,5 +1,3 @@
-'use client'
-
 import { useAppSelector } from "@/hooks/reduxHooks"
 
 import { motion } from "motion/react"

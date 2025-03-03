@@ -34,8 +34,6 @@ export const Modal = ({isOpen, openChange} : {isOpen: boolean, openChange: () =>
     const handleContinueModal = () => {
         setModalView(0)
     }
-    console.log(modalView);
-    console.log(hasInfo);
     
     return (
         <NextUIModal backdrop="opaque" isOpen={isOpen} onOpenChange={openChange}className={`max-w-6xl transition-all duration-300 ease-in-out`}>

@@ -1,10 +1,12 @@
-"use client"
+import { Link } from "@heroui/link"
 
-export default function Home() {
-
+export default function Page() {
   return (
     <section className="flex flex-col w-full gap-4 max-w-[100vw]">
-      asd 1
+      Pagina inicial
+      <Link href="/application">
+        Ingresar a aplicación
+      </Link>
     </section>
   )
 }
