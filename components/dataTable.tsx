@@ -1,5 +1,11 @@
 "use client"
 
+import type {
+  ArrayTableColumnsType,
+  BaseObjectDataType,
+  MainDataArrayType,
+} from "@/store/types"
+
 import {
   Table,
   TableBody,
@@ -25,11 +31,6 @@ import {
 } from "@/components/extended/TableCells"
 import LoadingData from "@/components/loadingData"
 import { useAppSelector } from "@/hooks/reduxHooks"
-import {
-  ArrayTableColumnsType,
-  BaseObjectDataType,
-  MainDataArrayType,
-} from "@/store/types"
 
 interface DataTableProps {
   label: string

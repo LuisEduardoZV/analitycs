@@ -1,9 +1,9 @@
 // Tremor cx [v0.0.0]
 
+import type { ArrayTableColumnsType, MainDataArrayType } from "@/store/types"
+
 import clsx, { type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
-
-import { ArrayTableColumnsType, MainDataArrayType } from "@/store/types"
 
 export function cx(...args: ClassValue[]) {
   return twMerge(clsx(...args))

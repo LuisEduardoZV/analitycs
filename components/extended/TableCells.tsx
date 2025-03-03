@@ -1,15 +1,15 @@
 /* eslint-disable prettier/prettier */
 "use client"
 
+import type {
+  CountryObjectDataType,
+  CustomObjectDataType,
+} from "@/components/extended/types/tableCellTypes"
+
 import * as Icons from "@heroicons/react/24/solid"
 import { Chip } from "@heroui/chip"
 import dayjs from "dayjs"
 import { useCallback } from "react"
-
-import {
-  CountryObjectDataType,
-  CustomObjectDataType,
-} from "./types/tableCellTypes"
 
 import { useAppSelector } from "@/hooks/reduxHooks"
 import { TypesOfDates } from "@/store/contants"

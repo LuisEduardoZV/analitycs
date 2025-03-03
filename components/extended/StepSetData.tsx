@@ -1,16 +1,17 @@
-import { Key, useState } from "react"
+import type { DataTypes } from "@/store/types"
+
 import { Textarea } from "@heroui/input"
 import { Tab, Tabs } from "@heroui/tabs"
 import { motion } from "motion/react"
+import { Key, useState } from "react"
 import { useDropzone } from "react-dropzone"
 
-import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks"
 import InforCardData from "@/components/extended/InfoCardData"
-import { DEFAULT_DATA_IDS } from "@/store/contants"
-import { DataTypes } from "@/store/types"
-import { isJSONValid } from "@/utils/utils"
 import { variantsModalSteps } from "@/config/variantsAnimate"
+import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks"
+import { DEFAULT_DATA_IDS } from "@/store/contants"
 import { setData, setDataType } from "@/store/slices/main"
+import { isJSONValid } from "@/utils/utils"
 
 interface StepSetDataProps {
   handleContinue: () => void

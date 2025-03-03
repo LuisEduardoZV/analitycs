@@ -1,12 +1,12 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-
-import {
+import type {
   ColumnConfigPayload,
   ColumnTypePayload,
   DataTypes,
   MainState,
   ObjToChangeData,
-} from "../types"
+} from "@/store/types"
+
+import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 
 import {
   changeColumnConfig,
