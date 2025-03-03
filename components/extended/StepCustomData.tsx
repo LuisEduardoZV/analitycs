@@ -1,19 +1,25 @@
-import { useAppSelector } from "@/hooks/reduxHooks"
-
-import DataTable from "@/components/dataTable"
 import { motion } from "motion/react"
 
+import { useAppSelector } from "@/hooks/reduxHooks"
+import DataTable from "@/components/dataTable"
 import { variantsModalSteps } from "@/config/variantsAnimate"
 
 const StepCustomData = () => {
-    const dataInfoState = useAppSelector((state) => state.dataInfo)
-    const columns = useAppSelector((state) => state.dataInfo.table_columns)
-    
-    return (
-        <motion.div key="viewData" variants={variantsModalSteps} initial='inactive' animate='active' exit='exit' className="w-full flex flex-col gap-2 max-h-[60vh] relative">
-            <h2 className="text-lg font-semibold">2. Vista previa de datos</h2>
-            <div className="w-full overflow-y-auto p-3">
-                {/* <div className="w-full flex justify-between">
+  const dataInfoState = useAppSelector((state) => state.dataInfo)
+  const columns = useAppSelector((state) => state.dataInfo.table_columns)
+
+  return (
+    <motion.div
+      key="viewData"
+      animate="active"
+      className="w-full flex flex-col gap-2 max-h-[60vh] relative"
+      exit="exit"
+      initial="inactive"
+      variants={variantsModalSteps}
+    >
+      <h2 className="text-lg font-semibold">2. Vista previa de datos</h2>
+      <div className="w-full overflow-y-auto p-3">
+        {/* <div className="w-full flex justify-between">
                     <Input 
                     label="Separador de miles"
                     labelPlacement="outside"
@@ -37,10 +43,16 @@ const StepCustomData = () => {
                         {(times) => <SelectItem>{times.label}</SelectItem>}
                     </Select>
                 </div> */}
-                <DataTable label={dataInfoState.data_type + "-data-table-" + dataInfoState.data_id} data={dataInfoState.data} columns={columns} /> 
-            </div>
-        </motion.div>
-    )
+        <DataTable
+          columns={columns}
+          data={dataInfoState.data}
+          label={
+            dataInfoState.data_type + "-data-table-" + dataInfoState.data_id
+          }
+        />
+      </div>
+    </motion.div>
+  )
 }
 
 export default StepCustomData

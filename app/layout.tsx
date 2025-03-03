@@ -3,7 +3,6 @@ import clsx from "clsx"
 import { Metadata, Viewport } from "next"
 
 import { Providers } from "@/app/providers"
-
 import { fontSans } from "@/config/fonts"
 import { siteConfig } from "@/config/site"
 
@@ -40,9 +39,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <main className="relative flex flex-col h-screen">
-            {children}
-          </main>
+          <main className="relative flex flex-col h-screen">{children}</main>
         </Providers>
       </body>
     </html>

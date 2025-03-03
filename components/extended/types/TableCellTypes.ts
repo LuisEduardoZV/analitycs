@@ -1,16 +1,16 @@
 type parseFunction = (value: string) => string
 
-type TableCellTypeTypes = 'custom' | 'country' | string
+type TableCellTypeTypes = "custom" | "country" | string
 
 export interface BaseObjectDataType {
-    key?: string
-    id?: string
+  key?: string
+  id?: string
   type: TableCellTypeTypes
   value: string | number | boolean
 }
 
 export interface CustomObjectDataType extends BaseObjectDataType {
-  type: 'custom'
+  type: "custom"
   icon?: string
   color?: string
   chip?: boolean
@@ -21,7 +21,7 @@ export interface CustomObjectDataType extends BaseObjectDataType {
 }
 
 export interface CountryObjectDataType extends BaseObjectDataType {
-  type: 'country'
+  type: "country"
   value: string
   code: string
 }

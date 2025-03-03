@@ -5,71 +5,71 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
 }
 
 export type GendersUsers = {
-  male: number,
-  female: number,
+  male: number
+  female: number
   others: number
 }
 
 export type AgesUsers = {
-  '18-25': number,
-  '25-35': number,
-  '35-45': number,
-  '45-60': number,
-  '60-75': number,
+  "18-25": number
+  "25-35": number
+  "35-45": number
+  "45-60": number
+  "60-75": number
 }
 
-export type UsersTypes = { 
-  'new': number, 
-  'returning': number
-} 
+export type UsersTypes = {
+  new: number
+  returning: number
+}
 
-export type DefaultData = { 
-  "Usuarios totales": number,
-  country: string,
-  ages: AgesUsers, 
-  genders: GendersUsers, 
+export type DefaultData = {
+  "Usuarios totales": number
+  country: string
+  ages: AgesUsers
+  genders: GendersUsers
   userType: UsersTypes
-} 
+}
 
-export type DefaultDataUsersByCountry = { 
-  [country: string]: { 
-    "Usuarios totales": number,
-    ages: AgesUsers, 
-    genders: GendersUsers, 
+export type DefaultDataUsersByCountry = {
+  [country: string]: {
+    "Usuarios totales": number
+    ages: AgesUsers
+    genders: GendersUsers
     userType: UsersTypes
-  } 
+  }
 }
 
 export type TotalDataUsers = {
-  totalUsers: number,
+  totalUsers: number
   totalGenders: GendersUsers
-  newUsers: number,
+  newUsers: number
   firtsCountry: {
-    country: string,
+    country: string
     total: number
-  },
+  }
   secondCountry: {
-    country: string,
+    country: string
     total: number
-  },
+  }
   thirdCountry: {
-    country: string,
+    country: string
     total: number
-  },
-  maxAge: any[],
+  }
+  maxAge: any[]
   minAge: any[]
 }
 
 export type InfoUsersInCountry = {
-  country: string,
-  totalUsers: number,
+  country: string
+  totalUsers: number
   topGender: {
-    gender: string,
-    total: number,
+    gender: string
+    total: number
     Icon: React.FC<React.SVGProps<SVGSVGElement>>
-  },
+  }
   topAge: {
-    age: string,
+    age: string
     total: number
   }
 }

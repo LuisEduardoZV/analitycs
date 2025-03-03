@@ -29,7 +29,11 @@
 		"react-hooks/exhaustive-deps": "off",
 		"jsx-a11y/click-events-have-key-events": "warn",
 		"jsx-a11y/interactive-supports-focus": "warn",
-		"jsx-a11y/no-noninteractive-tabindex": ["error", "never"],
+		"jsx-a11y/no-noninteractive-tabindex": ["error", {
+			"tags": [],
+			"roles": ["tabpanel"],
+			"allowExpressionValues": true
+		  }],
 		"prettier/prettier": [
       "error", {
         "semi": false

@@ -1,6 +1,6 @@
 interface BaseType {
   type: string
-  value: string | number | boolean 
+  value: string | number | boolean
   dsc?: string
 }
 
