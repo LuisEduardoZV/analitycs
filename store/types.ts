@@ -31,7 +31,7 @@ export interface ColumnConfigPayload {
 }
 
 export interface BaseObjectDataType {
-  key: string
+  key: string | number
   [key: string]: string | number | boolean | OptionsCustomType
 }
 

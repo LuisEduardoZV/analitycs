@@ -3,17 +3,17 @@
 import { Button } from "@heroui/button"
 import { useDisclosure } from "@heroui/modal"
 import {
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  Navbar as NextUINavbar,
+    NavbarBrand,
+    NavbarContent,
+    NavbarItem,
+    NavbarMenuToggle,
+    Navbar as NextUINavbar,
 } from "@heroui/navbar"
 import NextLink from "next/link"
 
-import { HeartFilledIcon, Logo /* SearchIcon */ } from "@/components/icons"
-import { Modal } from "@/components/modal"
-import { ThemeSwitch } from "@/components/theme-switch"
+import { HeartFilledIcon, Logo /* SearchIcon */ } from "@/app/components/icons"
+import { Modal } from "@/app/components/modal"
+import { ThemeSwitch } from "@/app/components/theme-switch"
 
 export const Navbar = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()

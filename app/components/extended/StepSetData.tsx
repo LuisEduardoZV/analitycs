@@ -1,4 +1,4 @@
-import type { DataTypes } from "@/store/types"
+import type { DataTypes, MainDataArrayType } from "@/store/types"
 
 import { Textarea } from "@heroui/input"
 import { Tab, Tabs } from "@heroui/tabs"
@@ -6,16 +6,19 @@ import { motion } from "motion/react"
 import { Key, useState } from "react"
 import { useDropzone } from "react-dropzone"
 
-import InforCardData from "@/components/extended/InfoCardData"
+import InforCardData from "@/app/components/extended/InfoCardData"
 import { variantsModalSteps } from "@/config/variantsAnimate"
 import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks"
 import { DEFAULT_DATA_IDS } from "@/store/contants"
+import DEFAULT_DATA from "@/store/data/defaut.json"
 import { setData, setDataType } from "@/store/slices/main"
 import { isJSONValid } from "@/utils/utils"
 
 interface StepSetDataProps {
   handleContinue: () => void
 }
+
+type idsDefault = "usuarios" | "trafico" | "inventario"
 
 const StepSetData = ({ handleContinue }: StepSetDataProps) => {
   const initType = useAppSelector((state) => state.dataInfo.data_type)
@@ -35,16 +38,19 @@ const StepSetData = ({ handleContinue }: StepSetDataProps) => {
   const isDefaultDataSelected = (id: string) => defaultDataId === id
 
   const handleChangeDefaultData = (id: string) => {
-    const data = require("@/store/data/defaut.json")
-    let newData = data[id] || null
+    let newData = DEFAULT_DATA[id as idsDefault] || null
 
-    if (Array.isArray(newData) && newData.length > 0 && !newData[0]?.key)
+    if (
+      Array.isArray(newData) &&
+      newData.length > 0 &&
+      !Object.keys(newData[0]).includes("key")
+    )
       newData = newData.map((item: any, idx: number) => ({
         key: idx + 1,
         ...item,
       }))
 
-    dispatch(setData({ data: newData, id }))
+    dispatch(setData({ data: newData as MainDataArrayType, id }))
     // handleContinue()
   }
 

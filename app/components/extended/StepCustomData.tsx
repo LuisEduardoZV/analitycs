@@ -1,8 +1,8 @@
 import { motion } from "motion/react"
 
-import { useAppSelector } from "@/hooks/reduxHooks"
-import DataTable from "@/components/dataTable"
+import DataTable from "@/app/components/dataTable"
 import { variantsModalSteps } from "@/config/variantsAnimate"
+import { useAppSelector } from "@/hooks/reduxHooks"
 
 const StepCustomData = () => {
   const dataInfoState = useAppSelector((state) => state.dataInfo)

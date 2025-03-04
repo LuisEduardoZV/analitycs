@@ -4,10 +4,11 @@
 import type {
   CountryObjectDataType,
   CustomObjectDataType,
-} from "@/components/extended/types/tableCellTypes"
+} from "@/app/components/extended/types/tableCellTypes"
 
 import * as Icons from "@heroicons/react/24/solid"
 import { Chip } from "@heroui/chip"
+import clsx from "clsx"
 import dayjs from "dayjs"
 import { useCallback } from "react"
 
@@ -78,7 +79,10 @@ const TableCellCustom = ({
 
     return (
       <div
-        className={`flex ${money ? "flex-row-reverse gap-0.5 italic" : "flex-row gap-1"}`}
+        className={clsx('flex flex-row gap-1', {
+          'flex-row-reverse gap-0.5 italic': money,
+          [clasesColor]: color
+        })}
       >
         <span>{newValue}</span> <span>{dsc}</span>
       </div>

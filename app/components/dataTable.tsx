@@ -18,7 +18,7 @@ import {
 import { useAsyncList } from "@react-stately/data"
 import React from "react"
 
-import SelectTypeColumn from "@/components/extended/SelectTypeColumn"
+import SelectTypeColumn from "@/app/components/extended/SelectTypeColumn"
 import {
   TableCellBoolean,
   TableCellCategory,
@@ -28,8 +28,8 @@ import {
   TableCellMoney,
   TableCellNumber,
   TableCellRating,
-} from "@/components/extended/TableCells"
-import LoadingData from "@/components/loadingData"
+} from "@/app/components/extended/TableCells"
+import LoadingData from "@/app/components/loadingData"
 import { useAppSelector } from "@/hooks/reduxHooks"
 
 interface DataTableProps {

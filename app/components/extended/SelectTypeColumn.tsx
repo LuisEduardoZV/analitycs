@@ -2,7 +2,7 @@
 
 import { PointerEvent, useState } from "react"
 
-import ModalMenuTypes from "@/components/extended/ModalMenuTypes"
+import ModalMenuTypes from "@/app/components/extended/ModalMenuTypes"
 import { useAppDispatch } from "@/hooks/reduxHooks"
 import { setColumnType } from "@/store/slices/main"
 

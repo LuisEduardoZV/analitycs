@@ -2,7 +2,7 @@
 import { AnimatePresence, motion } from "motion/react"
 import { PointerEvent, useState } from "react"
 
-import MenuTypeItem from "@/components/extended/MenuTypeItem"
+import MenuTypeItem from "@/app/components/extended/MenuTypeItem"
 import { itemsTypesColumns } from "@/store/contants"
 
 type onChangeType = (e: PointerEvent<HTMLDivElement>, type: string) => void

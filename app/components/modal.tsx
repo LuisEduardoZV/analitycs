@@ -1,20 +1,20 @@
 "use client"
 
-import { useState } from "react"
 import {
-  ModalBody,
-  ModalContent,
-  ModalHeader,
-  Modal as NextUIModal,
+    ModalBody,
+    ModalContent,
+    ModalHeader,
+    Modal as NextUIModal,
 } from "@heroui/modal"
 import { AnimatePresence, motion } from "motion/react"
+import { useState } from "react"
 
-import { clearData } from "@/store/slices/main"
-import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks"
-import MyModalFooter from "@/components/extended/MyModalFooter"
-import StepCustomData from "@/components/extended/StepCustomData"
-import StepSetData from "@/components/extended/StepSetData"
+import MyModalFooter from "@/app/components/extended/MyModalFooter"
+import StepCustomData from "@/app/components/extended/StepCustomData"
+import StepSetData from "@/app/components/extended/StepSetData"
 import { variantsModalSteps } from "@/config/variantsAnimate"
+import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks"
+import { clearData } from "@/store/slices/main"
 
 export const Modal = ({
   isOpen,

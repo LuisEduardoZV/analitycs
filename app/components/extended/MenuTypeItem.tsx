@@ -1,6 +1,6 @@
 import { PointerEvent } from "react"
 
-import SubmenuTypeCol from "@/components/extended/SubmenuTypeCol"
+import SubmenuTypeCol from "@/app/components/extended/SubmenuTypeCol"
 
 type onChangeType = (e: PointerEvent<HTMLDivElement>, type: string) => void
 
