@@ -77,3 +77,12 @@ export const itemsTypesColumns = [
     items: TypesOfMoney,
   },
 ]
+
+export const TIMEZONES_AVAILABLE = [
+  { key: "UTC", label: "UTC" },
+  { key: "America/Los_Angeles", label: "America/Los_Angeles" },
+  { key: "America/New_York", label: "America/New_York" },
+  { key: "America/Chicago", label: "America/Chicago" },
+  { key: "America/Denver", label: "America/Denver" },
+  { key: "America/Phoenix", label: "America/Phoenix" },
+]
