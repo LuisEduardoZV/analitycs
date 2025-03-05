@@ -1,10 +1,6 @@
 "use client"
 
-import type {
-  ArrayTableColumnsType,
-  BaseObjectDataType,
-  MainDataArrayType,
-} from "@/store/types"
+import type { BaseObjectDataType } from "@/store/types"
 
 import {
   Table,
@@ -18,82 +14,25 @@ import {
 import { useAsyncList } from "@react-stately/data"
 import React from "react"
 
+import TableCellType from "./extended/TableCells"
+import LoadingData from "./loadingData"
+
 import SelectTypeColumn from "@/app/components/extended/SelectTypeColumn"
-import {
-  TableCellBoolean,
-  TableCellCategory,
-  TableCellCountry,
-  TableCellCustom,
-  TableCellDates,
-  TableCellMoney,
-  TableCellNumber,
-  TableCellRating,
-} from "@/app/components/extended/TableCells"
-import LoadingData from "@/app/components/loadingData"
 import { useAppSelector } from "@/hooks/reduxHooks"
 
-interface DataTableProps {
-  label: string
-  data: MainDataArrayType
-  columns: ArrayTableColumnsType
-}
-
-const DataTable = ({ label, data, columns }: DataTableProps) => {
+const DataTable = () => {
   const columnsErrors = useAppSelector((state) => state.dataInfo.messages)
   const isReady = useAppSelector((state) => state.dataInfo.isReadyToShow)
+  const mainInfo = useAppSelector((state) => state.dataInfo)
+  const columns = useAppSelector((state) => state.dataInfo.table_columns)
 
   const [loading, setLoading] = React.useState(true)
-
-  const renderSwitchCell = React.useCallback(
-    (item: BaseObjectDataType, columnKey: string) => {
-      const value = getKeyValue(item, columnKey)
-      const isKey = columnKey === "key"
-
-      if (typeof value === "object") {
-        const objType = value.type
-
-        switch (objType) {
-          case "country":
-            return (
-              <TableCellCountry {...value} key={columnKey} id={columnKey} />
-            )
-          case "number":
-            return <TableCellNumber {...value} key={columnKey} id={columnKey} />
-          case "money":
-            return <TableCellMoney {...value} key={columnKey} id={columnKey} />
-          case "boolean":
-            return (
-              <TableCellBoolean {...value} key={columnKey} id={columnKey} />
-            )
-          case "category":
-            return (
-              <TableCellCategory {...value} key={columnKey} id={columnKey} />
-            )
-          case "date":
-            return <TableCellDates {...value} key={columnKey} id={columnKey} />
-          case "rating":
-            return <TableCellRating {...value} key={columnKey} id={columnKey} />
-          case "custom":
-          default:
-            return <TableCellCustom {...value} key={columnKey} id={columnKey} />
-        }
-      }
-
-      return (
-        <span className={`${isKey ? "font-light text-default-400" : ""}`}>
-          {`${isKey ? "#" : ""}`}
-          {value}
-        </span>
-      )
-    },
-    [data],
-  )
 
   let list = useAsyncList({
     async load({ cursor }) {
       if (!cursor) setLoading(false)
 
-      return { items: data }
+      return { items: mainInfo.data }
     },
     async sort({ items, sortDescriptor }) {
       return {
@@ -121,13 +60,15 @@ const DataTable = ({ label, data, columns }: DataTableProps) => {
     <Table
       isStriped
       removeWrapper
-      aria-label={`Tabla de datos para ${label}`}
+      aria-label={`Tabla de datos`}
       className="w-full"
       sortDescriptor={list.sortDescriptor}
       onSortChange={list.sort}
     >
       <TableHeader columns={columns}>
         {(column) => {
+          console.log(columnsErrors)
+
           const hasError = !!columnsErrors[column.key]
 
           return (
@@ -149,6 +90,7 @@ const DataTable = ({ label, data, columns }: DataTableProps) => {
         }}
       </TableHeader>
       <TableBody
+        key={columns.map((c) => c.type).join("-")}
         emptyContent="No hay datos"
         isLoading={loading}
         items={list.items as BaseObjectDataType[]}
@@ -159,7 +101,10 @@ const DataTable = ({ label, data, columns }: DataTableProps) => {
             {(columnKey) => {
               return (
                 <TableCell className="w-max relative">
-                  {renderSwitchCell(item, columnKey.toString())}
+                  <TableCellType
+                    columnKey={columnKey.toString()}
+                    value={getKeyValue(item, columnKey)}
+                  />
                 </TableCell>
               )
             }}

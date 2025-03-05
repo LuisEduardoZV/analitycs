@@ -56,7 +56,6 @@ export function changeTypeColumn(
   const info = columns.map((item) =>
     item.key === key ? { ...item, type } : item,
   )
-  // console.log(info);
 
   return info
 }
@@ -82,7 +81,7 @@ export function checkTypeColumn(
       switch (colType) {
         case "number":
         case "money":
-          if (isNaN(parseInt(value.toString())))
+          if (isNaN(Number(value.toString())))
             throw new Error(`${key} is not a number`)
           break
         case "string":
@@ -102,8 +101,6 @@ export function checkTypeColumn(
       break
     }
   }
-
-  console.log(error)
 
   return error
 }

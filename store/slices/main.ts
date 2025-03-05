@@ -31,7 +31,9 @@ export const dataInfoSlice = createSlice({
     setData: (state, action: PayloadAction<ObjToChangeData>) => {
       state.data = action.payload.data
       state.data_id = action.payload.id
-      state.table_columns = getColumns(action.payload.data)
+      const info = getColumns(action.payload.data)
+
+      state.table_columns = info
       state.isReadyToShow = true
     },
     setDataType: (state, action: PayloadAction<DataTypes>) => {
@@ -63,7 +65,6 @@ export const dataInfoSlice = createSlice({
       const newErrors = checkTypeColumn(newCols, action.payload.key, state.data)
 
       state.messages[action.payload.key] = newErrors
-
       state.table_columns = newCols
     },
   },

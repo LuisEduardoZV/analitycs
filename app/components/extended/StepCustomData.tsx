@@ -2,12 +2,8 @@ import { motion } from "motion/react"
 
 import DataTable from "@/app/components/dataTable"
 import { variantsModalSteps } from "@/config/variantsAnimate"
-import { useAppSelector } from "@/hooks/reduxHooks"
 
 const StepCustomData = () => {
-  const dataInfoState = useAppSelector((state) => state.dataInfo)
-  const columns = useAppSelector((state) => state.dataInfo.table_columns)
-
   return (
     <motion.div
       key="viewData"
@@ -43,13 +39,7 @@ const StepCustomData = () => {
                         {(times) => <SelectItem>{times.label}</SelectItem>}
                     </Select>
                 </div> */}
-        <DataTable
-          columns={columns}
-          data={dataInfoState.data}
-          label={
-            dataInfoState.data_type + "-data-table-" + dataInfoState.data_id
-          }
-        />
+        <DataTable />
       </div>
     </motion.div>
   )

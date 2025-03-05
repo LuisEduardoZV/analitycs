@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
-"use client"
+'use client'
 
 import type {
   CountryObjectDataType,
   CustomObjectDataType,
+  TableCellType
 } from "@/app/components/extended/types/tableCellTypes"
 
 import * as Icons from "@heroicons/react/24/solid"
@@ -17,6 +18,7 @@ import { TypesOfDates } from "@/store/contants"
 import { isValidHexa } from "@/utils/utils"
 
 const TableCellCountry = ({ value, code }: CountryObjectDataType) => {
+  if (!code) return <>{value}</>
   const FlagComponent = require(`country-flag-icons/react/3x2`)[code]
 
   return (
@@ -126,21 +128,16 @@ const TableCellNumber = ({ value, parse, dsc }: CustomObjectDataType) => {
   return <div className="flex gap-2 items-center">{renderValue()}</div>
 }
 
-const TableCellDates = ({ value, id }: CustomObjectDataType) => {
-  const tableCols = useAppSelector((state) => state.dataInfo.table_columns)
-
-  const colConfig = tableCols.find((item) => item.key === id)
-
+const TableCellDates = ({ value, parse }: CustomObjectDataType) => {
   const renderValue = useCallback(() => {
     let newValue = value
 
     if (typeof value === "string") {
       if (
-        colConfig &&
-        colConfig?.parse &&
-        TypesOfDates.find((item) => item.key === colConfig.parse)
+        parse &&
+        TypesOfDates.find((item) => item.key === parse)
       ) {
-        newValue = dayjs(value).format(colConfig.parse)
+        newValue = dayjs(value).format(parse)
       } else newValue = new Date(value).toLocaleString("es-MX")
     }
 
@@ -149,7 +146,7 @@ const TableCellDates = ({ value, id }: CustomObjectDataType) => {
         <span>{newValue}</span>
       </div>
     )
-  }, [colConfig])
+  }, [])
 
   return <div className="flex gap-2 items-center">{renderValue()}</div>
 }
@@ -171,12 +168,7 @@ const TableCellBoolean = ({ value, dsc }: CustomObjectDataType) => {
   )
 }
 
-const TableCellMoney = ({ value, id }: CustomObjectDataType) => {
-  const tableCols = useAppSelector((state) => state.dataInfo.table_columns)
-
-  const colConfig = tableCols.find((item) => item.key === id)
-  const dsc = colConfig?.dsc || ""
-
+const TableCellMoney = ({ value, dsc }: CustomObjectDataType) => {
   return (
     <div className="flex gap-2 items-center">
       <div className={`flex flex-row gap-1`}>
@@ -239,6 +231,97 @@ const TableCellRating = ({ value }: CustomObjectDataType) => {
       </div>
     </div>
   )
+}
+
+export default function TableCellType ({value, columnKey}: TableCellType) {
+      const columns = useAppSelector((state) => state.dataInfo.table_columns)
+      const hasError = useAppSelector((state) => state.dataInfo.messages[columnKey])
+      const config = columns.find((item) => item.key === columnKey)
+  
+      const isKey = columnKey === "key"
+
+      if (!hasError && typeof value === "object" ) {
+        let objType = config ? config.type : value.type
+
+        switch (objType) {
+          case "country":
+            return (
+              <TableCellCountry
+                {...{ ...value, ...config }}
+                key={columnKey}
+                id={columnKey}
+              />
+            )
+          case "number":
+            return (
+              <TableCellNumber
+                {...{ ...value, ...config }}
+                key={columnKey}
+                id={columnKey}
+              />
+            )
+          case "money":
+            return (
+              <TableCellMoney
+                {...{ ...value, ...config }}
+                key={columnKey}
+                id={columnKey}
+              />
+            )
+          case "boolean":
+            return (
+              <TableCellBoolean
+                {...{ ...value, ...config }}
+                key={columnKey}
+                id={columnKey}
+              />
+            )
+          case "category":
+            return (
+              <TableCellCategory
+                {...{ ...value, ...config }}
+                key={columnKey}
+                id={columnKey}
+              />
+            )
+          case "date":
+            return (
+              <TableCellDates
+                {...{ ...value, ...config }}
+                key={columnKey}
+                id={columnKey}
+              />
+            )
+          case "rating":
+            return (
+              <TableCellRating
+                {...{ ...value, ...config }}
+                key={columnKey}
+                id={columnKey}
+              />
+            )
+          case "custom":
+          default:
+            return (
+              <TableCellCustom
+                {...{ ...value, ...config }}
+                key={columnKey}
+                id={columnKey}
+              />
+            )
+        }
+      }
+
+      let finalValue = typeof value === "object" ? value.value : value
+
+      if (typeof value === "object" && value.type === "boolean") finalValue = String((value as CustomObjectDataType).dsc)
+
+      return (
+        <span className={`${isKey ? "font-light text-default-400" : ""}`}>
+          {`${isKey ? "#" : ""}`}
+          {finalValue}
+        </span>
+      )
 }
 
 export {
