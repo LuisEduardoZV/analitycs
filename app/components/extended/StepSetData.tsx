@@ -14,13 +14,9 @@ import DEFAULT_DATA from "@/store/data/defaut.json"
 import { setData, setDataType } from "@/store/slices/main"
 import { isJSONValid } from "@/utils/utils"
 
-interface StepSetDataProps {
-  handleContinue: () => void
-}
-
 type idsDefault = "usuarios" | "trafico" | "inventario"
 
-const StepSetData = ({ handleContinue }: StepSetDataProps) => {
+const StepSetData = () => {
   const initType = useAppSelector((state) => state.dataInfo.data_type)
   const defaultDataId = useAppSelector((state) => state.dataInfo.data_id)
 
@@ -64,6 +60,11 @@ const StepSetData = ({ handleContinue }: StepSetDataProps) => {
       variants={variantsModalSteps}
     >
       <h2 className="text-lg font-semibold">1. Carga de datos</h2>
+      <p className="text-sm text-default-500 dark:text-default-400 ml-1">
+        Puede cargar datos desde su computadora o pegarlos directamente en el
+        cuadro de texto. Contamos con datos predefinidos en caso de no contar
+        con un dataset.
+      </p>
       <Tabs
         color="primary"
         selectedKey={tabSelected}

@@ -8,7 +8,7 @@ const StepCustomData = () => {
     <motion.div
       key="viewData"
       animate="active"
-      className="w-full flex flex-col gap-2 max-h-[60vh] relative"
+      className="w-full flex flex-col gap-2 max-h-[80dvh] relative"
       exit="exit"
       initial="inactive"
       variants={variantsModalSteps}

@@ -29,9 +29,9 @@ const MyModalFooter = ({
       >
         Cerrar
       </Button>
-      <div className="flex gap-2 items-center">
-        <AnimatePresence initial={false} mode="wait">
-          {viewType === 0 ? (
+      <AnimatePresence>
+        <div className="flex gap-2 items-center">
+          {viewType === 0 && (
             <MotionButton
               key="backButton"
               animate={{ opacity: 1 }}
@@ -39,22 +39,23 @@ const MyModalFooter = ({
               color="secondary"
               exit={{ opacity: 0 }}
               initial={{ opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
               variant="bordered"
               onPress={onBack}
             >
               Regresar
             </MotionButton>
-          ) : null}
-        </AnimatePresence>
-        <Button
-          className="px-4 py-2 rounded"
-          color="primary"
-          variant="shadow"
-          onPress={onContinue}
-        >
-          {viewType === 1 ? "Continuar" : "Terminar"}
-        </Button>
-      </div>
+          )}
+          <Button
+            className="px-4 py-2 rounded"
+            color="primary"
+            variant="shadow"
+            onPress={onContinue}
+          >
+            {viewType === 1 ? "Continuar" : "Terminar"}
+          </Button>
+        </div>
+      </AnimatePresence>
     </ModalFooter>
   )
 }

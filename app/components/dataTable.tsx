@@ -58,6 +58,7 @@ const DataTable = () => {
 
   return (
     <Table
+      isHeaderSticky
       isStriped
       removeWrapper
       aria-label={`Tabla de datos`}
@@ -67,15 +68,13 @@ const DataTable = () => {
     >
       <TableHeader columns={columns}>
         {(column) => {
-          console.log(columnsErrors)
-
           const hasError = !!columnsErrors[column.key]
 
           return (
             <TableColumn
               key={column.key}
               allowsSorting
-              className={`relative ${hasError ? "bg-red-100/50" : ""} transition-background duration-200 ease-in`}
+              className={`relative ${hasError ? "bg-red-50" : ""} transition-background duration-200 ease-in`}
             >
               <div
                 className={`flex items-center gap-2 w-fit ${hasError ? "text-red-600" : ""} transition-colors duration-200 ease-in`}
@@ -90,7 +89,6 @@ const DataTable = () => {
         }}
       </TableHeader>
       <TableBody
-        key={columns.map((c) => c.type).join("-")}
         emptyContent="No hay datos"
         isLoading={loading}
         items={list.items as BaseObjectDataType[]}
